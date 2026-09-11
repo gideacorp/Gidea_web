@@ -1,0 +1,15 @@
+CARPETA: servicios/
+Colocar aqui las imagenes de cada servicio (tarjetas de servicio).
+
+ARCHIVOS REQUERIDOS:
+- procedimientos-vuelo.jpg    → Servicio: Diseno de Procedimientos de Vuelo
+                                Ejemplo: carta de aproximacion, pantalla de simulador
+                                Tamaño: 800 x 450 px (relacion 16:9)
+
+- entorno-aeroportuario.jpg   → Servicio: Ingenieria del Entorno Aeroportuario
+                                Ejemplo: foto aerea de aerodromo, diagrama de obstaculos
+                                Tamaño: 800 x 450 px (relacion 16:9)
+
+- seguridad-operacional.jpg   → Servicio: Seguridad Operacional y Calidad
+                                Ejemplo: checklist, sala de analisis, documentacion
+                                Tamaño: 800 x 450 px (relacion 16:9)

@@ -1,0 +1,11 @@
+CARPETA: nosotros/
+Colocar aqui las imagenes de la seccion "Quienes Somos".
+
+ARCHIVOS REQUERIDOS:
+- about-team.jpg     → Foto del equipo o imagen institucional de la empresa
+                       Ejemplo: foto grupal del equipo, oficina, reunion tecnica
+                       Tamaño recomendado: 800 x 1000 px (orientacion vertical/portrait)
+
+ARCHIVOS OPCIONALES:
+- analysis-map.jpg   → Imagen de mapa aeronautico o analisis de rutas
+                       Tamaño recomendado: 1600 x 600 px (orientacion horizontal)

@@ -1,0 +1,16 @@
+CARPETA: logos/
+Colocar aqui los archivos del logo de GIDEA-IFPD.
+
+ARCHIVOS REQUERIDOS:
+- logo.svg          → Logo principal en SVG (fondo transparente, para fondos claros)
+- logo-white.svg    → Logo en blanco (para la navbar sobre fondos oscuros)
+- favicon.svg       → Icono pequeño del sitio (32x32 px o cuadrado)
+
+ARCHIVOS OPCIONALES:
+- logo.png          → Logo en PNG con transparencia (800px ancho max)
+- logo-white.png    → Logo blanco en PNG
+- favicon.ico       → Favicon en formato ICO (16x16 y 32x32)
+
+NOTAS:
+- SVG es el formato ideal para logos (escalable sin perder calidad)
+- El nombre del archivo debe ser exactamente el indicado arriba

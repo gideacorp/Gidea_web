@@ -1,0 +1,16 @@
+CARPETA: hero/
+Colocar aqui las imagenes de fondo del sitio web.
+
+ARCHIVOS REQUERIDOS:
+- hero-bg.jpg        → Imagen principal del hero (fondo de pantalla completa)
+                       Ejemplo: foto aerea de aeropuerto, cockpit, radar ATC
+                       Tamaño recomendado: 1920 x 1080 px minimo
+                       
+- cta-banner-bg.jpg  → Imagen de fondo del banner llamada a la accion (CTA)
+                       Ejemplo: pista de aterrizaje, espacio aereo nocturno
+                       Tamaño recomendado: 1920 x 800 px
+
+NOTAS:
+- Formato JPG, comprimido para web (max 500KB)
+- Las imagenes se muestran con filtro oscuro automaticamente
+- No es necesario que sean muy brillantes

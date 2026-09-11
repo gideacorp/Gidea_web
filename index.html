@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GIDEA-IFPD — Grupo de Ingeniería Aeronáutica y Diseño de Procedimientos de Vuelo." />
+  <title>GIDEA-IFPD | Ingeniería Aeronáutica y Diseño de Procedimientos de Vuelo</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/images/logos/favicon.png" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Flag Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/mobile.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <img src="assets/images/logos/Logo_principal_sin fondo.png" alt="GIDEA-IFPD" class="logo-icon" />
+        <img src="assets/images/logos/name.png" alt="GIDEA-IFPD" class="logo-name" />
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-right" id="navRight">
+        <ul class="nav-menu">
+          <li><a href="#procedimientos" data-i18n="nav_procedures">Procedimientos de Vuelo</a></li>
+          <li><a href="#entorno" data-i18n="nav_airport">Entorno Aeroportuario</a></li>
+          <li><a href="#capacidades" data-i18n="nav_capabilities">Capacidades Técnicas</a></li>
+          <li><a href="#contacto" class="btn-nav" data-i18n="nav_contact">Contacto</a></li>
+        </ul>
+
+        <!-- Language Selector -->
+        <div class="lang-selector">
+          <button class="lang-current" id="langToggle" aria-haspopup="true" aria-expanded="false">
+            <span class="fi fi-ar fis"></span>
+            <span class="lang-code" id="currentLangCode">ES</span>
+            <svg class="lang-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-btn active" data-lang="es" data-flag="fi-ar" data-code="ES">
+              <span class="fi fi-ar fis"></span>
+              <span>Español</span>
+            </button>
+            <button class="lang-btn" data-lang="en" data-flag="fi-gb" data-code="EN">
+              <span class="fi fi-gb fis"></span>
+              <span>English</span>
+            </button>
+            <button class="lang-btn" data-lang="fr" data-flag="fi-fr" data-code="FR">
+              <span class="fi fi-fr fis"></span>
+              <span>Français</span>
+            </button>
+            <button class="lang-btn" data-lang="pt" data-flag="fi-br" data-code="PT">
+              <span class="fi fi-br fis"></span>
+              <span>Português</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content text-center">
+        <h1 data-i18n="hero_title">INGENIERÍA QUE TRANSFORMA REQUERIMIENTOS OPERACIONALES EN SOLUCIONES DE NAVEGACIÓN AÉREA.</h1>
+        <p class="hero-sub" data-i18n="hero_sub">GIDEA-IFPD integra ingeniería aeronáutica, diseño de procedimientos instrumentales de vuelo y análisis del entorno aeroportuario.</p>
+        <div class="hero-buttons">
+          <a href="#procedimientos" class="btn btn-primary" data-i18n="hero_cta">Ver Servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 01. PROCEDIMIENTOS DE VUELO ===== -->
+    <section id="procedimientos" class="section bg-dark">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2 class="text-white" data-i18n="sec1_title">DISEÑO DE PROCEDIMIENTOS INSTRUMENTALES DE VUELO</h2>
+          <p class="section-lead text-white" data-i18n="sec1_lead">Diseño especializado de procedimientos instrumentales considerando los requerimientos operacionales, las características del aeródromo, el entorno aeronáutico y los criterios de diseño aplicables.</p>
+        </div>
+        <div class="grid-4">
+          <div class="card">
+            <h3 data-i18n="card1_title">Aproximaciones · SID · STAR</h3>
+            <p data-i18n="card1_text">Diseño de trayectorias, análisis de performance, áreas de protección y estudio de obstáculos.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="card2_title">Procedimientos Convencionales</h3>
+            <p data-i18n="card2_text">Desarrollo basado en radioayudas terrestres, garantizando altitudes, mínimos y codificación exacta.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="card3_title">Performance-Based Navigation (PBN)</h3>
+            <p data-i18n="card3_text">Navegación Basada en la Performance según Doc 9613 OACI. Soluciones de alta eficiencia operacional.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="card4_title">RNP AR (Authorization Required)</h3>
+            <p data-i18n="card4_text">Diseño para escenarios complejos, maximizando el uso del espacio aéreo y la tecnología de a bordo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 02. ENTORNO AEROPORTUARIO ===== -->
+    <section id="entorno" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 data-i18n="sec2_title">INGENIERÍA PARA EL ENTORNO AEROPORTUARIO / SEGURIDAD OPERACIONAL</h2>
+          <p class="section-lead" data-i18n="sec2_lead">Estudios aeronáuticos y soluciones de ingeniería orientados a evaluar la viabilidad, operación y afectación en instalaciones y desarrollos planificados.</p>
+        </div>
+        <div class="grid-2">
+          <div class="info-box">
+            <h4 data-i18n="box1_title">Factibilidad Aeronáutica</h4>
+            <p data-i18n="box1_text">Evaluación de alternativas para nuevos aeródromos, helipuertos, infraestructura y proyectos que requieran condiciones aeronáuticas específicas.</p>
+          </div>
+          <div class="info-box">
+            <h4 data-i18n="box2_title">Safety Assessments</h4>
+            <p data-i18n="box2_text">Evaluación de riesgos de seguridad operacional asociados a cambios en procedimientos, espacio aéreo, infraestructura u operación.</p>
+          </div>
+          <div class="info-box">
+            <h4 data-i18n="box3_title">Afectación Aeronáutica</h4>
+            <p data-i18n="box3_text">Evaluación del impacto potencial de construcciones, desarrollos urbanísticos, antenas, parques eólicos y nuevas instalaciones sobre las condiciones de operación existentes.</p>
+          </div>
+          <div class="info-box">
+            <h4 data-i18n="box4_title">Estudios Operacionales</h4>
+            <p data-i18n="box4_text">Evaluaciones considerando la interacción entre: Aeródromo + aeronaves + infraestructura + espacio aéreo + procedimientos de vuelo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 03. CAPACIDADES TÉCNICAS ===== -->
+    <section id="capacidades" class="section bg-light">
+      <div class="container">
+        <div class="layout-split">
+          <div class="split-content">
+            <h2 data-i18n="sec3_title">CAPACIDADES TÉCNICAS Y OPERATIVAS</h2>
+            <ul class="bullet-list">
+              <li><strong data-i18n="cap1_label">Nuevos Aeropuertos / Aeródromos:</strong> <span data-i18n="cap1_text">Evaluación de factibilidad y desarrollo desde la planificación.</span></li>
+              <li><strong data-i18n="cap2_label">Modernización del Espacio Aéreo:</strong> <span data-i18n="cap2_text">Análisis y rediseño de rutas ATS y estructuras terminales.</span></li>
+              <li><strong data-i18n="cap3_label">Optimización de Procedimientos:</strong> <span data-i18n="cap3_text">Revisión y mejora de estructuras existentes.</span></li>
+              <li><strong data-i18n="cap4_label">Cambios Operacionales:</strong> <span data-i18n="cap4_text">Evaluación del impacto de modificaciones en infraestructura.</span></li>
+              <li><strong data-i18n="cap5_label">Desarrollo de Software Aeronáutico:</strong> <span data-i18n="cap5_text">Herramientas propias para cálculos y validación técnica.</span></li>
+            </ul>
+          </div>
+          <div class="split-image">
+            <img src="assets/images/nosotros/about-team.jpg" alt="Capacidades Técnicas" class="img-responsive shadow" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ESTÁNDARES ICAO ===== -->
+    <section class="section bg-dark text-white text-center">
+      <div class="container">
+        <h2 data-i18n="sec4_title">ESTÁNDARES Y CUMPLIMIENTO NORMATIVO</h2>
+        <p class="section-lead mx-auto text-white" data-i18n="sec4_lead">Rigor Técnico · Integridad de Datos · Seguridad Operacional</p>
+        <div class="grid-3 mt-4">
+          <div class="standard-box">
+            <h4 data-i18n="std1_title">Doc 8168 (PANS-OPS)</h4>
+            <p data-i18n="std1_text">Criterios para la construcción de procedimientos de vuelo visual y por instrumentos (Vol. II).</p>
+          </div>
+          <div class="standard-box">
+            <h4 data-i18n="std2_title">Doc 9906</h4>
+            <p data-i18n="std2_text">Aseguramiento de la Calidad (QA) en el Proceso de Diseño de Procedimientos de Vuelo.</p>
+          </div>
+          <div class="standard-box">
+            <h4 data-i18n="std3_title">Gestión de Calidad</h4>
+            <p data-i18n="std3_text">Todo proceso técnico está respaldado por un Expediente Técnico completo garantizando trazabilidad absoluta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO / FORMULARIO ===== -->
+    <section id="contacto" class="section contact-section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Left: Info -->
+          <div class="contact-info">
+            <h2 data-i18n="contact_title">CONTACTO</h2>
+            <p class="section-lead" data-i18n="contact_lead">Consultoría y diseño de procedimientos de vuelo y espacio aéreo. Contáctenos para presentar su requerimiento técnico.</p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+                <span>proyectos@gidea-ifpd.com<br><small style="opacity:0.6;">[PENDIENTE_EMAIL_GIDEA]</small></span>
+              </div>
+              <div class="contact-detail-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Buenos Aires, Argentina<br>Latinoamérica</span>
+              </div>
+            </div>
+
+            <div class="icao-badge">
+              <span>ICAO PANS-OPS</span>
+              <span>Doc 8168 · Doc 9613 · Doc 9906</span>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-form-wrap">
+            <!-- Replace YOUR_FORM_ID with your Formspree form ID when you have the email -->
+            <form id="contactForm" action="https://formspree.io/f/[PENDIENTE_EMAIL_GIDEA]" method="POST" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" data-i18n="form_name">Nombre y Apellido</label>
+                  <input type="text" id="form-name" name="name" required data-i18n-placeholder="form_name" placeholder="Nombre y Apellido" />
+                </div>
+                <div class="form-group">
+                  <label for="form-org" data-i18n="form_org">Organización / Estado / ANSP</label>
+                  <input type="text" id="form-org" name="organization" required data-i18n-placeholder="form_org" placeholder="Organización / Estado / ANSP" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-role" data-i18n="form_role">Cargo / Rol (opcional)</label>
+                  <input type="text" id="form-role" name="role" data-i18n-placeholder="form_role" placeholder="Cargo / Rol (opcional)" />
+                </div>
+                <div class="form-group">
+                  <label for="form-email" data-i18n="form_email">Correo Electrónico</label>
+                  <input type="email" id="form-email" name="email" required data-i18n-placeholder="form_email" placeholder="correo@organizacion.com" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-country" data-i18n="form_country">País</label>
+                  <select id="form-country" name="country" required>
+                    <option value="">País</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="form-subject" data-i18n="form_subject">Tipo de Consulta</label>
+                  <select id="form-subject" name="subject" required>
+                    <option value="">Seleccione una opción...</option>
+                    <option>Diseño de Procedimientos de Vuelo</option>
+                    <option>Seguridad Operacional / SMS</option>
+                    <option>Estudios SLO / Afectación Aeronáutica</option>
+                    <option>Planificación Aeroportuaria</option>
+                    <option>Desarrollo de Software Aeronáutico</option>
+                    <option>Otra consulta</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" data-i18n="form_message">Descripción del requerimiento técnico</label>
+                <textarea id="form-message" name="message" rows="5" required data-i18n-placeholder="form_message" placeholder="Describa su requerimiento técnico..."></textarea>
+              </div>
+
+              <!-- Hidden fields for Formspree -->
+              <input type="hidden" name="_subject" value="Nueva consulta GIDEA-IFPD" />
+              <input type="hidden" name="_language" id="form-lang" value="es" />
+              <input type="text" name="_gotcha" style="display:none" />
+
+              <button type="submit" class="btn btn-primary btn-full" data-i18n="form_submit">Enviar Solicitud</button>
+
+              <div id="form-success" class="form-feedback form-feedback-success" style="display:none;" data-i18n="form_success">
+                ¡Solicitud enviada correctamente! Nos pondremos en contacto a la brevedad.
+              </div>
+              <div id="form-error" class="form-feedback form-feedback-error" style="display:none;" data-i18n="form_error">
+                Error al enviar. Por favor intente nuevamente o contáctenos por correo.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="assets/images/logos/logo_completo_blanco.png" alt="GIDEA-IFPD - Ingeniería Aeronáutica" style="height: 65px; width: auto;" />
+      </div>
+      <p class="footer-text" data-i18n="footer_tagline">GRUPO DE INGENIERÍA AERONÁUTICA Y DISEÑO DE PROCEDIMIENTOS DE VUELO.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

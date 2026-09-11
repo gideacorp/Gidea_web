@@ -1,0 +1,8 @@
+CARPETA: equipo/
+Colocar aqui las fotos del equipo profesional.
+
+USO FUTURO:
+- Cuando se habilite la seccion "Equipo" en el sitio web
+- Fotos individuales de cada integrante del equipo
+- Tamaño recomendado: 400 x 500 px (portrait/vertical)
+- Nombre del archivo: nombre-apellido.jpg

@@ -1,0 +1,23 @@
+CARPETA: capacidades/
+Colocar aqui las imagenes de cada capacidad tecnica.
+
+ARCHIVOS REQUERIDOS:
+- nuevos-aeropuertos.jpg           → Capacidad 01: Nuevos Aeropuertos/Aerodromos
+                                     Ejemplo: construccion de pista, nuevo aerodromo
+                                     Tamaño: 720 x 400 px
+
+- modernizacion-espacio-aereo.jpg  → Capacidad 02: Modernizacion del Espacio Aereo
+                                     Ejemplo: pantalla de radar moderno, ATC
+                                     Tamaño: 720 x 400 px
+
+- optimizacion-procedimientos.jpg  → Capacidad 03: Optimizacion de Procedimientos
+                                     Ejemplo: simulacion de trayectoria, carta PBN
+                                     Tamaño: 720 x 400 px
+
+- nuevos-procedimientos.jpg        → Capacidad 04: Nuevos Procedimientos
+                                     Ejemplo: carta aeronautica, plotter de vuelo
+                                     Tamaño: 720 x 400 px
+
+- cambios-operacionales.jpg        → Capacidad 05: Cambios Operacionales
+                                     Ejemplo: reunion tecnica, analisis de datos
+                                     Tamaño: 720 x 400 px
