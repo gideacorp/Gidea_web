@@ -261,7 +261,6 @@ a {
   background-image: url('../images/hero/hero-bg.jpg');
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
 }
 .hero-overlay {
   position: absolute;
