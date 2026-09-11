@@ -15,7 +15,7 @@
   "card2_title": "Conventional Procedures",
   "card2_text": "Design based on conventional navigation aids (VOR, NDB, ILS/DME), ensuring obstacle clearance, minima and ARINC 424 coding.",
   "card3_title": "Performance-Based Navigation (PBN)",
-  "card3_text": "RNAV and RNP procedure design per ICAO Doc 9613. RNAV(GNSS), RNP APCH and advanced PBN solutions.",
+  "card3_text": "RNAV and RNP procedure design according to ICAO Doc 9613 and Doc 8168. RNP APCH and advanced PBN solutions.",
   "card4_title": "RNP AR APCH",
   "card4_text": "Design for complex aerodrome environments, maximising airspace utilisation with curved and RF leg segments.",
   "sec2_tag": "02. AERODROME ENVIRONMENT",

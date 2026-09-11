@@ -15,7 +15,7 @@
   "card2_title": "Procédures Conventionnelles",
   "card2_text": "Conception basée sur les aides conventionnelles (VOR, NDB, ILS/DME), garantissant la marge franchissement d'obstacles, les minimums et le codage ARINC 424.",
   "card3_title": "Navigation Basée sur les Performances (PBN)",
-  "card3_text": "Conception de procédures RNAV et RNP conformément au Doc 9613 de l'OACI. RNAV(GNSS), RNP APCH et solutions PBN avancées.",
+  "card3_text": "Conception de procédures RNAV et RNP conformément aux Doc 9613 et Doc 8168 de l'OACI. RNP APCH et solutions PBN avancées.",
   "card4_title": "RNP AR APCH",
   "card4_text": "Conception pour des environnements aéroportuaires complexes, optimisant l'utilisation de l'espace aérien avec des segments courbes et RF.",
   "sec2_tag": "02. ENVIRONNEMENT AÉROPORTUAIRE",
