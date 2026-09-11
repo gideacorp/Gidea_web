@@ -108,11 +108,13 @@
     font-weight: 600 !important;
     color: var(--primary-color) !important;
   }
+  .nav-menu a.btn-nav {
+    color: var(--bg-white) !important;
+  }
   .btn-nav {
     display: inline-block;
     padding: 12px 30px !important;
     background: var(--primary-color);
-    color: var(--bg-white) !important;
     border-radius: 30px !important;
   }
 
@@ -163,9 +165,6 @@
     margin-top: 68px !important;
     min-height: 450px !important;
     padding: 0 15px;
-  }
-  .hero-bg {
-    background-attachment: scroll !important; /* Fixes massive zoom bug on iOS Safari */
   }
   .hero-content {
     padding: 30px 10px;
