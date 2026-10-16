@@ -286,8 +286,8 @@
     padding: 0 6px !important;
   }
   .marquee-item img {
-    max-height: 26px !important;
-    max-width: 95px !important;
+    max-height: 28px !important;
+    max-width: 105px !important;
   }
   .marquee-track-wrap::before,
   .marquee-track-wrap::after {

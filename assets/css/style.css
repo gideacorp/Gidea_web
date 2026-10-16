@@ -629,36 +629,41 @@ a {
 
 /* ===== LOGO CAROUSELS (NORMATIVA DE FONDO) ===== */
 .brand-carousel-section {
-  padding: 26px 0 22px;
+  padding: 34px 0 30px;
   background: #ffffff;
   border-top: 1px solid #eef2f6;
   border-bottom: 1px solid #eef2f6;
   position: relative;
 }
+.brand-carousel-section .container {
+  max-width: 1120px;
+}
 .brand-carousel-section--alt {
   background: #f8fafc;
 }
 .brand-carousel-title {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   color: #0d2b45;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   letter-spacing: 0.5px;
 }
 .brand-carousel-sub {
-  font-size: 12px;
+  font-size: 13px;
   color: #64748b;
-  margin-bottom: 16px;
-  max-width: 680px;
+  margin-bottom: 20px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
 }
 .marquee-track-wrap {
   width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
-  padding: 6px 0;
+  padding: 8px 0;
 }
 .marquee-track-wrap::before,
 .marquee-track-wrap::after {
@@ -666,7 +671,7 @@ a {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 80px;
+  width: 70px;
   z-index: 2;
   pointer-events: none;
 }
@@ -688,9 +693,9 @@ a {
 .marquee-track {
   display: flex;
   align-items: center;
-  gap: 44px;
+  gap: 52px;
   width: max-content;
-  animation: marqueeScroll 26s linear infinite;
+  animation: marqueeScroll 25s linear infinite;
 }
 .marquee-track--slow {
   animation-duration: 24s;
@@ -752,19 +757,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 42px;
-  min-width: 105px;
-  padding: 0 10px;
+  height: 52px;
+  min-width: 120px;
+  padding: 0 12px;
   text-decoration: none;
   cursor: pointer;
 }
 .marquee-item img {
-  max-height: 32px;
-  max-width: 125px;
+  max-height: 44px;
+  max-width: 145px;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%) opacity(0.65);
+  filter: grayscale(100%) opacity(0.7);
   transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 .marquee-item:hover img {
