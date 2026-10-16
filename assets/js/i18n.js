@@ -5,7 +5,7 @@
  */
 const i18n = (() => {
   const STORAGE_KEY = 'gidea_lang';
-  const DEFAULT_LANG = 'es';
+  const DEFAULT_LANG = 'en';
   let currentLang = DEFAULT_LANG;
   let translations = {};
 
@@ -67,9 +67,23 @@ const i18n = (() => {
   }
 
   function updateLangSelector(lang) {
+    // Mark active button in dropdown
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
+
+    // Update trigger button: show correct icon (flag for EN, globe for others)
+    const activeBtn = document.querySelector(`.lang-btn[data-lang="${lang}"]`);
+    if (!activeBtn) return;
+
+    const isFlag = activeBtn.getAttribute('data-icon') === 'flag';
+    const flagEl  = document.querySelector('#langToggle .fi');
+    const globeEl = document.querySelector('#langToggle .lang-globe');
+    const codeEl  = document.getElementById('currentLangCode');
+
+    if (flagEl)  flagEl.style.display  = isFlag ? '' : 'none';
+    if (globeEl) globeEl.style.display = isFlag ? 'none' : '';
+    if (codeEl)  codeEl.textContent    = activeBtn.getAttribute('data-code') || lang.toUpperCase();
   }
 
   async function setLanguage(lang) {

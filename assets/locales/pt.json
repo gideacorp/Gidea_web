@@ -68,5 +68,10 @@
   "form_submit": "Enviar Solicitação",
   "form_success": "Solicitação enviada com sucesso. Retornaremos em breve.",
   "form_error": "Falha no envio. Por favor tente novamente ou entre em contato diretamente por e-mail.",
-  "footer_tagline": "GRUPO DE ENGENHARIA AERONÁUTICA E PROJETO DE PROCEDIMENTOS DE VOO"
+  "footer_tagline": "ENGENHARIA AERONÁUTICA E PROJETO DE PROCEDIMENTOS INSTRUMENTAIS DE VOO.",
+  "footer_company": "Empresa",
+  "footer_coverage": "Cobertura",
+  "footer_latam": "América Central e do Sul",
+  "footer_icao": "Conformidade OACI — Doc 8168 / Doc 9613",
+  "footer_rights": "\u00a9 2025 GIDEA LLC. Todos os direitos reservados."
 }

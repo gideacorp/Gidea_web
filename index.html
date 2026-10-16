@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="GIDEA-IFPD — Grupo de Ingeniería Aeronáutica y Diseño de Procedimientos de Vuelo." />
-  <title>GIDEA-IFPD | Ingeniería Aeronáutica y Diseño de Procedimientos de Vuelo</title>
+  <meta name="description" content="GIDEA LLC — Aeronautical Engineering & Instrument Flight Procedure Design. Melbourne, FL, USA. Serving Central & South America." />
+  <title>GIDEA LLC | Aeronautical Engineering & Flight Procedure Design</title>
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
   <link rel="icon" type="image/png" href="assets/images/logos/favicon.png" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -14,13 +14,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/mobile.css?v=2" />
+  
+  <!-- GIDEA Analytics Tracker -->
+  <script>
+    (function() {
+      fetch('https://api-gidea.vercel.app/api/analytics/track', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          url: window.location.pathname,
+          referrer: document.referrer,
+          screen: window.innerWidth
+        })
+      }).catch(function() {});
+    })();
+  </script>
 </head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="brand">
+      <a href="#" class="brand" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
         <img src="assets/images/logos/Logo_principal_sin fondo.png" alt="GIDEA-IFPD" class="logo-icon" />
         <img src="assets/images/logos/name.png" alt="GIDEA-IFPD" class="logo-name" />
       </a>
@@ -43,26 +58,28 @@
         <!-- Language Selector -->
         <div class="lang-selector">
           <button class="lang-current" id="langToggle" aria-haspopup="true" aria-expanded="false">
-            <span class="fi fi-ar fis"></span>
-            <span class="lang-code" id="currentLangCode">ES</span>
+            <span class="fi fi-us fis lang-flag-en" style="display:none"></span>
+            <!-- Globe icon for non-English languages -->
+            <svg class="lang-globe lang-flag-es lang-flag-pt lang-flag-fr" style="display:none" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span class="lang-code" id="currentLangCode">EN</span>
             <svg class="lang-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
           <div class="lang-dropdown" id="langDropdown">
-            <button class="lang-btn active" data-lang="es" data-flag="fi-ar" data-code="ES">
-              <span class="fi fi-ar fis"></span>
-              <span>Español</span>
-            </button>
-            <button class="lang-btn" data-lang="en" data-flag="fi-gb" data-code="EN">
-              <span class="fi fi-gb fis"></span>
+            <button class="lang-btn" data-lang="en" data-flag="fi-us" data-code="EN" data-icon="flag">
+              <span class="fi fi-us fis"></span>
               <span>English</span>
             </button>
-            <button class="lang-btn" data-lang="fr" data-flag="fi-fr" data-code="FR">
-              <span class="fi fi-fr fis"></span>
-              <span>Français</span>
+            <button class="lang-btn" data-lang="es" data-flag="" data-code="ES" data-icon="globe">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Español</span>
             </button>
-            <button class="lang-btn" data-lang="pt" data-flag="fi-br" data-code="PT">
-              <span class="fi fi-br fis"></span>
+            <button class="lang-btn" data-lang="pt" data-flag="" data-code="PT" data-icon="globe">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
               <span>Português</span>
+            </button>
+            <button class="lang-btn" data-lang="fr" data-flag="" data-code="FR" data-icon="globe">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Français</span>
             </button>
           </div>
         </div>
@@ -299,13 +316,63 @@
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-brand">
-        <img src="assets/images/logos/logo_completo_blanco.png" alt="GIDEA-IFPD - Ingeniería Aeronáutica" style="height: 65px; width: auto;" />
+        <img src="assets/images/logos/logo_completo_blanco.png" alt="GIDEA-IFPD - Aeronautical Engineering" style="height: 65px; width: auto;" />
+        <p class="footer-tagline" data-i18n="footer_tagline">AERONAUTICAL ENGINEERING & INSTRUMENT FLIGHT PROCEDURE DESIGN.</p>
       </div>
-      <p class="footer-text" data-i18n="footer_tagline">GRUPO DE INGENIERÍA AERONÁUTICA Y DISEÑO DE PROCEDIMIENTOS DE VUELO.</p>
+
+      <div class="footer-info">
+        <div class="footer-col">
+          <h4 class="footer-col-title" data-i18n="footer_company">Company</h4>
+          <ul class="footer-list">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Melbourne, FL — USA</span>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:consultas@gideacorp.com">consultas@gideacorp.com</a>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <a href="https://www.gideacorp.com" target="_blank" rel="noopener">www.gideacorp.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title" data-i18n="footer_coverage">Coverage</h4>
+          <ul class="footer-list">
+            <li>🌎 <span data-i18n="footer_latam">Central &amp; South America</span></li>
+            <li>🌍 <span data-i18n="footer_icao">ICAO Compliant — Doc 8168 / Doc 9613</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_rights">© 2025 GIDEA LLC. All rights reserved.</span>
+      </div>
     </div>
   </footer>
 
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
+<!-- GIDEA Analytics -->
+<script>
+  (function() {
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:';
+    const apiUrl = isLocal ? 'http://localhost:4000/api/analytics/track' : 'https://api.gideacorp.com/api/analytics/track';
+    fetch(apiUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        url: window.location.href,
+        referrer: document.referrer,
+        screen: window.innerWidth
+      })
+    }).catch(e => console.error('Analytics error:', e));
+  })();
+</script>
 </body>
 </html>
+
+

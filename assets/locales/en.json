@@ -68,5 +68,10 @@
   "form_submit": "Submit Request",
   "form_success": "Request submitted successfully. We will respond shortly.",
   "form_error": "Submission failed. Please try again or contact us directly by e-mail.",
-  "footer_tagline": "AERONAUTICAL ENGINEERING GROUP AND FLIGHT PROCEDURE DESIGN"
+  "footer_tagline": "AERONAUTICAL ENGINEERING & INSTRUMENT FLIGHT PROCEDURE DESIGN.",
+  "footer_company": "Company",
+  "footer_coverage": "Coverage",
+  "footer_latam": "Central & South America",
+  "footer_icao": "ICAO Compliant — Doc 8168 / Doc 9613",
+  "footer_rights": "\u00a9 2025 GIDEA LLC. All rights reserved."
 }

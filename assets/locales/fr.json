@@ -68,5 +68,10 @@
   "form_submit": "Envoyer la Demande",
   "form_success": "Demande transmise avec succès. Nous vous répondrons dans les meilleurs délais.",
   "form_error": "Échec de l'envoi. Veuillez réessayer ou nous contacter directement par e-mail.",
-  "footer_tagline": "GROUPE D'INGÉNIERIE AÉRONAUTIQUE ET DE CONCEPTION DE PROCÉDURES DE VOL"
+  "footer_tagline": "INGÉNIERIE AÉRONAUTIQUE ET CONCEPTION DE PROCÉDURES INSTRUMENTALES DE VOL.",
+  "footer_company": "Entreprise",
+  "footer_coverage": "Couverture",
+  "footer_latam": "Amérique Centrale et du Sud",
+  "footer_icao": "Conformité OACI — Doc 8168 / Doc 9613",
+  "footer_rights": "\u00a9 2025 GIDEA LLC. Tous droits r\u00e9serv\u00e9s."
 }
