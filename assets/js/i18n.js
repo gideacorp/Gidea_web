@@ -4,7 +4,7 @@
  * Uses localStorage to remember user language preference.
  */
 const i18n = (() => {
-  const STORAGE_KEY = 'gidea_lang_v9';
+  const STORAGE_KEY = 'gidea_lang_v10';
   const DEFAULT_LANG = 'en';
   let currentLang = DEFAULT_LANG;
   let translations = {};
@@ -12,13 +12,13 @@ const i18n = (() => {
   // Country list for all 4 languages
   const countryLists = {
     es: ["Argentina","Bolivia","Brasil","Chile","Colombia","Costa Rica","Cuba","Ecuador","El Salvador","España","Guatemala","Honduras","México","Nicaragua","Panamá","Paraguay","Perú","Portugal","Puerto Rico","República Dominicana","Uruguay","Venezuela","Estados Unidos","Canadá","Francia","Reino Unido","Alemania","Italia","Países Bajos","Bélgica","Suiza","Portugal","Nigeria","Sudáfrica","Etiopía","Kenia","Egipto","Marruecos","Angola","Mozambique","Tanzania","Ghana","Camerún","Costa de Marfil","Senegal","Zambia","Zimbabue","Ruanda","Uganda","Malí","Burkina Faso","Níger","Chad","Sudán","Somalia","Libia","Argelia","Túnez","China","India","Japón","Corea del Sur","Indonesia","Australia","Nueva Zelanda","Singapur","Emiratos Árabes Unidos","Arabia Saudita","Qatar","Kuwait","Bahréin","Omán","Otro"],
-    en: ["Argentina","Bolivia","Brazil","Chile","Colombia","Costa Rica","Cuba","Ecuador","El Salvador","Guatemala","Honduras","Mexico","Nicaragua","Panama","Paraguay","Peru","Dominican Republic","Uruguay","Venezuela","United States","Canada","United Kingdom","France","Germany","Italy","Spain","Netherlands","Belgium","Switzerland","Portugal","Australia","New Zealand","Japan","China","India","South Korea","Singapore","United Arab Emirates","Saudi Arabia","Qatar","South Africa","Nigeria","Kenya","Morocco","Egypt","Other"],
+    en: ["Argentina","Bolivia","Brazil","Chile","Colombia","Costa Rica","Cuba","Ecuador","El Salvador","Guatemala","Honduras","Mexico","Nicaragua","Panamá","Paraguay","Peru","Dominican Republic","Uruguay","Venezuela","United States","Canada","United Kingdom","France","Germany","Italy","Spain","Netherlands","Belgium","Switzerland","Portugal","Australia","New Zealand","Japan","China","India","South Korea","Singapore","United Arab Emirates","Saudi Arabia","Qatar","South Africa","Nigeria","Kenya","Morocco","Egypt","Other"],
     fr: ["Argentine","Bolivie","Brésil","Chili","Colombie","Costa Rica","Cuba","Équateur","El Salvador","Guatemala","Honduras","Mexique","Nicaragua","Panama","Paraguay","Pérou","République Dominicaine","Uruguay","Venezuela","États-Unis","Canada","Royaume-Uni","France","Allemagne","Italie","Espagne","Pays-Bas","Belgique","Suisse","Portugal","Australie","Nouvelle-Zélande","Japon","Chine","Inde","Corée du Sud","Singapour","Émirats Arabes Unis","Arabie Saoudite","Qatar","Afrique du Sud","Nigéria","Kenya","Maroc","Égypte","Autre"],
     pt: ["Argentina","Bolívia","Brasil","Chile","Colômbia","Costa Rica","Cuba","Equador","El Salvador","Guatemala","Honduras","México","Nicarágua","Panamá","Paraguai","Peru","República Dominicana","Uruguai","Venezuela","Estados Unidos","Canadá","Reino Unido","França","Alemanha","Itália","Espanha","Países Baixos","Bélgica","Suíça","Portugal","Austrália","Nova Zelândia","Japão","China","Índia","Coreia do Sul","Singapura","Emirados Árabes Unidos","Arábia Saudita","Catar","África do Sul","Nigéria","Quênia","Marrocos","Egito","Outro"]
   };
 
   async function loadTranslations(lang) {
-    const resp = await fetch(`assets/locales/${lang}.json?v=9`);
+    const resp = await fetch(`assets/locales/${lang}.json?v=10`);
     if (!resp.ok) throw new Error(`Could not load locale: ${lang}`);
     return resp.json();
   }

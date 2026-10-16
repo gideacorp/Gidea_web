@@ -1,4 +1,4 @@
-﻿{
+{
   "lang": "en",
   "nav_procedures": "Flight Procedures",
   "nav_airport": "Aerodromes & Heliports",
@@ -89,7 +89,7 @@
   "nav_partners": "Strategic Alliances",
   "reg_title": "REGULATORY BASELINE & COMPLIANCE",
   "reg_sub": "Our technical processes and flight procedure criteria strictly adhere to the standards, recommended practices, and orders of premier international aviation authorities.",
-  "partners_tag": "05. STRATEGIC ALLIANCES",
+  "partners_tag": "STRATEGIC ALLIANCES",
   "partners_title": "STRATEGIC PARTNERSHIPS & OPERATIONAL ECOSYSTEM",
   "partners_lead": "GIDEA focuses on core Instrument Flight Procedure Design (IFPD) and integrates comprehensive airport engineering, advanced aerospace R&D, and flight validation through strategic specialized alliances.",
   "partner1_badge": "Airport Infrastructure & Planning",

@@ -6,16 +6,16 @@
 /* ==========================================================================
    DESKTOP (Ocultar botón hamburguesa)
    ========================================================================== */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .mobile-menu-btn {
     display: none;
   }
 }
 
 /* ==========================================================================
-   MOBILE & TABLET (Max-width: 768px)
+   MOBILE & TABLET (Max-width: 1024px)
    ========================================================================== */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /* ===== NAVBAR Y MENÚ HAMBURGUESA ===== */
   .navbar {
     padding: 12px 0;
@@ -265,8 +265,46 @@
   .footer-brand img {
     height: 50px !important;
   }
-  .footer-text {
+  /* ===== MARQUEE Y ALIANZAS EN MÓVIL ===== */
+  .brand-carousel-section {
+    padding: 18px 0 14px !important;
+  }
+  .brand-carousel-title {
+    font-size: 15px !important;
+  }
+  .brand-carousel-sub {
     font-size: 11px !important;
-    line-height: 1.5;
+    margin-bottom: 10px !important;
+    padding: 0 10px !important;
+  }
+  .marquee-track {
+    gap: 26px !important;
+  }
+  .marquee-item {
+    height: 36px !important;
+    min-width: 80px !important;
+    padding: 0 6px !important;
+  }
+  .marquee-item img {
+    max-height: 26px !important;
+    max-width: 95px !important;
+  }
+  .marquee-track-wrap::before,
+  .marquee-track-wrap::after {
+    width: 35px !important;
+  }
+  .section-alliances-clean {
+    padding: 38px 0 42px !important;
+  }
+  .partners-minimal-row {
+    gap: 16px !important;
+    margin-top: 18px !important;
+  }
+  .partner-logo-link {
+    padding: 12px 20px !important;
+  }
+  .partner-logo-img {
+    max-height: 42px !important;
+    max-width: 155px !important;
   }
 }
