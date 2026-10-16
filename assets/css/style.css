@@ -15,8 +15,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 85px;
   font-family: 'Roboto', sans-serif;
   color: var(--text-dark);
+}
+
+section[id] {
+  scroll-margin-top: 85px;
 }
 
 body {
@@ -135,7 +140,8 @@ a {
   white-space: nowrap !important;
   display: inline-block;
 }
-.nav-menu a:hover {
+.nav-menu a:hover,
+.nav-menu a.active {
   color: var(--accent-color);
 }
 .btn-nav {

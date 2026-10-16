@@ -1,15 +1,69 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ===== 1. Smooth Scrolling =====
+  // ===== 1. Smooth Scrolling with precise navbar offset =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      e.preventDefault();
       const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
+      if (!targetId || targetId === '#') return;
       const el = document.querySelector(targetId);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      if (el) {
+        e.preventDefault();
+        const header = document.getElementById('navbar');
+        const navHeight = header ? header.offsetHeight : 75;
+        const targetPos = el.getBoundingClientRect().top + window.pageYOffset - navHeight - 15;
+        
+        window.scrollTo({
+          top: Math.max(0, targetPos),
+          behavior: 'smooth'
+        });
+
+        // Update active class immediately on click
+        document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+        if (!this.classList.contains('btn-nav')) {
+          this.classList.add('active');
+        }
+
+        // Close mobile menu if open
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navRight = document.getElementById('navRight');
+        if (mobileMenuBtn && navRight && navRight.classList.contains('active')) {
+          mobileMenuBtn.classList.remove('active');
+          navRight.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      }
     });
   });
+
+  // ===== ScrollSpy for Nav Menu =====
+  const navLinks = document.querySelectorAll('.nav-menu a:not(.btn-nav)');
+  const trackedSections = [];
+  navLinks.forEach(link => {
+    const id = link.getAttribute('href');
+    if (id && id.startsWith('#') && id.length > 1) {
+      const sec = document.querySelector(id);
+      if (sec) trackedSections.push({ link, sec });
+    }
+  });
+
+  window.addEventListener('scroll', () => {
+    const scrollPos = window.pageYOffset + 120;
+    let current = null;
+
+    for (const item of trackedSections) {
+      const top = item.sec.offsetTop;
+      const height = item.sec.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        current = item;
+        break;
+      }
+    }
+
+    if (current) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      current.link.classList.add('active');
+    }
+  }, { passive: true });
 
   // ===== 2. Navbar shadow on scroll =====
   const header = document.getElementById('navbar');

@@ -1,110 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Obstacle Assessment &amp; Aeronautical Impact Studies (OLS) | GIDEA LLC</title>
-  <meta name="description" content="Aeronautical impact evaluation and Obstacle Limitation Surfaces (OLS) assessment according to ICAO Annex 14 and FAA FAR Part 77 for wind farms, tall buildings, telecom towers, and urban developments." />
+  <title>Evaluación de Obstáculos y Superficies Limitadoras (OLS) | OACI Anexo 14 & FAA Part 77 | GIDEA LLC</title>
+  <meta name="description" content="Estudios de afectación aeronáutica, modelación de Superficies Limitadoras de Obstáculos (OLS) y análisis de franqueamiento bajo OACI Anexo 14, Doc 8168 y FAA 14 CFR Part 77." />
   <link rel="canonical" href="https://www.gideacorp.com/services/obstacle-assessment-ols.html" />
-  <link rel="stylesheet" href="../assets/css/style.css?v=11" />
-  <link rel="stylesheet" href="../assets/css/mobile.css?v=11" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=12" />
+  <link rel="stylesheet" href="../assets/css/mobile.css?v=12" />
   <link rel="icon" type="image/png" href="../assets/images/logos/favicon.png" />
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:url" content="https://www.gideacorp.com/services/obstacle-assessment-ols.html" />
-  <meta property="og:title" content="Obstacle Assessment &amp; Aeronautical Impact Studies (OLS) — GIDEA LLC" />
-  <meta property="og:description" content="Technical studies evaluating physical obstacle impact on aerodrome OLS (ICAO Annex 14) and flight procedure safety (ICAO Doc 8168 / TERPS)." />
-  <meta property="og:image" content="https://www.gideacorp.com/assets/images/servicios/entorno-aeroportuario.jpg" />
+  <meta property="og:title" content="Evaluación de Obstáculos y Superficies Limitadoras (OLS) — GIDEA LLC" />
+  <meta property="og:description" content="Dictámenes y estudios de afectación aeronáutica para proyectos civiles, parques eólicos, torres e infraestructuras en el entorno aeroportuario." />
+  <meta property="og:image" content="https://www.gideacorp.com/assets/images/logos/logo-full.png" />
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Obstacle Assessment & Aeronautical Impact Studies",
-    "serviceType": "Obstacle Limitation Surfaces (OLS) & Aeronautical Safety Analysis",
+    "name": "Evaluación de Obstáculos y Superficies Limitadoras (OLS)",
+    "serviceType": "Estudios Aeronáuticos y Servidumbres de Aeródromos",
     "provider": {
       "@type": "Corporation",
       "name": "GIDEA LLC",
-      "url": "https://www.gideacorp.com"
+      "url": "https://www.gideacorp.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Melbourne",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      }
     },
-    "description": "Rigorous technical evaluations of proposed constructions, wind farms, telecommunication masts, and civil infrastructure penetrating aerodrome Obstacle Limitation Surfaces (OLS) or instrument flight procedure protection areas."
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Latinoamérica" },
+      { "@type": "AdministrativeArea", "name": "El Caribe" },
+      { "@type": "Country", "name": "Estados Unidos" }
+    ],
+    "description": "Estudios de afectación aeronáutica, modelación de superficies OLS (OACI Anexo 14) y evaluación de obstrucciones según FAA 14 CFR Part 77 para parques eólicos, edificaciones y estructuras elevadas."
   }
   </script>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="../index.html" class="brand">
         <img src="../assets/images/logos/Logo_principal_sin fondo.png" alt="GIDEA-IFPD" class="logo-icon" />
         <img src="../assets/images/logos/name.png" alt="GIDEA-IFPD" class="logo-name" />
       </a>
-      <nav class="nav-right">
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-right" id="navRight">
         <ul class="nav-menu">
-          <li><a href="../index.html#procedimientos">Flight Procedures</a></li>
-          <li><a href="../index.html#entorno">Aerodromes & Heliports</a></li>
-          <li><a href="../index.html#capacidades">Capabilities</a></li>
-          <li><a href="../index.html#alianzas">Strategic Alliances</a></li>
-          <li><a href="../index.html#contacto" class="btn-nav">Contact</a></li>
+          <li><a href="../index.html#procedimientos" data-i18n="nav_procedures">Procedimientos de Vuelo</a></li>
+          <li><a href="../index.html#entorno" data-i18n="nav_airport">Entorno Aeroportuario</a></li>
+          <li><a href="../index.html#capacidades" data-i18n="nav_capabilities">Capacidades Técnicas</a></li>
+          <li><a href="../index.html#alianzas" data-i18n="nav_partners">Alianzas</a></li>
+          <li><a href="../index.html#contacto" class="btn-nav" data-i18n="nav_contact">Contacto</a></li>
         </ul>
+
+        <!-- Language Selector -->
+        <div class="lang-selector">
+          <button class="lang-current" id="langToggle" aria-haspopup="true" aria-expanded="false">
+            <span class="fi fi-us fis lang-flag-en" style="display:none"></span>
+            <svg class="lang-globe lang-flag-es lang-flag-pt lang-flag-fr" style="display:none" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span class="lang-code" id="currentLangCode">ES</span>
+            <svg class="lang-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-btn" data-lang="en" data-flag="fi-us" data-code="EN" data-icon="flag">
+              <span class="fi fi-us fis"></span>
+              <span>English</span>
+            </button>
+            <button class="lang-btn" data-lang="es" data-flag="" data-code="ES" data-icon="globe">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Español</span>
+            </button>
+            <button class="lang-btn" data-lang="pt" data-flag="" data-code="PT" data-icon="globe">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Português</span>
+            </button>
+            <button class="lang-btn" data-lang="fr" data-flag="" data-code="FR" data-icon="globe">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Français</span>
+            </button>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
 
-  <main style="padding-top: 90px;">
-    <!-- Hero -->
-    <section class="section" style="background: linear-gradient(135deg, #0d2b45 0%, #173f64 100%); color: #ffffff; padding: 70px 0 55px;">
+  <main style="padding-top: 85px;">
+    <!-- Technical Header Banner -->
+    <section class="section" style="background: linear-gradient(135deg, #002244 0%, #003366 100%); color: #ffffff; padding: 55px 0 45px;">
       <div class="container">
-        <div style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin-bottom: 12px;">
-          <a href="../index.html" style="color: #ffffff; text-decoration: none;">Home</a> &rarr; Services &rarr; Obstacle Assessment
+        <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin-bottom: 12px;">
+          <a href="../index.html" style="color: #ffffff; text-decoration: none;">Inicio</a> &rarr; Servicios Técnicos &rarr; Evaluación de Obstáculos
         </div>
-        <h1 style="font-size: 38px; font-weight: 700; margin-bottom: 16px; line-height: 1.2;">Obstacle Assessment &amp; Aeronautical Impact Studies</h1>
-        <p style="font-size: 17px; max-width: 800px; opacity: 0.9; line-height: 1.6; margin: 0 0 25px;">
-          Evaluating the compatibility of high-rise buildings, antenna masts, wind farms, and power lines with aerodrome Obstacle Limitation Surfaces (OLS) under <strong>ICAO Annex 14</strong> and <strong>FAA FAR Part 77</strong>.
+        <h1 style="font-size: 32px; font-weight: 700; margin-bottom: 14px; line-height: 1.25;">Evaluación de Obstáculos y Superficies Limitadoras (OLS)</h1>
+        <p style="font-size: 16px; max-width: 860px; opacity: 0.9; line-height: 1.6; margin: 0 0 20px;">
+          Estudios de afectación y servidumbres aeronáuticas conforme a <strong>OACI Anexo 14 (Vol. I y II)</strong>, <strong>OACI Doc 8168 (PANS-OPS)</strong> y <strong>FAA 14 CFR Part 77</strong>, evaluando el impacto de estructuras sobre la seguridad de las operaciones aéreas.
         </p>
-        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-          <a href="../index.html#contacto" class="btn btn-primary">Submit Project Coordinates for Review</a>
+        <div style="display: inline-flex; gap: 12px; align-items: center; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 4px; font-size: 13px; font-family: monospace;">
+          <span>OACI Anexo 14</span> · <span>OACI Doc 8168</span> · <span>FAA 14 CFR Part 77</span> · <span>FAA AC 70/7460</span>
         </div>
       </div>
     </section>
 
-    <!-- Scope -->
+    <!-- Technical Scope Section -->
     <section class="section">
       <div class="container">
-        <div class="layout-split">
-          <div class="split-content">
-            <span class="section-tag">AERONAUTICAL IMPACT EVALUATION</span>
-            <h2>Protecting Operational Safety &amp; Aerodrome Viability</h2>
-            <p class="section-lead">
-              GIDEA conducts definitive technical studies to verify whether planned developments compromise current or future air operations.
+        <div class="section-heading">
+          <h2>SERVICIOS DE EVALUACIÓN DE AFECTACIÓN AERONÁUTICA</h2>
+          <p class="section-lead">
+            Análisis pericial y modelación 3D para promotores de infraestructuras, empresas de energía, constructoras y administraciones aeroportuarias.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Modelación OLS -->
+          <div class="info-box">
+            <h4 style="color: var(--primary-color); margin-bottom: 8px;">Modelación de Superficies OLS (OACI Anexo 14)</h4>
+            <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
+              Generación espacial de superficies limitadoras para aeródromos y helipuertos:
             </p>
-            <ul class="bullet-list">
-              <li><strong>OLS Penetration Analysis:</strong> Calculation against Approach, Take-off Climb, Transitional, Inner Horizontal, and Conical surfaces (ICAO Annex 14 Vol I &amp; II).</li>
-              <li><strong>Impact on IFP Minimums:</strong> Evaluating if new obstacles increase Obstacle Clearance Altitudes/Heights (OCA/H) or minimum vectoring altitudes (MVA).</li>
-              <li><strong>Wind Farm Impact:</strong> Assessing the physical and radar/CNS interference of wind turbine developments in proximity to flight paths.</li>
-              <li><strong>Shielding Principle Applications:</strong> Determining if an obstacle is shielded by existing natural terrain or approved permanent structures.</li>
-              <li><strong>Official Authority Reports:</strong> Preparing expert technical dossiers required by Civil Aviation Authorities for construction permits.</li>
+            <ul style="font-size: 13.5px; line-height: 1.7; padding-left: 18px; color: var(--text-dark);">
+              <li><strong>Superficies de Despegue y Aproximación:</strong> Determinación de pendientes y altitudes máximas admisibles en las prolongaciones de pista.</li>
+              <li><strong>Superficies de Transición, Horizontal Interna (IHS) y Cónica:</strong> Verificación de alturas de edificaciones en zonas urbanas circundantes.</li>
+              <li><strong>Helipuertos (Anexo 14 Vol. II):</strong> Superficies de aproximación y ascenso en el despegue para helipuertos elevados y de superficie.</li>
             </ul>
           </div>
-          <div class="split-image">
-            <img src="../assets/images/servicios/entorno-aeroportuario.jpg" alt="Aeronautical Impact & OLS Assessment" class="img-responsive shadow" style="border-radius: 8px;" />
+
+          <!-- Parques Eólicos y Estructuras Elevadas -->
+          <div class="info-box">
+            <h4 style="color: var(--primary-color); margin-bottom: 8px;">Estudios de Impacto: Parques Eólicos y Antenas</h4>
+            <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
+              Evaluación aeronáutica según FAA Part 77 y normativas DGAC:
+            </p>
+            <ul style="font-size: 13.5px; line-height: 1.7; padding-left: 18px; color: var(--text-dark);">
+              <li><strong>Aerogeneradores y Torres Meteorológicas:</strong> Análisis de afectación sobre procedimientos instrumentales (altitudes mínimas de sector MSA, altitudes de paso y circuitos de espera).</li>
+              <li><strong>Líneas de Alta Tensión y Grúas:</strong> Evaluación de interferencia temporal o permanente con el espacio aéreo protegido.</li>
+              <li><strong>Criterio de Apantallamiento (Shielding):</strong> Justificación técnica de estructuras proyectadas a la sombra de obstáculos preexistentes consolidados.</li>
+            </ul>
+          </div>
+
+          <!-- Dictámenes Oficiales -->
+          <div class="info-box">
+            <h4 style="color: var(--primary-color); margin-bottom: 8px;">Dictámenes Técnicos y Trámites de Autorización</h4>
+            <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
+              Elaboración de informes periciales para presentación ante autoridades aeronáuticas:
+            </p>
+            <ul style="font-size: 13.5px; line-height: 1.7; padding-left: 18px; color: var(--text-dark);">
+              <li><strong>Informe de No Afectación Operacional:</strong> Documento justificativo para la obtención de permisos de construcción en zonas de servidumbre.</li>
+              <li><strong>Propuesta de Medidas Mitigadoras:</strong> Relocalización, ajuste de cotas máximas o modificación de procedimientos para hacer viable el proyecto.</li>
+            </ul>
+          </div>
+
+          <!-- Balizamiento e Iluminación -->
+          <div class="info-box">
+            <h4 style="color: var(--primary-color); margin-bottom: 8px;">Señalamiento y Balizamiento de Obstáculos</h4>
+            <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
+              Determinación de especificaciones de visibilidad según OACI Anexo 14 Cap. 6:
+            </p>
+            <ul style="font-size: 13.5px; line-height: 1.7; padding-left: 18px; color: var(--text-dark);">
+              <li><strong>Luces de Obstáculo (Baja, Media y Alta Intensidad):</strong> Esquemas de distribución e intermitencia exigibles según la altura de la estructura.</li>
+              <li><strong>Pintura y Señalamiento Diurno:</strong> Patrones de contraste para torres, mástiles y palas de aerogeneradores.</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- CTA -->
-    <section class="section text-center" style="background: #0d2b45; color: #ffffff; padding: 50px 0;">
-      <div class="container">
-        <h2 style="color: #ffffff; margin-bottom: 12px;">Planning Infrastructure Near an Aerodrome?</h2>
-        <p style="opacity: 0.85; max-width: 600px; margin: 0 auto 24px; font-size: 15px;">
-          Ensure regulatory compliance and operational safety with GIDEA's independent aeronautical assessment.
-        </p>
-        <a href="../index.html#contacto" class="btn btn-primary">Request Aeronautical Assessment</a>
+        <div class="text-center mt-4">
+          <a href="../index.html#contacto" class="btn btn-primary">Solicitar Estudio de Afectación de Obstáculos</a>
+        </div>
       </div>
     </section>
   </main>
@@ -117,10 +200,12 @@
         <p class="footer-tagline">AERONAUTICAL ENGINEERING &amp; INSTRUMENT FLIGHT PROCEDURE DESIGN.</p>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2025 GIDEA LLC. Melbourne, FL — USA. All rights reserved.</span>
+        <span>&copy; 2025 GIDEA LLC. Melbourne, FL — USA. Todos los derechos reservados.</span>
       </div>
     </div>
   </footer>
 
+  <script src="../assets/js/i18n.js?v=12"></script>
+  <script src="../assets/js/main.js?v=12"></script>
 </body>
 </html>
