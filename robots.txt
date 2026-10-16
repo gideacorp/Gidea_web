@@ -1,0 +1,36 @@
+# Robots.txt for GIDEA LLC — https://www.gideacorp.com
+User-agent: *
+Allow: /
+
+# Search Engine & AI Retrieval Agents explicitly enabled
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://www.gideacorp.com/sitemap.xml

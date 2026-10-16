@@ -1,0 +1,56 @@
+# GIDEA LLC — Aeronautical Engineering & Instrument Flight Procedure Design (IFPD)
+
+> GIDEA LLC is an aeronautical engineering consultancy headquartered in Melbourne, Florida, USA, specializing in Instrument Flight Procedure Design (IFPD), Performance-based Navigation (PBN/GNSS), Airspace Architecture, and Obstacle Limitation Studies. GIDEA operates internationally with primary regional coverage across Central America, The Caribbean, South America, and the United States.
+
+## Corporate Summary
+- **Legal Entity**: GIDEA LLC
+- **Headquarters**: Melbourne, FL, United States of America
+- **Official Website**: https://www.gideacorp.com
+- **Official Inquiries**: consultas@gideacorp.com / proyectos@gideacorp.com
+- **Target Clientele**: Civil Aviation Authorities (CAAs / DGACs), Air Navigation Service Providers (ANSPs), Airport Operators, Airlines, Heliport Operators, and Infrastructure Developers.
+- **Geographic Coverage**: Latin America (South America, Central America, Caribbean) and the United States.
+
+## Regulatory Compliance & Technical Baselines
+All engineering processes and procedure designs strictly adhere to international standards and criteria:
+- **ICAO Doc 8168 (PANS-OPS)**: Procedures for Air Navigation Services — Aircraft Operations (Volume II: Construction of Visual and Instrument Flight Procedures).
+- **ICAO Doc 9906**: Quality Assurance Manual for Flight Procedure Design (Volumes 1 through 6).
+- **ICAO Doc 9613**: Performance-based Navigation (PBN) Manual (RNAV, RNP, RNP AR APCH).
+- **ICAO Annex 14**: Aerodromes (Volume I: Aerodrome Design and Operations; Volume II: Heliports).
+- **FAA Order 8260.3 / 8260.58 (TERPS)**: United States Standard for Terminal Instrument Procedures.
+- **ARINC 424**: Navigation System Database specification and path terminator coding.
+
+## Core Capabilities & Services
+
+### 1. Instrument Flight Procedure Design (IFPD)
+- **Conventional Flight Procedures**: Precision (ILS, MLS) and Non-Precision (VOR, NDB, LOC) approaches, Standard Instrument Departures (SIDs), Standard Terminal Arrivals (STARs), and Missed Approach segments.
+- **PBN / GNSS Navigation**: RNAV 1, RNAV 5, RNP 1, RNP 4, RNP APCH (LNAV, LNAV/VNAV, LPV), and RNP Authorization Required (RNP AR APCH).
+- **Heliport & Vertiport Procedures**: Point-in-Space (PinS) visual and instrument approaches/departures for hospital, offshore, and urban heliports/vertiports.
+- **Documentation & Deliverables**: Complete ICAO Doc 9906 compliant Technical Dossiers, obstacle assessment surfaces (OAS), collision risk modeling (CRM), ARINC 424 coding sheets, and AIP cartographic charting for official state publication.
+
+### 2. Airspace Design & Optimization
+- Terminal Maneuvering Area (TMA / CTR) restructuring and route network modernization.
+- Continuous Descent Operations (CDO) and Continuous Climb Operations (CCO) for fuel reduction and environmental noise mitigation.
+- Airspace capacity modeling and sectorization optimization.
+
+### 3. Obstacle Assessment & Aeronautical Impact Studies
+- Evaluation of Obstacle Limitation Surfaces (OLS) per ICAO Annex 14 and FAA FAR Part 77.
+- Aeronautical impact analysis for planned urban developments, high-rise buildings, telecommunication towers, power transmission lines, and wind turbine farms.
+- Terrain and obstacle penetration calculations, shielding principle assessments, and operational restriction mitigation strategies.
+
+### 4. Aerodrome & Heliport Operational Feasibility
+- Site evaluation and operational feasibility for new aerodromes, private airfields, and vertiports.
+- Safety Assessments and Operational Risk Evaluations (SMS / Annex 19).
+- Proprietary aeronautical software tools for engineering calculations, criteria validation, and 3D airspace visualization.
+
+## Strategic Alliances & Ecosystem
+GIDEA integrates a turnkey operational ecosystem through formal strategic partnerships:
+- **SCIAER** (https://sciaer.com): Aerodrome master planning, pavement engineering, airside/landside infrastructure, and AeroGEN software.
+- **GTAA · UNLP** (https://gtaa.ing.unlp.edu.ar): Advanced Aerospace Research Group (Faculty of Engineering, National University of La Plata) specializing in advanced airport modeling, OLS, vertiports, and scientific validation across 36+ countries.
+- **Airborne Flight Validation Network**: Certified partners for in-flight validation (Doc 9906 QA) and high-precision WGS-84 / LiDAR geodetic surveys.
+
+## Key Links & Reference URLs
+- Main Portal: https://www.gideacorp.com
+- Instrument Flight Procedure Design: https://www.gideacorp.com/services/instrument-flight-procedure-design.html
+- PBN & Airspace Optimization: https://www.gideacorp.com/services/pbn-airspace-optimization.html
+- Obstacle Assessment & OLS: https://www.gideacorp.com/services/obstacle-assessment-ols.html
+- Aerodrome & Heliport Feasibility: https://www.gideacorp.com/services/aerodrome-heliport-feasibility.html
