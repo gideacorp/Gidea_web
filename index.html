@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="GIDEA LLC — Aeronautical Engineering & Instrument Flight Procedure Design. Melbourne, FL, USA. Serving Central & South America." />
   <title>GIDEA LLC | Aeronautical Engineering & Flight Procedure Design</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=5" />
+  <link rel="stylesheet" href="assets/css/style.css?v=6" />
   <link rel="icon" type="image/png" href="assets/images/logos/favicon.png" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <!-- Flag Icons CDN -->
@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/mobile.css?v=5" />
+  <link rel="stylesheet" href="assets/css/mobile.css?v=6" />
   
   <!-- GIDEA Analytics Tracker -->
   <script>
@@ -201,126 +201,80 @@
           </div>
         </div>
 
-        <!-- Regulatory Framework / Normativa de fondo -->
-        <div class="regulatory-framework">
-          <h3 class="regulatory-title" data-i18n="reg_title">NORMATIVA DE FONDO Y MARCO REGULATORIO</h3>
-          <p class="regulatory-sub" data-i18n="reg_sub">Nuestros procesos técnicos y criterios de diseño se fundamentan estrictamente en las normas y métodos recomendados de los principales organismos aeronáuticos mundiales.</p>
-          <div class="regulatory-logos-grid">
-            <!-- FAA -->
-            <div class="regulatory-item">
-              <svg viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
-                <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 2"/>
-                <path d="M16 26l8-12 8 12h-4.5l-3.5-6-3.5 6H16z" fill="currentColor"/>
-                <text x="54" y="23" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="currentColor" letter-spacing="2">FAA</text>
-                <text x="54" y="34" font-family="'Inter', sans-serif" font-size="7" font-weight="600" fill="currentColor" opacity="0.85" letter-spacing="0.8">FEDERAL AVIATION ADMIN</text>
-              </svg>
-              <span>FAA Order 8260 · TERPS</span>
-            </div>
+      </div>
+    </section>
 
-            <!-- ICAO -->
-            <div class="regulatory-item">
-              <svg viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="1.8"/>
-                <ellipse cx="24" cy="24" rx="9" ry="17" stroke="currentColor" stroke-width="1.2"/>
-                <line x1="7" y1="24" x2="41" y2="24" stroke="currentColor" stroke-width="1.4"/>
-                <path d="M5 21c7-7 14-8 19-8s12 1 19 8c-7-3-13-4-19-4s-12 1-19 4z" fill="currentColor" opacity="0.85"/>
-                <text x="54" y="23" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="currentColor" letter-spacing="2">ICAO · OACI</text>
-                <text x="54" y="34" font-family="'Inter', sans-serif" font-size="7" font-weight="600" fill="currentColor" opacity="0.85" letter-spacing="0.8">CIVIL AVIATION ORG</text>
-              </svg>
-              <span>Doc 8168 · Doc 9613 · Doc 9906</span>
-            </div>
-
-            <!-- IATA -->
-            <div class="regulatory-item">
-              <svg viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="1.8"/>
-                <ellipse cx="24" cy="24" rx="7" ry="17" stroke="currentColor" stroke-width="1.2"/>
-                <line x1="7" y1="24" x2="41" y2="24" stroke="currentColor" stroke-width="1.4"/>
-                <path d="M6 19l18-7 18 7-8-2-10-3-10 3-8 2z" fill="currentColor"/>
-                <text x="54" y="23" font-family="'Inter', sans-serif" font-size="17" font-weight="900" fill="currentColor" letter-spacing="3">IATA</text>
-                <text x="54" y="34" font-family="'Inter', sans-serif" font-size="7" font-weight="600" fill="currentColor" opacity="0.85" letter-spacing="0.8">AIR TRANSPORT ASSOC</text>
-              </svg>
-              <span>Airport Dev Manual (ADRM)</span>
-            </div>
-
-            <!-- DGAC / CAAs -->
-            <div class="regulatory-item">
-              <svg viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 8l16 6v13c0 9-16 15-16 15s-16-6-16-15V14l16-6z" stroke="currentColor" stroke-width="1.8" fill="none"/>
-                <path d="M15 22l9-4 9 4-9 6-9-6z" fill="currentColor"/>
-                <text x="54" y="23" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="currentColor" letter-spacing="1.5">DGAC / CAAs</text>
-                <text x="54" y="34" font-family="'Inter', sans-serif" font-size="7" font-weight="600" fill="currentColor" opacity="0.85" letter-spacing="0.8">CIVIL AVIATION AUTHORITIES</text>
-              </svg>
-              <span>National Civil Aviation Codes</span>
-            </div>
+    <!-- ===== NORMATIVA DE FONDO / MARCO REGULATORIO (DYNAMIC LOGO CAROUSEL) ===== -->
+    <section class="brand-carousel-section" id="normativa">
+      <div class="container text-center">
+        <h3 class="brand-carousel-title" data-i18n="reg_title">NORMATIVA DE FONDO Y MARCO REGULATORIO</h3>
+        <p class="brand-carousel-sub" data-i18n="reg_sub">Nuestros procesos técnicos y criterios de diseño se fundamentan estrictamente en las normas y métodos recomendados de los principales organismos aeronáuticos mundiales.</p>
+      </div>
+      <div class="marquee-track-wrap">
+        <div class="marquee-track">
+          <div class="marquee-item" title="ICAO - International Civil Aviation Organization">
+            <img src="assets/images/logos/logo-oaci.jpg" alt="ICAO - OACI" />
+          </div>
+          <div class="marquee-item" title="FAA - Federal Aviation Administration">
+            <img src="assets/images/logos/logo-faa.jpg" alt="FAA" />
+          </div>
+          <div class="marquee-item" title="EASA - European Union Aviation Safety Agency">
+            <img src="assets/images/logos/logo-easa.webp" alt="EASA" />
+          </div>
+          <div class="marquee-item" title="IATA - International Air Transport Association">
+            <img src="assets/images/logos/logo-iata.webp" alt="IATA" />
+          </div>
+          <div class="marquee-item" title="DGAC - Civil Aviation Authorities">
+            <img src="assets/images/logos/logo-dgac.webp" alt="DGAC / CAAs" />
+          </div>
+          <!-- Duplicated for seamless infinite marquee loop -->
+          <div class="marquee-item" title="ICAO - International Civil Aviation Organization">
+            <img src="assets/images/logos/logo-oaci.jpg" alt="ICAO - OACI" />
+          </div>
+          <div class="marquee-item" title="FAA - Federal Aviation Administration">
+            <img src="assets/images/logos/logo-faa.jpg" alt="FAA" />
+          </div>
+          <div class="marquee-item" title="EASA - European Union Aviation Safety Agency">
+            <img src="assets/images/logos/logo-easa.webp" alt="EASA" />
+          </div>
+          <div class="marquee-item" title="IATA - International Air Transport Association">
+            <img src="assets/images/logos/logo-iata.webp" alt="IATA" />
+          </div>
+          <div class="marquee-item" title="DGAC - Civil Aviation Authorities">
+            <img src="assets/images/logos/logo-dgac.webp" alt="DGAC / CAAs" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== SOCIEDADES Y ALIANZAS ESTRATÉGICAS ===== -->
-    <section class="section section-alliances" id="alianzas">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag" data-i18n="partners_tag">05. STRATEGIC ALLIANCES</span>
-          <h2 data-i18n="partners_title">STRATEGIC PARTNERSHIPS &amp; OPERATIONAL ECOSYSTEM</h2>
-          <p class="section-lead mx-auto" data-i18n="partners_lead">
-            GIDEA focuses on core Instrument Flight Procedure Design (IFPD) and integrates comprehensive airport engineering, advanced aerospace R&amp;D, and flight validation through strategic specialized alliances.
-          </p>
-        </div>
-
-        <div class="alliances-grid">
-          <!-- Card 1: SCIAER -->
-          <div class="alliance-card">
-            <div class="alliance-logo-wrap">
-              <img src="assets/images/logos/sciaer-logo.jpg" alt="SCIAER - Consultoría en Ingeniería Aeroportuaria" class="alliance-logo" />
-            </div>
-            <div class="alliance-badge" data-i18n="partner1_badge">Airport Infrastructure &amp; Planning</div>
-            <h3 class="alliance-name">SCIAER</h3>
-            <p class="alliance-desc" data-i18n="partner1_desc">
-              Consultancy firm specialised in aerodrome master planning, runway and taxiway pavements, airside/landside facilities, and the AeroGEN software platform.
-            </p>
-            <div class="alliance-synergy">
-              <span class="synergy-label" data-i18n="partner_synergy_label">Synergy with GIDEA:</span>
-              <span data-i18n="partner1_synergy">Turnkey solutions uniting physical airport infrastructure engineering with instrument flight procedure design.</span>
-            </div>
-            <a href="https://sciaer.com" target="_blank" rel="noopener" class="alliance-link">www.sciaer.com &rarr;</a>
-          </div>
-
-          <!-- Card 2: GTAA UNLP -->
-          <div class="alliance-card">
-            <div class="alliance-logo-wrap">
-              <img src="assets/images/logos/gtaa-logo.png" alt="GTAA - Grupo de Trabajo Avanzado en Aeródromos UNLP" class="alliance-logo" />
-            </div>
-            <div class="alliance-badge" data-i18n="partner2_badge">Aerodrome, Heliport &amp; Vertiport R&amp;D</div>
-            <h3 class="alliance-name">GTAA · UNLP</h3>
-            <p class="alliance-desc" data-i18n="partner2_desc">
-              Advanced aerospace research unit (Faculty of Engineering, UNLP) with technical experience spanning 36+ countries and 250+ aerodromes, specializing in operational modeling, OLS, vertiports, and airport capacity.
-            </p>
-            <div class="alliance-synergy">
-              <span class="synergy-label" data-i18n="partner_synergy_label">Synergy with GIDEA:</span>
-              <span data-i18n="partner2_synergy">State-of-the-art scientific and academic backing for complex airspace, vertiport, and obstacle limitation studies.</span>
-            </div>
-            <a href="https://gtaa.ing.unlp.edu.ar" target="_blank" rel="noopener" class="alliance-link">gtaa.ing.unlp.edu.ar &rarr;</a>
-          </div>
-
-          <!-- Card 3: Flight Validation & Geodesy Network -->
-          <div class="alliance-card">
-            <div class="alliance-icon-wrap">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
-            <div class="alliance-badge" data-i18n="partner3_badge">Operational Flight Validation &amp; Survey</div>
-            <h3 class="alliance-name" data-i18n="partner3_name">Flight Inspection &amp; Geodesy Network</h3>
-            <p class="alliance-desc" data-i18n="partner3_desc">
-              Strategic agreements for airborne flight validation (ICAO Doc 9906 Quality Assurance) and high-precision WGS-84 / LiDAR geodetic obstacle surveys.
-            </p>
-            <div class="alliance-synergy">
-              <span class="synergy-label" data-i18n="partner_synergy_label">Synergy with GIDEA:</span>
-              <span data-i18n="partner3_synergy">Ensures the complete lifecycle of instrument procedures through to official civil aviation authority approval and AIP publication.</span>
-            </div>
-            <span class="alliance-status" data-i18n="partner3_status">Active regional network</span>
-          </div>
+    <!-- ===== SOCIEDADES Y ALIANZAS ESTRATÉGICAS (DYNAMIC LOGO CAROUSEL) ===== -->
+    <section class="brand-carousel-section brand-carousel-section--alt" id="alianzas">
+      <div class="container text-center">
+        <span class="section-tag" data-i18n="partners_tag">05. STRATEGIC ALLIANCES</span>
+        <h3 class="brand-carousel-title" data-i18n="partners_title">STRATEGIC PARTNERSHIPS &amp; OPERATIONAL ECOSYSTEM</h3>
+        <p class="brand-carousel-sub" data-i18n="partners_lead">GIDEA focuses on core Instrument Flight Procedure Design (IFPD) and integrates comprehensive airport engineering, advanced aerospace R&amp;D, and flight validation through strategic specialized alliances.</p>
+      </div>
+      <div class="marquee-track-wrap">
+        <div class="marquee-track marquee-track--slow">
+          <a href="https://sciaer.com" target="_blank" rel="noopener" class="marquee-item" title="SCIAER - Airport Infrastructure & Planning">
+            <img src="assets/images/logos/sciaer-logo.jpg" alt="SCIAER - Consultoría en Ingeniería Aeroportuaria" />
+          </a>
+          <a href="https://gtaa.ing.unlp.edu.ar" target="_blank" rel="noopener" class="marquee-item" title="GTAA UNLP - Aerodrome, Heliport & Vertiport R&D">
+            <img src="assets/images/logos/gtaa-logo.png" alt="GTAA - Grupo de Trabajo Avanzado en Aeródromos UNLP" />
+          </a>
+          <!-- Duplicated items for smooth infinite loop -->
+          <a href="https://sciaer.com" target="_blank" rel="noopener" class="marquee-item" title="SCIAER - Airport Infrastructure & Planning">
+            <img src="assets/images/logos/sciaer-logo.jpg" alt="SCIAER - Consultoría en Ingeniería Aeroportuaria" />
+          </a>
+          <a href="https://gtaa.ing.unlp.edu.ar" target="_blank" rel="noopener" class="marquee-item" title="GTAA UNLP - Aerodrome, Heliport & Vertiport R&D">
+            <img src="assets/images/logos/gtaa-logo.png" alt="GTAA - Grupo de Trabajo Avanzado en Aeródromos UNLP" />
+          </a>
+          <a href="https://sciaer.com" target="_blank" rel="noopener" class="marquee-item" title="SCIAER - Airport Infrastructure & Planning">
+            <img src="assets/images/logos/sciaer-logo.jpg" alt="SCIAER - Consultoría en Ingeniería Aeroportuaria" />
+          </a>
+          <a href="https://gtaa.ing.unlp.edu.ar" target="_blank" rel="noopener" class="marquee-item" title="GTAA UNLP - Aerodrome, Heliport & Vertiport R&D">
+            <img src="assets/images/logos/gtaa-logo.png" alt="GTAA - Grupo de Trabajo Avanzado en Aeródromos UNLP" />
+          </a>
         </div>
       </div>
     </section>
@@ -497,8 +451,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=5"></script>
-  <script src="assets/js/main.js?v=5"></script>
+  <script src="assets/js/i18n.js?v=6"></script>
+  <script src="assets/js/main.js?v=6"></script>
 <!-- GIDEA Analytics -->
 <script>
   (function() {
