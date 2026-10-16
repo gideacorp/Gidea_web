@@ -59,8 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
           top: Math.max(0, top - navHeight - 15),
           behavior: 'smooth'
         });
+        targetEl.classList.add('target-highlight');
+        setTimeout(() => targetEl.classList.remove('target-highlight'), 2600);
       };
-      setTimeout(scrollToHash, 80);
+      setTimeout(scrollToHash, 100);
       window.addEventListener('load', scrollToHash);
     }
   }
@@ -166,40 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Update the current flag + code when a language is chosen
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const flag = btn.querySelector('.fi');
-        const code = btn.getAttribute('data-code');
-        const flagClass = btn.getAttribute('data-flag');
-
-        // Update the toggle button display
-        const currentFlag = langToggle.querySelector('.fi');
-        const currentCode = document.getElementById('currentLangCode');
-        if (currentFlag && flagClass) {
-          // Reset all fi-* classes
-          currentFlag.className = `fi fis ${flagClass}`;
-        }
-        if (currentCode && code) {
-          currentCode.textContent = code;
-        }
-
-        // Close dropdown
-        langSelector.classList.remove('open');
-        langToggle.setAttribute('aria-expanded', 'false');
-
-        // Update the hidden form lang field
-        const formLang = document.getElementById('form-lang');
-        if (formLang) formLang.value = btn.getAttribute('data-lang');
-        
-        // Close mobile menu if open
-        if (mobileMenuBtn && navRight && navRight.classList.contains('active')) {
-          mobileMenuBtn.classList.remove('active');
-          navRight.classList.remove('active');
-          document.body.style.overflow = '';
-        }
-      });
-    });
+    // Note: lang-btn selection and UI sync is centrally managed by i18n.js
   }
 
   // ===== 4. Contact Form (Formspree AJAX) =====

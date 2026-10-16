@@ -175,5 +175,15 @@
   "feas_sec2_lead": "Nuestros análisis permiten viabilizar proyectos de infraestructura aeroportuaria garantizando que cada cambio mantenga el nivel aceptable de rendimiento de la seguridad operacional (ALOSP).",
   "feas_cta_title": "¿Requiere un Estudio de Factibilidad o Evaluación SMS?",
   "feas_cta_lead": "Presente los requerimientos de su emplazamiento o proyecto aeroportuario para recibir una propuesta técnica a medida.",
-  "feas_cta_btn": "Contactar al Equipo de Ingeniería"
+  "feas_cta_btn": "Contactar al Equipo de Ingeniería",
+  "nav_standards": "Normativa",
+  "cap_to_standards": "Ver Marco Regulatorio y Estándares OACI / FAA",
+  "card1_btn": "Ficha: Aproximaciones y PinS",
+  "card2_btn": "Ficha: Radioayudas Convencionales",
+  "card3_btn": "Ficha: Optimización PBN y Espacio Aéreo",
+  "card4_btn": "Ficha: Operaciones RNP AR APCH",
+  "box1_btn": "Ficha: Factibilidad de Sitio",
+  "box2_btn": "Ficha: Safety Assessments (SMS)",
+  "box3_btn": "Ficha: Superficies Limitadoras (OLS)",
+  "box4_btn": "Ficha: Interacción Operacional"
 }

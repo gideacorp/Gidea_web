@@ -175,5 +175,15 @@
   "feas_sec2_lead": "Our rigorous engineering evaluations unlock aerodrome infrastructure development while guaranteeing that every operational change maintains an acceptable level of safety performance (ALOSP).",
   "feas_cta_title": "Require a Feasibility Study or SMS Safety Assessment?",
   "feas_cta_lead": "Submit your site criteria or airport infrastructure project to receive a customized technical proposal.",
-  "feas_cta_btn": "Contact Engineering Team"
+  "feas_cta_btn": "Contact Engineering Team",
+  "nav_standards": "Standards",
+  "cap_to_standards": "View ICAO / FAA Regulatory Standards & Framework",
+  "card1_btn": "Specs: Approaches & PinS",
+  "card2_btn": "Specs: Conventional Navaids",
+  "card3_btn": "Specs: PBN & Airspace Optimization",
+  "card4_btn": "Specs: RNP AR APCH Operations",
+  "box1_btn": "Specs: Site Feasibility",
+  "box2_btn": "Specs: Operational Safety (SMS)",
+  "box3_btn": "Specs: Obstacle Surfaces (OLS)",
+  "box4_btn": "Specs: Operational Interaction"
 }

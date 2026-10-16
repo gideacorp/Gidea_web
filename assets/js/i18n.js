@@ -2,9 +2,11 @@
  * GIDEA-IFPD i18n Engine
  * Internationalization system supporting ES, EN, FR, PT
  * Uses localStorage to remember user language preference.
+ * Handles bfcache (pageshow event) to ensure consistent language when navigating back/forward.
  */
 const i18n = (() => {
-  const STORAGE_KEY = 'gidea_lang_v13';
+  const STORAGE_KEY = 'gidea_lang';
+  const LEGACY_STORAGE_KEY = 'gidea_lang_v13';
   const DEFAULT_LANG = 'en';
   let currentLang = DEFAULT_LANG;
   let translations = {};
@@ -19,7 +21,7 @@ const i18n = (() => {
 
   async function loadTranslations(lang) {
     const basePath = window.location.pathname.includes('/services/') ? '../assets/locales/' : 'assets/locales/';
-    const resp = await fetch(`${basePath}${lang}.json?v=13`);
+    const resp = await fetch(`${basePath}${lang}.json?v=14`);
     if (!resp.ok) throw new Error(`Could not load locale: ${lang}`);
     return resp.json();
   }
@@ -48,7 +50,7 @@ const i18n = (() => {
     if (countrySelect) {
       const currentVal = countrySelect.value;
       const countries = countryLists[currentLang] || countryLists.es;
-      const defaultOpt = `<option value="">${t['form_country']}</option>`;
+      const defaultOpt = `<option value="">${t['form_country'] || 'País'}</option>`;
       const opts = countries.map(c => `<option value="${c}"${c === currentVal ? ' selected' : ''}>${c}</option>`).join('');
       countrySelect.innerHTML = defaultOpt + opts;
     }
@@ -65,6 +67,10 @@ const i18n = (() => {
       }).join('');
       subjectSelect.innerHTML = opts;
     }
+
+    // Update hidden form lang
+    const formLang = document.getElementById('form-lang');
+    if (formLang) formLang.value = currentLang;
   }
 
   function updateLangSelector(lang) {
@@ -92,6 +98,7 @@ const i18n = (() => {
       translations = await loadTranslations(lang);
       currentLang = lang;
       localStorage.setItem(STORAGE_KEY, lang);
+      localStorage.setItem(LEGACY_STORAGE_KEY, lang);
       applyTranslations(translations);
       updateLangSelector(lang);
     } catch (e) {
@@ -99,14 +106,34 @@ const i18n = (() => {
     }
   }
 
+  function getStoredLanguage() {
+    return localStorage.getItem(STORAGE_KEY) || localStorage.getItem(LEGACY_STORAGE_KEY) || DEFAULT_LANG;
+  }
+
   function init() {
-    const savedLang = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
+    const savedLang = getStoredLanguage();
 
     // Bind language buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
-        setLanguage(btn.getAttribute('data-lang'));
+        const selectedLang = btn.getAttribute('data-lang');
+        setLanguage(selectedLang);
+
+        // Close dropdown
+        const langSelector = document.querySelector('.lang-selector');
+        const langToggle = document.getElementById('langToggle');
+        if (langSelector) langSelector.classList.remove('open');
+        if (langToggle) langToggle.setAttribute('aria-expanded', 'false');
+
+        // Close mobile menu if open
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navRight = document.getElementById('navRight');
+        if (mobileMenuBtn && navRight && navRight.classList.contains('active')) {
+          mobileMenuBtn.classList.remove('active');
+          navRight.classList.remove('active');
+          document.body.style.overflow = '';
+        }
       });
     });
 
@@ -114,7 +141,22 @@ const i18n = (() => {
     setLanguage(savedLang);
   }
 
-  return { init, setLanguage };
+  // Handle BFCache (Back/Forward Cache) when user presses browser Back/Forward
+  window.addEventListener('pageshow', (event) => {
+    const savedLang = getStoredLanguage();
+    if (savedLang && savedLang !== currentLang) {
+      setLanguage(savedLang);
+    }
+  });
+
+  // Handle cross-tab or cross-window language changes
+  window.addEventListener('storage', (e) => {
+    if ((e.key === STORAGE_KEY || e.key === LEGACY_STORAGE_KEY) && e.newValue && e.newValue !== currentLang) {
+      setLanguage(e.newValue);
+    }
+  });
+
+  return { init, setLanguage, getCurrentLang: () => currentLang };
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
