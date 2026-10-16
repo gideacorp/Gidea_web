@@ -1,4 +1,4 @@
-{
+﻿{
   "lang": "en",
   "nav_procedures": "Flight Procedures",
   "nav_airport": "Aerodromes & Heliports",
@@ -85,5 +85,23 @@
   "footer_icao_faa": "ICAO & FAA Criteria Compliant",
   "footer_pans_terps": "PANS-OPS · TERPS · PBN",
   "footer_heliports": "Aerodromes & Heliports (PinS)",
-  "footer_rights": "\u00a9 2025 GIDEA LLC. All rights reserved."
+  "footer_rights": "© 2025 GIDEA LLC. All rights reserved.",
+  "nav_partners": "Strategic Alliances",
+  "reg_title": "REGULATORY BASELINE & COMPLIANCE",
+  "reg_sub": "Our technical processes and flight procedure criteria strictly adhere to the standards, recommended practices, and orders of premier international aviation authorities.",
+  "partners_tag": "05. STRATEGIC ALLIANCES",
+  "partners_title": "STRATEGIC PARTNERSHIPS & OPERATIONAL ECOSYSTEM",
+  "partners_lead": "GIDEA focuses on core Instrument Flight Procedure Design (IFPD) and integrates comprehensive airport engineering, advanced aerospace R&D, and flight validation through strategic specialized alliances.",
+  "partner1_badge": "Airport Infrastructure & Planning",
+  "partner1_desc": "Consultancy firm specialised in aerodrome master planning, runway and taxiway pavements, airside/landside facilities, and the AeroGEN software platform.",
+  "partner1_synergy": "Turnkey solutions uniting physical airport infrastructure engineering with instrument flight procedure design.",
+  "partner2_badge": "Aerodrome, Heliport & Vertiport R&D",
+  "partner2_desc": "Advanced aerospace research unit (Faculty of Engineering, UNLP) with technical experience spanning 36+ countries and 250+ aerodromes, specializing in operational modeling, OLS, vertiports, and airport capacity.",
+  "partner2_synergy": "State-of-the-art scientific and academic backing for complex airspace, vertiport, and obstacle limitation studies.",
+  "partner3_name": "Flight Validation & Geodesy Network",
+  "partner3_badge": "Operational Flight Validation & Survey",
+  "partner3_desc": "Strategic agreements for airborne flight validation (ICAO Doc 9906 Quality Assurance) and high-precision WGS-84 / LiDAR geodetic obstacle surveys.",
+  "partner3_synergy": "Ensures the complete lifecycle of instrument procedures through to official civil aviation authority approval and AIP publication.",
+  "partner_synergy_label": "Synergy with GIDEA:",
+  "partner3_status": "Active regional network"
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "lang": "es",
   "nav_procedures": "Procedimientos de Vuelo",
   "nav_airport": "Aeródromos y Helipuertos",
@@ -85,5 +85,23 @@
   "footer_icao_faa": "Conforme a Criterios OACI y FAA",
   "footer_pans_terps": "PANS-OPS · TERPS · PBN",
   "footer_heliports": "Aeródromos y Helipuertos (PinS)",
-  "footer_rights": "\u00a9 2025 GIDEA LLC. Todos los derechos reservados."
+  "footer_rights": "© 2025 GIDEA LLC. Todos los derechos reservados.",
+  "nav_partners": "Alianzas",
+  "reg_title": "NORMATIVA DE FONDO Y MARCO REGULATORIO",
+  "reg_sub": "Nuestros procesos técnicos y criterios de diseño se fundamentan estrictamente en las normas y métodos recomendados de los principales organismos aeronáuticos mundiales.",
+  "partners_tag": "05. ALIANZAS ESTRATÉGICAS",
+  "partners_title": "SOCIEDADES ESTRATÉGICAS Y ECOSISTEMA OPERACIONAL",
+  "partners_lead": "GIDEA lidera el diseño de procedimientos de vuelo por instrumentos (IFPD) e integra soluciones completas de ingeniería aeroportuaria, I+D+i y validación técnica mediante alianzas estratégicas especializadas.",
+  "partner1_badge": "Infraestructura y Consultoría Aeroportuaria",
+  "partner1_desc": "Consultoría especializada en diseño, desarrollo y optimización de infraestructura aeroportuaria, pavimentos, terminales lado aire/lado tierra y software de planificación AeroGEN.",
+  "partner1_synergy": "Soluciones llave en mano combinando la ingeniería física del aeródromo con el diseño de procedimientos de vuelo.",
+  "partner2_badge": "I+D+i en Aeródromos, Helipuertos y Vertipuertos",
+  "partner2_desc": "Unidad de investigación en ingeniería aeroespacial (Facultad de Ingeniería, UNLP) con experiencia técnica en más de 36 países y 250 aeródromos, especializada en modelado operacional, OLS, vertipuertos y capacidad.",
+  "partner2_synergy": "Respaldo científico y académico de vanguardia para estudios complejos de espacio aéreo, helipuertos, vertipuertos y superficies de obstáculos.",
+  "partner3_name": "Red de Validación en Vuelo y Geodesia",
+  "partner3_badge": "Validación en Vuelo y Relevamiento Geodésico",
+  "partner3_desc": "Acuerdos estratégicos para la verificación en vuelo (Flight Validation según OACI Doc 9906) y relevamientos topográficos geodésicos WGS-84 / LiDAR de alta precisión.",
+  "partner3_synergy": "Garantiza el ciclo de vida completo del procedimiento hasta su aprobación formal por la autoridad aeronáutica y publicación en el AIP.",
+  "partner_synergy_label": "Sinergia con GIDEA:",
+  "partner3_status": "Red activa en la región"
 }
