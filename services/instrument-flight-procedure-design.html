@@ -45,16 +45,7 @@
       { "@type": "AdministrativeArea", "name": "El Caribe" },
       { "@type": "Country", "name": "Estados Unidos" }
     ],
-    "description": "Diseño, validación y mantenimiento periódico de procedimientos de vuelo visual y por instrumentos bajo OACI Doc 8168 (PANS-OPS) y FAA Order 8260 (TERPS). Procedimientos convencionales ILS/VOR/NDB, PBN/RNP, RNP AR APCH y aproximaciones Point-in-Space (PinS) para helipuertos con Expediente Técnico de Garantía de Calidad OACI Doc 9906.",
-    "knowsAbout": [
-      "OACI Doc 8168 PANS-OPS Vol II",
-      "OACI Doc 9613 Manual PBN",
-      "OACI Doc 9906 Garantía de Calidad en IFPD",
-      "FAA Order 8260 TERPS",
-      "Codificación ARINC 424",
-      "Procedimientos Helipuertos PinS",
-      "Superficies OAS y MOC"
-    ]
+    "description": "Diseño, validación y mantenimiento periódico de procedimientos de vuelo visual y por instrumentos bajo OACI Doc 8168 (PANS-OPS) y FAA Order 8260 (TERPS)."
   }
   </script>
 </head>
@@ -116,115 +107,114 @@
   </header>
 
   <main style="padding-top: 85px;">
-    <!-- Technical Header Banner -->
-    <section class="section" style="background: linear-gradient(135deg, #002244 0%, #003366 100%); color: #ffffff; padding: 55px 0 45px;">
+    <!-- Technical Header Banner with Background Image -->
+    <section class="section" style="position: relative; background: linear-gradient(135deg, rgba(0, 34, 68, 0.92) 0%, rgba(0, 51, 102, 0.88) 100%), url('../assets/images/hero/hero-bg.jpg') center/cover no-repeat; color: #ffffff; padding: 65px 0 50px;">
       <div class="container">
-        <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin-bottom: 12px;">
-          <a href="../index.html" style="color: #ffffff; text-decoration: none;">Inicio</a> &rarr; Servicios Técnicos &rarr; IFPD
+        <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin-bottom: 12px;">
+          <a href="../index.html" style="color: #ffffff; text-decoration: none;" data-i18n="ifpd_breadcrumb">Inicio → Servicios Técnicos → IFPD</a>
         </div>
-        <h1 style="font-size: 32px; font-weight: 700; margin-bottom: 14px; line-height: 1.25;">Diseño de Procedimientos de Vuelo por Instrumentos (IFPD)</h1>
-        <p style="font-size: 16px; max-width: 860px; opacity: 0.9; line-height: 1.6; margin: 0 0 20px;">
-          Desarrollo técnico, evaluación de franqueamiento de obstáculos y mantenimiento periódico de procedimientos de vuelo visual e instrumental bajo criterios estrictos <strong>OACI Doc 8168 (PANS-OPS Vol. II)</strong> y <strong>FAA Order 8260 (TERPS)</strong>.
+        <h1 style="font-size: 34px; font-weight: 700; margin-bottom: 14px; line-height: 1.25;" data-i18n="ifpd_title">Diseño de Procedimientos de Vuelo por Instrumentos (IFPD)</h1>
+        <p style="font-size: 16.5px; max-width: 860px; opacity: 0.92; line-height: 1.6; margin: 0 0 22px;" data-i18n="ifpd_lead">
+          Desarrollo técnico, evaluación de franqueamiento de obstáculos y mantenimiento periódico de procedimientos de vuelo visual e instrumental bajo criterios estrictos OACI Doc 8168 (PANS-OPS Vol. II) y FAA Order 8260 (TERPS).
         </p>
-        <div style="display: inline-flex; gap: 12px; align-items: center; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 4px; font-size: 13px; font-family: monospace;">
+        <div style="display: inline-flex; gap: 12px; align-items: center; background: rgba(255,255,255,0.12); backdrop-filter: blur(4px); padding: 8px 16px; border-radius: 4px; font-size: 13px; font-family: monospace;">
           <span>OACI Doc 8168</span> · <span>OACI Doc 9613 (PBN)</span> · <span>OACI Doc 9906 (QA)</span> · <span>FAA 8260</span>
         </div>
       </div>
     </section>
 
-    <!-- Technical Scope Section -->
+    <!-- Scope with Split Layout & Image -->
     <section class="section">
       <div class="container">
-        <div class="section-heading">
-          <h2>ALCANCE TÉCNICO Y TIPOLOGÍAS DE PROCEDIMIENTO</h2>
-          <p class="section-lead">
-            Modelación analítica de trayectorias nominales, áreas de viraje, gradientes de ascenso y franqueamiento de obstáculos (MOC) para aeronaves de ala fija y helicópteros.
-          </p>
+        <div class="layout-split" style="margin-bottom: 40px; align-items: center;">
+          <div class="split-content">
+            <span class="section-tag" style="color: var(--accent-color); font-weight: 700; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;">AERONAUTICAL PROCEDURE ENGINEERING</span>
+            <h2 data-i18n="ifpd_sec1_title" style="margin-top: 6px; font-size: 26px; color: var(--primary-color);">ALCANCE TÉCNICO Y TIPOLOGÍAS DE PROCEDIMIENTO</h2>
+            <p class="section-lead" data-i18n="ifpd_sec1_lead" style="font-size: 15.5px; margin: 12px 0 0; color: var(--text-gray);">
+              Modelado analítico de trayectorias nominales, áreas de viraje, gradientes de ascenso y franqueamiento de obstáculos (MOC) para aeronaves de ala fija y helicópteros.
+            </p>
+          </div>
+          <div class="split-image">
+            <img src="../assets/images/servicios/procedimientos-vuelo.jpg" alt="Instrument Flight Procedure Design" class="img-responsive shadow" style="border-radius: 6px; width: 100%; max-height: 280px; object-fit: cover;" />
+          </div>
         </div>
 
         <div class="grid-2">
           <!-- PBN -->
-          <div class="info-box">
-            <h4 style="color: var(--primary-color); margin-bottom: 8px;">Navegación Basada en la Performance (PBN / GNSS)</h4>
-            <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
-              Diseño conforme a las especificaciones de navegación del Manual PBN (OACI Doc 9613):
+          <div class="info-box" style="border-left: 4px solid var(--accent-color);">
+            <h4 data-i18n="ifpd_card1_title" style="color: var(--primary-color); margin-bottom: 8px;">Navegación Basada en la Performance (PBN / GNSS)</h4>
+            <p data-i18n="ifpd_card1_text" style="font-size: 14px; line-height: 1.6; color: var(--text-dark);">
+              Procedimientos RNP APCH (LNAV, LNAV/VNAV, LP/LPV), RNP AR APCH con tramos curvos Radius-to-Fix (RF) para topografía compleja, y rutas terminales RNAV 1 / RNP 1 (SID y STAR).
             </p>
-            <ul style="font-size: 13.5px; line-height: 1.7; padding-left: 18px; color: var(--text-dark);">
-              <li><strong>RNP APCH:</strong> Procedimientos de aproximación con guiado lateral (LNAV), guiado vertical barométrico (LNAV/VNAV), y aumentación SBAS (LP / LPV).</li>
-              <li><strong>RNP AR APCH (Authorization Required):</strong> Criterios avanzados con tramos de radio fijo curvos (RF legs) para aeródromos en orografía compleja.</li>
-              <li><strong>Rutas Terminales RNAV 1 / RNP 1:</strong> Salidas normalizadas (SID) y llegadas normalizadas (STAR) optimizadas.</li>
-            </ul>
           </div>
 
           <!-- Convencionales -->
-          <div class="info-box">
-            <h4 style="color: var(--primary-color); margin-bottom: 8px;">Procedimientos Convencionales (Radioayudas Terrestres)</h4>
-            <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
-              Desarrollo de maniobras basadas en radioayudas terrestres según PANS-OPS Vol. II:
+          <div class="info-box" style="border-left: 4px solid var(--primary-color);">
+            <h4 data-i18n="ifpd_card2_title" style="color: var(--primary-color); margin-bottom: 8px;">Procedimientos Convencionales (Radioayudas)</h4>
+            <p data-i18n="ifpd_card2_text" style="font-size: 14px; line-height: 1.6; color: var(--text-dark);">
+              Aproximaciones de precisión ILS (Cat I, II y III) con cálculo de superficies OAS y CRM, y no precisión VOR/DME, NDB y Localizador (LOC) con trayectorias de frustrada.
             </p>
-            <ul style="font-size: 13.5px; line-height: 1.7; padding-left: 18px; color: var(--text-dark);">
-              <li><strong>Aproximaciones de Precisión:</strong> ILS (Cat I, II y III) con cálculo de Superficies de Evaluación de Obstáculos (OAS) y aplicación de Collision Risk Model (CRM).</li>
-              <li><strong>Aproximaciones de No Precisión (NPA):</strong> VOR, VOR/DME, NDB y Localizador (LOC).</li>
-              <li><strong>Segmentos de Aproximación Frustrada:</strong> Determinación precisa del Punto de Aproximación Frustrada (MAPt) y gradientes de ascenso exigibles.</li>
-            </ul>
           </div>
 
           <!-- Helipuertos PinS -->
-          <div class="info-box">
-            <h4 style="color: var(--primary-color); margin-bottom: 8px;">Helipuertos y Movilidad Vertical (Point-in-Space - PinS)</h4>
-            <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
-              Diseño de maniobras específicas para helicópteros según OACI Doc 8168 Vol. II y Anexo 14 Vol. II:
+          <div class="info-box" style="border-left: 4px solid var(--accent-color);">
+            <h4 data-i18n="ifpd_card3_title" style="color: var(--primary-color); margin-bottom: 8px;">Helipuertos y Movilidad Vertical (PinS)</h4>
+            <p data-i18n="ifpd_card3_text" style="font-size: 14px; line-height: 1.6; color: var(--text-dark);">
+              Aproximaciones y salidas Point-in-Space (PinS) para helipuertos urbanos, hospitalarios y plataformas offshore según OACI Doc 8168 Vol. II y Anexo 14 Vol. II.
             </p>
-            <ul style="font-size: 13.5px; line-height: 1.7; padding-left: 18px; color: var(--text-dark);">
-              <li><strong>Aproximaciones y Salidas PinS:</strong> Conexión entre la red IFR en ruta y helipuertos de superficie, elevados u hospitalarios mediante tramo visual (Direct Visual o Maneuvering).</li>
-              <li><strong>Compatibilidad Operacional:</strong> Mitigación de impacto acústico y reducción de interferencias con el tránsito de ala fija.</li>
-            </ul>
           </div>
 
           <!-- QA Doc 9906 y ARINC 424 -->
-          <div class="info-box">
-            <h4 style="color: var(--primary-color); margin-bottom: 8px;">Garantía de Calidad y Codificación ARINC 424</h4>
-            <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
-              Cumplimiento del proceso de aseguramiento de calidad (QA) bajo OACI Doc 9906:
+          <div class="info-box" style="border-left: 4px solid var(--primary-color);">
+            <h4 data-i18n="ifpd_card4_title" style="color: var(--primary-color); margin-bottom: 8px;">Garantía de Calidad (OACI Doc 9906) y ARINC 424</h4>
+            <p data-i18n="ifpd_card4_text" style="font-size: 14px; line-height: 1.6; color: var(--text-dark);">
+              Validación en tierra independiente, planillas de codificación ARINC 424 de base de datos de navegación y cartografía aeronáutica conforme al Anexo 4 OACI.
             </p>
-            <ul style="font-size: 13.5px; line-height: 1.7; padding-left: 18px; color: var(--text-dark);">
-              <li><strong>Validación en Tierra (Ground Validation):</strong> Revisión independiente de cálculos de MOC, áreas de viraje y consistencia geométrica.</li>
-              <li><strong>Planillas de Codificación ARINC 424:</strong> Especificación detallada de Path & Terminator (IF, TF, CF, DF, RF), altitudes de paso, restricciones de velocidad y referencias de navegación.</li>
-              <li><strong>Cartografía Aeronáutica:</strong> Preparación de planos conformes al Anexo 4 OACI para su publicación oficial en el AIP / PIAC de la Autoridad Aeronáutica.</li>
-            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Design Dossier & Deliverables -->
+    <!-- Technical Dossier with Image Split -->
     <section class="section bg-light">
       <div class="container">
-        <div class="section-heading text-center">
-          <h2>ENTREGABLES DEL EXPEDIENTE TÉCNICO DE DISEÑO</h2>
-          <p class="section-lead mx-auto">
-            Cada procedimiento diseñado por GIDEA LLC se entrega respaldado por un Expediente Técnico (Design Dossier) auditable que garantiza trazabilidad absoluta ante la Autoridad de Aviación Civil.
-          </p>
+        <div class="layout-split" style="align-items: center; margin-bottom: 35px;">
+          <div class="split-image">
+            <img src="../assets/images/nosotros/analysis-map.jpg" alt="Technical Dossier Analysis" class="img-responsive shadow" style="border-radius: 6px; width: 100%; max-height: 270px; object-fit: cover;" />
+          </div>
+          <div class="split-content">
+            <h2 data-i18n="ifpd_sec2_title" style="font-size: 24px; color: var(--primary-color);">EXPEDIENTE TÉCNICO Y ENTREGABLES AUDITABLES</h2>
+            <p class="section-lead" data-i18n="ifpd_sec2_lead" style="font-size: 15px; margin-top: 10px; color: var(--text-gray);">
+              Cada procedimiento diseñado por GIDEA LLC se entrega respaldado por un Expediente Técnico (Design Dossier) completo que garantiza trazabilidad absoluta ante la Autoridad de Aviación Civil.
+            </p>
+          </div>
         </div>
 
         <div class="grid-3 mt-4">
           <div class="standard-box">
-            <h4>Memoria de Cálculo y Justificación</h4>
-            <p>Documentación técnica detallada con coordenadas WGS-84, altimetría, modelo de obstáculos evaluado, pendientes y justificación de mínimos operacionales (DA/H, MDA/H).</p>
+            <h4 data-i18n="ifpd_dossier1_title">Memoria de Cálculo y Justificación MOC</h4>
+            <p data-i18n="ifpd_dossier1_text">Planillas analíticas de franqueamiento de obstáculos, coordenadas WGS-84 y justificación de mínimos operacionales (DA/H, MDA/H).</p>
           </div>
           <div class="standard-box">
-            <h4>Tablas de Codificación ARINC 424</h4>
-            <p>Estructuración de datos para la carga en los sistemas de gestión de vuelo (FMS) de las aeronaves y proveedores de bases de datos de navegación aeronáutica.</p>
+            <h4 data-i18n="ifpd_dossier2_title">Codificación ARINC 424</h4>
+            <p data-i18n="ifpd_dossier2_text">Especificación de Path & Terminator, waypoints, restricciones de altitud y velocidad listas para bases de datos FMS.</p>
           </div>
           <div class="standard-box">
-            <h4>Planos Cartográficos AIP (Anexo 4)</h4>
-            <p>Cartas aeronáuticas en formato oficial listas para publicación AIP por el Proveedor de Servicios de Navegación Aérea (ANSP) o la Autoridad Aeronáutica competente.</p>
+            <h4 data-i18n="ifpd_dossier3_title">Cartografía Oficial AIP (Anexo 4)</h4>
+            <p data-i18n="ifpd_dossier3_text">Cartas de aproximación, salida y llegada preparadas para su publicación AIP por la autoridad aeronáutica.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="text-center mt-4">
-          <a href="../index.html#contacto" class="btn btn-primary">Solicitar Consulta Técnica o Propuesta</a>
-        </div>
+    <!-- CTA Section -->
+    <section class="section text-center" style="background: var(--primary-color); color: #ffffff; padding: 50px 0;">
+      <div class="container">
+        <h2 data-i18n="ifpd_cta_title" style="color: #ffffff; margin-bottom: 12px; font-size: 26px;">¿Requiere Diseño o Actualización de Procedimientos de Vuelo?</h2>
+        <p data-i18n="ifpd_cta_lead" style="opacity: 0.88; max-width: 650px; margin: 0 auto 24px; font-size: 15px;">
+          GIDEA LLC brinda consultoría e ingeniería técnica especializada para aeródromos, autoridades aeronáuticas y operadores en todo el continente.
+        </p>
+        <a href="../index.html#contacto" class="btn btn-primary" data-i18n="ifpd_cta_btn" style="background-color: var(--accent-color); padding: 12px 28px; font-weight: 600;">Solicitar Asesoramiento Técnico</a>
       </div>
     </section>
   </main>

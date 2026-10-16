@@ -107,35 +107,41 @@
   </header>
 
   <main style="padding-top: 85px;">
-    <!-- Technical Header Banner -->
-    <section class="section" style="background: linear-gradient(135deg, #002244 0%, #003366 100%); color: #ffffff; padding: 55px 0 45px;">
+    <!-- Technical Header Banner with Background Image -->
+    <section class="section" style="position: relative; background: linear-gradient(135deg, rgba(0, 34, 68, 0.92) 0%, rgba(0, 51, 102, 0.88) 100%), url('../assets/images/hero/hero-bg.jpg') center/cover no-repeat; color: #ffffff; padding: 65px 0 50px;">
       <div class="container">
-        <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin-bottom: 12px;">
+        <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin-bottom: 12px;">
           <a href="../index.html" style="color: #ffffff; text-decoration: none;">Inicio</a> &rarr; Servicios Técnicos &rarr; Optimización PBN
         </div>
-        <h1 style="font-size: 32px; font-weight: 700; margin-bottom: 14px; line-height: 1.25;">Optimización del Espacio Aéreo y Reestructuración PBN</h1>
-        <p style="font-size: 16px; max-width: 860px; opacity: 0.9; line-height: 1.6; margin: 0 0 20px;">
+        <h1 style="font-size: 34px; font-weight: 700; margin-bottom: 14px; line-height: 1.25;">Optimización del Espacio Aéreo y Reestructuración PBN</h1>
+        <p style="font-size: 16.5px; max-width: 860px; opacity: 0.92; line-height: 1.6; margin: 0 0 22px;">
           Ingeniería del espacio aéreo orientada a maximizar la capacidad, predictibilidad y eficiencia operativa en áreas terminales y en ruta, aplicando criterios <strong>OACI Doc 9613</strong>, <strong>Doc 9931 (CDO)</strong> y <strong>Doc 9993 (CCO)</strong>.
         </p>
-        <div style="display: inline-flex; gap: 12px; align-items: center; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 4px; font-size: 13px; font-family: monospace;">
+        <div style="display: inline-flex; gap: 12px; align-items: center; background: rgba(255,255,255,0.12); backdrop-filter: blur(4px); padding: 8px 16px; border-radius: 4px; font-size: 13px; font-family: monospace;">
           <span>OACI Doc 9613</span> · <span>OACI Doc 9931 (CDO)</span> · <span>OACI Doc 9993 (CCO)</span> · <span>OACI Doc 9426</span>
         </div>
       </div>
     </section>
 
-    <!-- Technical Scope Section -->
+    <!-- Scope with Split Layout & Image -->
     <section class="section">
       <div class="container">
-        <div class="section-heading">
-          <h2>ÁREAS DE APLICACIÓN TÉCNICA</h2>
-          <p class="section-lead">
-            Soluciones analíticas para Proveedores de Servicios de Navegación Aérea (ANSP) y operadores que requieren modernizar la arquitectura de su espacio aéreo.
-          </p>
+        <div class="layout-split" style="margin-bottom: 40px; align-items: center;">
+          <div class="split-content">
+            <span class="section-tag" style="color: var(--accent-color); font-weight: 700; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;">AIRSPACE ARCHITECTURE &amp; ATM</span>
+            <h2 style="margin-top: 6px; font-size: 26px; color: var(--primary-color);">ÁREAS DE APLICACIÓN TÉCNICA</h2>
+            <p class="section-lead" style="font-size: 15.5px; margin: 12px 0 0; color: var(--text-gray);">
+              Soluciones analíticas para Proveedores de Servicios de Navegación Aérea (ANSP) y operadores que requieren modernizar la arquitectura de su espacio aéreo.
+            </p>
+          </div>
+          <div class="split-image">
+            <img src="../assets/images/capacidades/modernizacion-espacio-aereo.jpg" alt="Airspace Modernization" class="img-responsive shadow" style="border-radius: 6px; width: 100%; max-height: 280px; object-fit: cover;" />
+          </div>
         </div>
 
         <div class="grid-2">
           <!-- TMA / CTR -->
-          <div class="info-box">
+          <div class="info-box" style="border-left: 4px solid var(--accent-color);">
             <h4 style="color: var(--primary-color); margin-bottom: 8px;">Reestructuración de Áreas Terminales (TMA / CTR)</h4>
             <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
               Segregación geométrica de trayectorias y optimización de volúmenes de espacio aéreo:
@@ -148,7 +154,7 @@
           </div>
 
           <!-- CCO / CDO -->
-          <div class="info-box">
+          <div class="info-box" style="border-left: 4px solid var(--primary-color);">
             <h4 style="color: var(--primary-color); margin-bottom: 8px;">Operaciones de Ascenso y Descenso Continuo (CCO / CDO)</h4>
             <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
               Diseño de perfiles verticales optimizados conforme a OACI Doc 9931 y Doc 9993:
@@ -161,7 +167,7 @@
           </div>
 
           <!-- Red de Rutas ATS -->
-          <div class="info-box">
+          <div class="info-box" style="border-left: 4px solid var(--accent-color);">
             <h4 style="color: var(--primary-color); margin-bottom: 8px;">Modernización de Rutas ATS (En-Ruta)</h4>
             <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
               Transición de rutas convencionales a navegación de área:
@@ -173,7 +179,7 @@
           </div>
 
           <!-- Capacidad y Seguridad -->
-          <div class="info-box">
+          <div class="info-box" style="border-left: 4px solid var(--primary-color);">
             <h4 style="color: var(--primary-color); margin-bottom: 8px;">Estudios de Capacidad y Seguridad Operacional</h4>
             <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 12px;">
               Evaluación del impacto global de los cambios en la arquitectura del espacio aéreo:
@@ -184,10 +190,34 @@
             </ul>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="text-center mt-4">
-          <a href="../index.html#contacto" class="btn btn-primary">Consultar con Nuestro Equipo de Ingeniería</a>
+    <!-- Airspace Optimization Image Split -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="layout-split" style="align-items: center; margin-bottom: 35px;">
+          <div class="split-image">
+            <img src="../assets/images/capacidades/optimizacion-procedimientos.jpg" alt="Procedure Optimization" class="img-responsive shadow" style="border-radius: 6px; width: 100%; max-height: 270px; object-fit: cover;" />
+          </div>
+          <div class="split-content">
+            <h2 style="font-size: 24px; color: var(--primary-color);">DISEÑO INTEGRADO Y TRAZABILIDAD OPERACIONAL</h2>
+            <p class="section-lead" style="font-size: 15px; margin-top: 10px; color: var(--text-gray);">
+              Nuestras soluciones articulan la geometría del espacio aéreo con la performance real de flota y la infraestructura aeroportuaria, garantizando un despliegue seguro y eficiente.
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section text-center" style="background: var(--primary-color); color: #ffffff; padding: 50px 0;">
+      <div class="container">
+        <h2 style="color: #ffffff; margin-bottom: 12px; font-size: 26px;">¿Requiere Modernizar su Espacio Aéreo o Rutas ATS?</h2>
+        <p style="opacity: 0.88; max-width: 650px; margin: 0 auto 24px; font-size: 15px;">
+          GIDEA LLC asiste a proveedores de servicios de navegación aérea y organismos reguladores en proyectos de rediseño de espacio aéreo.
+        </p>
+        <a href="../index.html#contacto" class="btn btn-primary" style="background-color: var(--accent-color); padding: 12px 28px; font-weight: 600;">Consultar con Nuestro Equipo</a>
       </div>
     </section>
   </main>
