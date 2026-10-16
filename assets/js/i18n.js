@@ -4,7 +4,7 @@
  * Uses localStorage to remember user language preference.
  */
 const i18n = (() => {
-  const STORAGE_KEY = 'gidea_lang_v12';
+  const STORAGE_KEY = 'gidea_lang_v13';
   const DEFAULT_LANG = 'en';
   let currentLang = DEFAULT_LANG;
   let translations = {};
@@ -19,7 +19,7 @@ const i18n = (() => {
 
   async function loadTranslations(lang) {
     const basePath = window.location.pathname.includes('/services/') ? '../assets/locales/' : 'assets/locales/';
-    const resp = await fetch(`${basePath}${lang}.json?v=12`);
+    const resp = await fetch(`${basePath}${lang}.json?v=13`);
     if (!resp.ok) throw new Error(`Could not load locale: ${lang}`);
     return resp.json();
   }

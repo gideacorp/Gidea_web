@@ -103,5 +103,6 @@
   "partner3_desc": "Acordos para verificação em voo (Flight Validation segundo ICAO Doc 9906) e levantamentos geodésicos WGS-84 / LiDAR de alta resolução.",
   "partner3_synergy": "Garante o ciclo completo do procedimento até sua homologação e publicação no AIP.",
   "partner_synergy_label": "Sinergia com GIDEA:",
-  "partner3_status": "Rede ativa na região"
+  "partner3_status": "Rede ativa na região",
+  "card_btn_spec": "Ver Ficha Técnica"
 }

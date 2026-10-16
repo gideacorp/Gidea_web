@@ -14,7 +14,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 85px;
   font-family: 'Roboto', sans-serif;
   color: var(--text-dark);
@@ -348,6 +347,8 @@ a {
   border-radius: 4px;
   border-top: 4px solid var(--accent-color);
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
 }
 .card h3 {
   font-size: 18px;
@@ -357,12 +358,15 @@ a {
 .card p {
   color: var(--text-gray);
   font-size: 14px;
+  flex-grow: 1;
 }
 .info-box {
   background: var(--bg-white);
   padding: 25px;
   border-left: 4px solid var(--primary-color);
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
 }
 .info-box h4 {
   font-size: 18px;
@@ -372,6 +376,39 @@ a {
 .info-box p {
   font-size: 15px;
   color: var(--text-gray);
+  flex-grow: 1;
+}
+
+/* Card Technical Action Buttons */
+.card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px 14px;
+  background: #f1f5f9;
+  color: var(--primary-color) !important;
+  font-size: 12.5px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid #cbd5e1;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+.card-btn:hover {
+  background: var(--primary-color);
+  color: #ffffff !important;
+  border-color: var(--primary-color);
+  transform: translateY(-1px);
+}
+.card-btn svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.card-btn:hover svg {
+  transform: translateX(3px);
 }
 .standard-box {
   background: rgba(255,255,255,0.1);

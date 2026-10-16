@@ -103,5 +103,6 @@
   "partner3_desc": "Partenariats pour la vérification en vol (Flight Validation OACI Doc 9906) et les relevés géodésiques WGS-84 / LiDAR haute précision.",
   "partner3_synergy": "Garantit le cycle complet de la procédure jusqu'à son approbation officielle et sa publication dans l'AIP.",
   "partner_synergy_label": "Synergie avec GIDEA :",
-  "partner3_status": "Réseau actif dans la région"
+  "partner3_status": "Réseau actif dans la région",
+  "card_btn_spec": "Fiche Technique"
 }

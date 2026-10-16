@@ -8,12 +8,27 @@ document.addEventListener('DOMContentLoaded', () => {
       const el = document.querySelector(targetId);
       if (el) {
         e.preventDefault();
+
+        // Close mobile menu if open before calculating scroll
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navRight = document.getElementById('navRight');
+        if (mobileMenuBtn && navRight && navRight.classList.contains('active')) {
+          mobileMenuBtn.classList.remove('active');
+          navRight.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+
         const header = document.getElementById('navbar');
         const navHeight = header ? header.offsetHeight : 75;
-        const targetPos = el.getBoundingClientRect().top + window.pageYOffset - navHeight - 15;
-        
+        let top = 0;
+        let curr = el;
+        while (curr) {
+          top += curr.offsetTop;
+          curr = curr.offsetParent;
+        }
+
         window.scrollTo({
-          top: Math.max(0, targetPos),
+          top: Math.max(0, top - navHeight - 15),
           behavior: 'smooth'
         });
 
@@ -22,18 +37,33 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!this.classList.contains('btn-nav')) {
           this.classList.add('active');
         }
-
-        // Close mobile menu if open
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navRight = document.getElementById('navRight');
-        if (mobileMenuBtn && navRight && navRight.classList.contains('active')) {
-          mobileMenuBtn.classList.remove('active');
-          navRight.classList.remove('active');
-          document.body.style.overflow = '';
-        }
       }
     });
   });
+
+  // ===== 1.5. URL Hash Arrival Handler (prevents cutoff when navigating from other pages) =====
+  if (window.location.hash) {
+    const hash = window.location.hash;
+    const targetEl = document.querySelector(hash);
+    if (targetEl) {
+      const scrollToHash = () => {
+        const header = document.getElementById('navbar');
+        const navHeight = header ? header.offsetHeight : 75;
+        let top = 0;
+        let curr = targetEl;
+        while (curr) {
+          top += curr.offsetTop;
+          curr = curr.offsetParent;
+        }
+        window.scrollTo({
+          top: Math.max(0, top - navHeight - 15),
+          behavior: 'smooth'
+        });
+      };
+      setTimeout(scrollToHash, 80);
+      window.addEventListener('load', scrollToHash);
+    }
+  }
 
   // ===== ScrollSpy for Nav Menu =====
   const navLinks = document.querySelectorAll('.nav-menu a:not(.btn-nav)');
@@ -47,13 +77,27 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   window.addEventListener('scroll', () => {
+    // If scrolled near bottom of page (Contacto section)
+    const isAtBottom = (window.innerHeight + window.pageYOffset) >= (document.documentElement.scrollHeight - 80);
+    if (isAtBottom) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const contactBtn = document.querySelector('.nav-menu a.btn-nav');
+      if (contactBtn) contactBtn.classList.add('active');
+      return;
+    }
+
     const scrollPos = window.pageYOffset + 120;
     let current = null;
 
-    for (const item of trackedSections) {
-      const top = item.sec.offsetTop;
-      const height = item.sec.offsetHeight;
-      if (scrollPos >= top && scrollPos < top + height) {
+    for (let i = trackedSections.length - 1; i >= 0; i--) {
+      const item = trackedSections[i];
+      let top = 0;
+      let curr = item.sec;
+      while (curr) {
+        top += curr.offsetTop;
+        curr = curr.offsetParent;
+      }
+      if (scrollPos >= top - 20) {
         current = item;
         break;
       }
