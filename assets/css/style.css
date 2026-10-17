@@ -650,25 +650,26 @@ a {
   transform: translateX(3px);
 }
 
-/* Technical Vector Diagram Card */
+/* Real-World Aeronautical Image Card */
 .ifpd-img-wrap {
   width: 100%;
-  height: 250px;
+  height: 255px;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  background: #030f22;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #0b1526;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .ifpd-img-wrap img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
+  transition: transform 0.4s ease;
+}
+.ifpd-img-wrap:hover img {
+  transform: scale(1.03);
 }
 
 /* Master Technical Landing Page CTA */
