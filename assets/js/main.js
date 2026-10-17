@@ -222,4 +222,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ===== IFPD Interactive Tabs System =====
+  const ifpdTabBtns = document.querySelectorAll('.ifpd-tab-btn');
+  const ifpdTabPanels = document.querySelectorAll('.ifpd-tab-panel');
+
+  if (ifpdTabBtns.length > 0 && ifpdTabPanels.length > 0) {
+    ifpdTabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab');
+        if (!targetId) return;
+
+        ifpdTabBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        ifpdTabPanels.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+      });
+    });
+
+    // Smooth scroll and subject pre-selection for tab consultation buttons
+    document.querySelectorAll('.btn-tab-action').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const subjectSelect = document.getElementById('form-subject');
+        if (subjectSelect) {
+          // Select option 1 (Diseño de Procedimientos por Instrumentos)
+          if (subjectSelect.options.length > 1) {
+            subjectSelect.selectedIndex = 1;
+          }
+        }
+      });
+    });
+  }
+
 });
+

@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="Specialists in Instrument Flight Procedure Design (IFPD), PBN/GNSS airspace modernization, obstacle assessment, and aerodrome feasibility across Latin America, the Caribbean, and the USA." />
   <meta name="twitter:image" content="https://www.gideacorp.com/assets/images/logos/logo-full.png" />
 
-  <link rel="stylesheet" href="assets/css/style.css?v=14" />
+  <link rel="stylesheet" href="assets/css/style.css?v=15" />
   <link rel="icon" type="image/png" href="assets/images/logos/favicon.png" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <!-- Flag Icons CDN -->
@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/mobile.css?v=14" />
+  <link rel="stylesheet" href="assets/css/mobile.css?v=15" />
 
   <!-- Schema.org Structured Data (JSON-LD) for Search Engines & AI Crawlers -->
   <script type="application/ld+json">
@@ -71,7 +71,10 @@
           "Obstacle Limitation Surfaces (OLS)",
           "ICAO Annex 14",
           "FAA FAR Part 77",
-          "ARINC 424 Navigation Database Coding"
+          "ARINC 424 Navigation Database Coding",
+          "Aircraft Noise Contours & Acoustic Footprint Modeling (AEDT)",
+          "ICAO Annex 16 Environmental Protection & Doc 9829 Balanced Approach",
+          "Continuous Descent Operations (CDO) & Noise Abatement Procedures"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -111,6 +114,15 @@
                 "name": "Aerodrome & Heliport Feasibility Studies",
                 "url": "https://www.gideacorp.com/services/aerodrome-heliport-feasibility.html",
                 "description": "Site selection, operational safety risk assessments (Doc 9859 SMS), wind rose analysis, and vertiport planning."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Aviation Noise Modeling, Aircraft Noise Mitigation & Environmental Impact",
+                "url": "https://www.gideacorp.com/services/aerodrome-heliport-feasibility.html#ruido-impacto-ambiental",
+                "description": "Aircraft noise contour modeling (AEDT), noise abatement procedure design, and environmental impact assessments according to ICAO Annex 16 and ICAO Doc 9829."
               }
             }
           ]
@@ -218,46 +230,222 @@
       </div>
     </section>
 
-    <!-- ===== 01. PROCEDIMIENTOS DE VUELO ===== -->
+    <!-- ===== 01. PROCEDIMIENTOS DE VUELO (INTERACTIVE IFPD TABS) ===== -->
     <section id="procedimientos" class="section bg-dark">
       <div class="container">
         <div class="section-heading text-center">
+          <span class="section-eyebrow" data-i18n="sec1_tag">01. SERVICIO PRINCIPAL</span>
           <h2 class="text-white" data-i18n="sec1_title">DISEÑO DE PROCEDIMIENTOS INSTRUMENTALES DE VUELO</h2>
-          <p class="section-lead text-white" data-i18n="sec1_lead">Diseño especializado de procedimientos instrumentales considerando los requerimientos operacionales, las características del aeródromo, el entorno aeronáutico y los criterios de diseño aplicables.</p>
+          <p class="section-lead text-white" data-i18n="sec1_lead">Diseño especializado de procedimientos de vuelo por instrumentos considerando los requerimientos operacionales, características del aeródromo o helipuerto, espacio aéreo y criterios de diseño aplicables OACI y FAA.</p>
         </div>
-        <div class="grid-4">
-          <div class="card">
-            <h3 data-i18n="card1_title">Aproximaciones · SID · STAR</h3>
-            <p data-i18n="card1_text">Diseño de trayectorias, análisis de performance, áreas de protección y estudio de obstáculos.</p>
-            <a href="services/instrument-flight-procedure-design.html#helipuertos-pins" class="card-btn">
-              <span data-i18n="card1_btn">Ficha: Aproximaciones y PinS</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </a>
+
+        <!-- Tabs Navigation -->
+        <div class="ifpd-tabs-container">
+          <div class="ifpd-tabs-nav" role="tablist" aria-label="Tipologías de Procedimientos IFPD">
+            <button type="button" class="ifpd-tab-btn active" role="tab" aria-selected="true" data-tab="tab-pins" id="btn-tab-pins">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+              <span data-i18n="tab_pins_title">Aproximaciones &amp; PinS</span>
+            </button>
+            <button type="button" class="ifpd-tab-btn" role="tab" aria-selected="false" data-tab="tab-conv" id="btn-tab-conv">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+              <span data-i18n="tab_conv_title">Convencionales (ILS / VOR)</span>
+            </button>
+            <button type="button" class="ifpd-tab-btn" role="tab" aria-selected="false" data-tab="tab-pbn" id="btn-tab-pbn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 19 21 12 17 5 21 12 2"></polygon></svg>
+              <span data-i18n="tab_pbn_title">PBN / GNSS (RNAV &amp; RNP)</span>
+            </button>
+            <button type="button" class="ifpd-tab-btn" role="tab" aria-selected="false" data-tab="tab-rnpar" id="btn-tab-rnpar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12A10 10 0 1 1 12 2"></path><polyline points="22 2 22 8 16 8"></polyline></svg>
+              <span data-i18n="tab_rnpar_title">RNP AR APCH (Tramos RF)</span>
+            </button>
           </div>
-          <div class="card">
-            <h3 data-i18n="card2_title">Procedimientos Convencionales</h3>
-            <p data-i18n="card2_text">Desarrollo basado en radioayudas terrestres, garantizando altitudes, mínimos y codificación exacta.</p>
-            <a href="services/instrument-flight-procedure-design.html#convencionales" class="card-btn">
-              <span data-i18n="card2_btn">Ficha: Radioayudas Convencionales</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </a>
+
+          <!-- Tabs Content Panels -->
+          <div class="ifpd-tabs-content">
+            <!-- PANEL 1: PINS & APROXIMACIONES -->
+            <div class="ifpd-tab-panel active" id="tab-pins" role="tabpanel" aria-labelledby="btn-tab-pins">
+              <div class="ifpd-panel-split">
+                <div class="ifpd-panel-info">
+                  <span class="ifpd-visual-badge" data-i18n="tab1_badge">OACI Doc 8168 Vol. II · FAA 8260.42 · Anexo 14 Vol. II</span>
+                  <h3 data-i18n="tab1_h3">Aproximaciones Instrumentales y Procedimientos PinS (Helipuertos)</h3>
+                  <p class="ifpd-lead-text" data-i18n="tab1_lead">Diseño de trayectorias de precisión y no precisión para aviones y helicópteros (Point-in-Space - PinS), integrando el franqueamiento de obstáculos desde fases tempranas de planificación.</p>
+                  <ul class="ifpd-features-list">
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab1_feat1">Modelado de trayectorias Point-in-Space (PinS) para helipuertos urbanos, hospitalarios y plataformas offshore.</span>
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab1_feat2">Análisis de performance de aeronaves y optimización de descensos y gradientes de ascenso frustrado.</span>
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab1_feat3">Cálculo analítico del margen mínimo de franqueamiento de obstáculos (MOC) bajo OACI Doc 8168 Vol. II.</span>
+                    </li>
+                  </ul>
+                  <div class="ifpd-deliverables-box">
+                    <span class="ifpd-deliv-header"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Entregables de Ingeniería:</span>
+                    <ul class="ifpd-deliv-pills">
+                      <li data-i18n="tab1_deliv1">Memoria de Cálculo y Justificación Analítica MOC</li>
+                      <li data-i18n="tab1_deliv2">Planillas de Coordenadas WGS-84 y Mínimos DA/MDA</li>
+                      <li data-i18n="tab1_deliv3">Cartas Oficiales AIP listas para publicación (OACI Anexo 4)</li>
+                    </ul>
+                  </div>
+                  <div class="ifpd-action-row">
+                    <a href="#contacto" class="btn-tab-action" data-subject="helipuertos">
+                      <span data-i18n="tab_contact_action">Consultar sobre esta tipología</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="ifpd-panel-visual">
+                  <div class="ifpd-img-wrap">
+                    <img src="assets/images/servicios/procedimientos-vuelo.jpg" alt="Aproximaciones PinS y Procedimientos de Vuelo" loading="lazy" width="600" height="400" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 2: CONVENCIONALES -->
+            <div class="ifpd-tab-panel" id="tab-conv" role="tabpanel" aria-labelledby="btn-tab-conv">
+              <div class="ifpd-panel-split">
+                <div class="ifpd-panel-info">
+                  <span class="ifpd-visual-badge" data-i18n="tab2_badge">ILS Cat I/II/III · VOR/DME · NDB · OACI Doc 8168</span>
+                  <h3 data-i18n="tab2_h3">Procedimientos de Vuelo Convencionales (Radioayudas Terrestres)</h3>
+                  <p class="ifpd-lead-text" data-i18n="tab2_lead">Desarrollo técnico riguroso basado en radioayudas tradicionales (ILS Cat I/II/III, VOR/DME, NDB y LOC), garantizando tolerancias de señal, altitudes seguras y máxima predictibilidad.</p>
+                  <ul class="ifpd-features-list">
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab2_feat1">Cálculo analítico de superficies OAS y modelos de riesgo de colisión (CRM) para ILS Cat I, II y III.</span>
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab2_feat2">Diseño de procedimientos de no precisión VOR/DME y NDB con trayectorias de frustrada optimizadas.</span>
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab2_feat3">Determinación estricta de altitudes mínimas de sector (MSA) y circuitos de espera convencionales.</span>
+                    </li>
+                  </ul>
+                  <div class="ifpd-deliverables-box">
+                    <span class="ifpd-deliv-header"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Entregables de Ingeniería:</span>
+                    <ul class="ifpd-deliv-pills">
+                      <li data-i18n="tab2_deliv1">Estudio de Cobertura y Tolerancias de Radioayudas</li>
+                      <li data-i18n="tab2_deliv2">Memoria Técnica de Superficies OAS / CRM</li>
+                      <li data-i18n="tab2_deliv3">Cartografía AIP OACI Anexo 4 y Normativas FAA</li>
+                    </ul>
+                  </div>
+                  <div class="ifpd-action-row">
+                    <a href="#contacto" class="btn-tab-action" data-subject="procedimientos">
+                      <span data-i18n="tab_contact_action">Consultar sobre esta tipología</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="ifpd-panel-visual">
+                  <div class="ifpd-img-wrap">
+                    <img src="assets/images/capacidades/nuevos-procedimientos.jpg" alt="Procedimientos Convencionales ILS VOR" loading="lazy" width="600" height="400" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 3: PBN / GNSS -->
+            <div class="ifpd-tab-panel" id="tab-pbn" role="tabpanel" aria-labelledby="btn-tab-pbn">
+              <div class="ifpd-panel-split">
+                <div class="ifpd-panel-info">
+                  <span class="ifpd-visual-badge" data-i18n="tab3_badge">OACI Doc 9613 · Doc 9906 · RNAV 1 · RNP APCH</span>
+                  <h3 data-i18n="tab3_h3">Navegación Basada en la Performance (PBN / GNSS)</h3>
+                  <p class="ifpd-lead-text" data-i18n="tab3_lead">Soluciones satelitales avanzadas RNAV y RNP según OACI Doc 9613. Maximizan la capacidad del espacio aéreo, reducen millas voladas y disminuyen emisiones acústicas y de CO2.</p>
+                  <ul class="ifpd-features-list">
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab3_feat1">Diseño de aproximaciones RNP APCH (LNAV, LNAV/VNAV, LP y LPV con aumentación SBAS/GBAS).</span>
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab3_feat2">Salidas SID y llegadas STAR bajo especificaciones RNAV 1 / RNP 1 con transiciones continuas.</span>
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab3_feat3">Validación en tierra independiente y garantía de calidad conforme a OACI Doc 9906.</span>
+                    </li>
+                  </ul>
+                  <div class="ifpd-deliverables-box">
+                    <span class="ifpd-deliv-header"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Entregables de Ingeniería:</span>
+                    <ul class="ifpd-deliv-pills">
+                      <li data-i18n="tab3_deliv1">Codificación Oficial ARINC 424 (Path &amp; Terminator)</li>
+                      <li data-i18n="tab3_deliv2">Validación Geodésica WGS-84 y Base de Datos FMS</li>
+                      <li data-i18n="tab3_deliv3">Dossier Técnico Completo para Aprobación CAA</li>
+                    </ul>
+                  </div>
+                  <div class="ifpd-action-row">
+                    <a href="#contacto" class="btn-tab-action" data-subject="pbn">
+                      <span data-i18n="tab_contact_action">Consultar sobre esta tipología</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="ifpd-panel-visual">
+                  <div class="ifpd-img-wrap">
+                    <img src="assets/images/capacidades/modernizacion-espacio-aereo.jpg" alt="PBN RNAV RNP Espacio Aereo" loading="lazy" width="600" height="400" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 4: RNP AR APCH -->
+            <div class="ifpd-tab-panel" id="tab-rnpar" role="tabpanel" aria-labelledby="btn-tab-rnpar">
+              <div class="ifpd-panel-split">
+                <div class="ifpd-panel-info">
+                  <span class="ifpd-visual-badge" data-i18n="tab4_badge">RNP 0.1 · Tramos RF · OACI Doc 9905 · FAA 8260.58</span>
+                  <h3 data-i18n="tab4_h3">Procedimientos RNP AR APCH (Autorización Requerida)</h3>
+                  <p class="ifpd-lead-text" data-i18n="tab4_lead">Ingeniería de máxima precisión para entornos topográficos complejos y aeropuertos con restricciones severas de espacio aéreo o montañas, aplicando tramos curvos Radius-to-Fix (RF).</p>
+                  <ul class="ifpd-features-list">
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab4_feat1">Tramos curvos Radius-to-Fix (RF) en aproximación final y frustrada para rodear obstáculos críticos.</span>
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab4_feat2">Valores RNP hasta 0.1 NM con reducción drástica de mínimos operacionales (DA/H).</span>
+                    </li>
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span data-i18n="tab4_feat3">Análisis de falla de motor en tramo curvo (Engine-Out Missed Approach) y estudio de seguridad operacional.</span>
+                    </li>
+                  </ul>
+                  <div class="ifpd-deliverables-box">
+                    <span class="ifpd-deliv-header"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Entregables de Ingeniería:</span>
+                    <ul class="ifpd-deliv-pills">
+                      <li data-i18n="tab4_deliv1">Diseño Geométrico RNP AR y Estudio Safety Case</li>
+                      <li data-i18n="tab4_deliv2">Planilla de Codificación ARINC 424 con Piernas RF</li>
+                      <li data-i18n="tab4_deliv3">Soporte Pericial para Aprobación Operacional OACI / FAA</li>
+                    </ul>
+                  </div>
+                  <div class="ifpd-action-row">
+                    <a href="#contacto" class="btn-tab-action" data-subject="rnp-ar">
+                      <span data-i18n="tab_contact_action">Consultar sobre esta tipología</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="ifpd-panel-visual">
+                  <div class="ifpd-img-wrap">
+                    <img src="assets/images/capacidades/optimizacion-procedimientos.jpg" alt="RNP AR APCH Tramos Curvos RF" loading="lazy" width="600" height="400" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h3 data-i18n="card3_title">Performance-Based Navigation (PBN)</h3>
-            <p data-i18n="card3_text">Navegación Basada en la Performance según Doc 9613 OACI. Soluciones de alta eficiencia operacional.</p>
-            <a href="services/pbn-airspace-optimization.html#pbn-tma" class="card-btn">
-              <span data-i18n="card3_btn">Ficha: Optimización PBN y Espacio Aéreo</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </a>
-          </div>
-          <div class="card">
-            <h3 data-i18n="card4_title">RNP AR (Authorization Required)</h3>
-            <p data-i18n="card4_text">Diseño para escenarios complejos, maximizando el uso del espacio aéreo y la tecnología de a bordo.</p>
-            <a href="services/instrument-flight-procedure-design.html#rnp-ar" class="card-btn">
-              <span data-i18n="card4_btn">Ficha: Operaciones RNP AR APCH</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </a>
-          </div>
+        </div>
+
+        <!-- Master Technical Landing Page CTA (Maintains SEO link juice & authority to dedicated page) -->
+        <div class="ifpd-master-cta-wrap text-center">
+          <a href="services/instrument-flight-procedure-design.html" class="btn-ifpd-master">
+            <span data-i18n="sec1_master_btn">Ver Metodología Completa y Memoria Técnica IFPD</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
         </div>
       </div>
     </section>
@@ -294,11 +482,12 @@
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </a>
           </div>
-          <div class="info-box">
-            <h4 data-i18n="box4_title">Estudios Operacionales</h4>
-            <p data-i18n="box4_text">Evaluaciones considerando la interacción entre: Aeródromo + aeronaves + infraestructura + espacio aéreo + procedimientos de vuelo.</p>
-            <a href="services/pbn-airspace-optimization.html#estudios-operacionales" class="card-btn">
-              <span data-i18n="box4_btn">Ficha: Interacción Operacional</span>
+          <div class="info-box info-box-highlight">
+            <span class="box-badge-tag" data-i18n="env_service_tag">OACI ANEXO 16 / ENFOQUE EQUILIBRADO</span>
+            <h4 data-i18n="box4_title">Huella Acústica, Mitigación de Ruido e Impacto Ambiental</h4>
+            <p data-i18n="box4_text">Modelado de ruido aeronáutico (curvas isófonas AEDT/INM), mitigación sonora en procedimientos de vuelo y planes de gestión ambiental bajo OACI Anexo 16 y Doc 9829. Experiencia y respaldo pericial con OACI y entidades de navegación aérea (CORPAC Perú).</p>
+            <a href="services/aerodrome-heliport-feasibility.html#ruido-impacto-ambiental" class="card-btn">
+              <span data-i18n="box4_btn">Ficha: Ruido &amp; Impacto Ambiental</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </a>
           </div>
@@ -318,6 +507,7 @@
               <li><strong data-i18n="cap3_label">Optimización de Procedimientos:</strong> <span data-i18n="cap3_text">Revisión y mejora de estructuras existentes.</span></li>
               <li><strong data-i18n="cap4_label">Cambios Operacionales:</strong> <span data-i18n="cap4_text">Evaluación del impacto de modificaciones en infraestructura.</span></li>
               <li><strong data-i18n="cap5_label">Desarrollo de Software Aeronáutico:</strong> <span data-i18n="cap5_text">Herramientas propias para cálculos y validación técnica.</span></li>
+              <li><strong data-i18n="cap6_label">Ruido e Impacto Ambiental Aeronáutico:</strong> <span data-i18n="cap6_text">Modelado de huella acústica (AEDT), curvas isófonas y diseño de trayectorias con mitigación de ruido y CO2 (OACI Anexo 16 / experiencia OACI &amp; CORPAC).</span></li>
             </ul>
             <a href="#estandares" class="btn-cap-standards">
               <span data-i18n="cap_to_standards">Ver Marco Regulatorio y Estándares OACI / FAA</span>
@@ -516,6 +706,7 @@
                     <option>Estudios SLO / Afectación Aeronáutica</option>
                     <option>Planificación Aeroportuaria</option>
                     <option>Desarrollo de Software Aeronáutico</option>
+                    <option>Huella Acústica, Ruido Aeronáutico e Impacto Ambiental (OACI Anexo 16)</option>
                     <option>Otra consulta</option>
                   </select>
                 </div>
@@ -608,8 +799,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=14"></script>
-  <script src="assets/js/main.js?v=14"></script>
+  <script src="assets/js/i18n.js?v=15"></script>
+  <script src="assets/js/main.js?v=15"></script>
 <!-- GIDEA Analytics -->
 <script>
   (function() {

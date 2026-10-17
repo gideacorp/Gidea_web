@@ -61,7 +61,7 @@ const i18n = (() => {
     // Update select options for form_subject
     const subjectSelect = document.getElementById('form-subject');
     if (subjectSelect) {
-      const opts = [0,1,2,3,4,5,6].map(i => {
+      const opts = [0,1,2,3,4,5,6,7].map(i => {
         const key = `form_subject_opt${i}`;
         return `<option value="${i === 0 ? '' : t[`form_subject_opt${i}`] || ''}">${t[key] || ''}</option>`;
       }).join('');
