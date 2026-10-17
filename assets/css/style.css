@@ -411,20 +411,38 @@ a {
   transform: translateX(3px);
 }
 
-/* ===== IFPD INTERACTIVE TABS COMPONENT ===== */
+/* ===== IFPD INTERACTIVE TABS COMPONENT (COMPACT & TECHNICAL) ===== */
+#procedimientos.section {
+  padding: 42px 0 36px 0;
+}
+#procedimientos .section-heading {
+  margin-bottom: 18px;
+}
+#procedimientos .section-heading h2 {
+  font-size: 23px;
+  margin-bottom: 6px;
+  letter-spacing: -0.2px;
+}
+#procedimientos .section-heading .section-lead {
+  font-size: 14px;
+  line-height: 1.45;
+  max-width: 760px;
+  opacity: 0.9;
+}
+
 .ifpd-tabs-container {
-  margin-top: 40px;
-  background: rgba(255, 255, 255, 0.03);
+  margin-top: 18px;
+  background: rgba(4, 19, 41, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
 }
 
 /* Tabs Navigation Bar */
 .ifpd-tabs-nav {
   display: flex;
-  background: rgba(0, 15, 35, 0.65);
+  background: rgba(2, 10, 24, 0.85);
   border-bottom: 2px solid rgba(255, 255, 255, 0.08);
   overflow-x: auto;
   scrollbar-width: none;
@@ -435,21 +453,21 @@ a {
 
 .ifpd-tab-btn {
   flex: 1;
-  min-width: 210px;
+  min-width: 170px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 18px 20px;
+  gap: 8px;
+  padding: 12px 14px;
   background: transparent;
   border: none;
   border-bottom: 3px solid transparent;
   color: #94a3b8;
   font-family: 'Roboto', sans-serif;
-  font-size: 14.5px;
+  font-size: 13.5px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
   white-space: nowrap;
 }
 .ifpd-tab-btn:hover {
@@ -459,7 +477,7 @@ a {
 .ifpd-tab-btn.active {
   color: #ffffff;
   font-weight: 700;
-  background: rgba(230, 81, 0, 0.12);
+  background: rgba(230, 81, 0, 0.15);
   border-bottom-color: var(--accent-color);
 }
 .ifpd-tab-btn.active svg {
@@ -469,12 +487,12 @@ a {
 /* Tabs Content Panels */
 .ifpd-tabs-content {
   position: relative;
-  min-height: 480px;
+  min-height: auto;
 }
 .ifpd-tab-panel {
   display: none;
-  padding: 40px;
-  animation: ifpdFadeIn 0.35s ease forwards;
+  padding: 22px 28px;
+  animation: ifpdFadeIn 0.25s ease forwards;
 }
 .ifpd-tab-panel.active {
   display: block;
@@ -483,7 +501,7 @@ a {
 @keyframes ifpdFadeIn {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(6px);
   }
   to {
     opacity: 1;
@@ -493,8 +511,8 @@ a {
 
 .ifpd-panel-split {
   display: flex;
-  align-items: stretch;
-  gap: 40px;
+  align-items: center;
+  gap: 28px;
 }
 .ifpd-panel-info {
   flex: 1.15;
@@ -514,70 +532,74 @@ a {
   display: inline-block;
   align-self: flex-start;
   background: rgba(230, 81, 0, 0.16);
-  border: 1px solid rgba(230, 81, 0, 0.45);
+  border: 1px solid rgba(230, 81, 0, 0.4);
   color: #ff9800;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 11.5px;
+  padding: 3px 10px;
+  border-radius: 14px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .ifpd-panel-info h3 {
-  font-size: 24px;
+  font-size: 19px;
   color: #ffffff;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   line-height: 1.3;
 }
 .ifpd-lead-text {
-  font-size: 15px;
+  font-size: 13.5px;
   color: #cbd5e1;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.45;
+  margin-bottom: 12px;
 }
 
 .ifpd-features-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 24px 0;
+  margin: 0 0 14px 0;
 }
 .ifpd-features-list li {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  font-size: 14px;
+  gap: 9px;
+  font-size: 13px;
   color: #e2e8f0;
-  line-height: 1.55;
-  margin-bottom: 12px;
+  line-height: 1.4;
+  margin-bottom: 6px;
 }
 .ifpd-features-list li svg {
   color: var(--accent-color);
   flex-shrink: 0;
-  margin-top: 3px;
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
 }
 
 .ifpd-deliverables-box {
-  background: rgba(0, 15, 35, 0.45);
+  background: rgba(2, 10, 24, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  padding: 16px 20px;
-  margin-bottom: 24px;
+  border-radius: 5px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
 }
 .ifpd-deliv-header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 12px;
+  gap: 6px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   color: #94a3b8;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 .ifpd-deliv-header svg {
   color: var(--accent-color);
+  width: 13px;
+  height: 13px;
 }
 .ifpd-deliv-pills {
   list-style: none;
@@ -585,101 +607,105 @@ a {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 .ifpd-deliv-pills li {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   color: #f1f5f9;
-  font-size: 12.5px;
-  padding: 5px 12px;
-  border-radius: 4px;
+  font-size: 11.5px;
+  padding: 3px 9px;
+  border-radius: 3px;
   font-weight: 500;
 }
 
 .ifpd-action-row {
-  margin-top: 6px;
+  margin-top: 2px;
 }
 .btn-tab-action {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   background: var(--accent-color);
   color: #ffffff !important;
-  font-size: 13.5px;
+  font-size: 12.5px;
   font-weight: 600;
-  padding: 10px 22px;
+  padding: 8px 18px;
   border-radius: 4px;
   text-decoration: none;
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 12px rgba(230, 81, 0, 0.3);
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 10px rgba(230, 81, 0, 0.25);
 }
 .btn-tab-action:hover {
   background: #d84315;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(230, 81, 0, 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(230, 81, 0, 0.35);
 }
 .btn-tab-action svg {
   transition: transform 0.2s ease;
+  width: 13px;
+  height: 13px;
 }
 .btn-tab-action:hover svg {
   transform: translateX(3px);
 }
 
+/* Technical Vector Diagram Card */
 .ifpd-img-wrap {
   width: 100%;
-  height: 100%;
-  min-height: 350px;
+  height: 250px;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  background: #030f22;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ifpd-img-wrap img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
-  transition: transform 0.4s ease;
-}
-.ifpd-img-wrap:hover img {
-  transform: scale(1.03);
 }
 
-/* Master Technical Landing Page CTA at bottom of Section 1 */
+/* Master Technical Landing Page CTA */
 .ifpd-master-cta-wrap {
-  margin-top: 35px;
-  padding-top: 25px;
+  margin-top: 16px;
+  padding-top: 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .btn-ifpd-master {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   background: transparent;
   color: #ffffff !important;
-  font-size: 14.5px;
+  font-size: 13px;
   font-weight: 600;
-  padding: 13px 30px;
-  border: 1.5px solid rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
+  padding: 9px 24px;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
   text-decoration: none;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
   backdrop-filter: blur(4px);
 }
 .btn-ifpd-master:hover {
   background: #ffffff;
   color: var(--primary-color) !important;
   border-color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 .btn-ifpd-master svg {
-  transition: transform 0.25s ease;
+  transition: transform 0.2s ease;
+  width: 14px;
+  height: 14px;
 }
 .btn-ifpd-master:hover svg {
-  transform: translateX(4px);
+  transform: translateX(3px);
 }
 
 /* Highlight badge for Box 4 in Section 2 (Environmental Noise) */
@@ -702,38 +728,104 @@ a {
   text-transform: uppercase;
 }
 
-/* Responsive Tabs */
+/* Responsive Tabs for Tablets and Mobiles */
 @media (max-width: 991px) {
+  #procedimientos.section {
+    padding: 32px 0 24px 0;
+  }
   .ifpd-panel-split {
-    flex-direction: column-reverse;
-    gap: 25px;
+    flex-direction: column;
+    gap: 18px;
   }
   .ifpd-img-wrap {
-    min-height: 240px;
-    max-height: 300px;
+    height: 200px;
+    width: 100%;
   }
   .ifpd-tab-panel {
-    padding: 24px 20px;
+    padding: 18px 16px;
   }
   .ifpd-tab-btn {
-    padding: 14px 16px;
-    font-size: 13px;
+    padding: 10px 12px;
+    font-size: 12.5px;
+    min-width: 150px;
   }
 }
 @media (max-width: 600px) {
+  #procedimientos.section {
+    padding: 24px 0 20px 0;
+  }
+  #procedimientos .section-heading {
+    margin-bottom: 12px;
+  }
+  #procedimientos .section-heading h2 {
+    font-size: 18px;
+  }
+  #procedimientos .section-heading .section-lead {
+    font-size: 12.5px;
+  }
   .ifpd-tabs-nav {
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.08);
   }
   .ifpd-tab-btn {
-    flex: 0 0 auto;
-    width: 80%;
-    min-width: 230px;
+    width: auto;
+    min-width: 0;
+    padding: 9px 8px;
+    font-size: 11.5px;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    background: rgba(3, 15, 34, 0.95);
+  }
+  .ifpd-tab-btn svg {
+    display: none;
+  }
+  .ifpd-tab-btn.active {
+    background: rgba(230, 81, 0, 0.22);
+    border-bottom-color: var(--accent-color);
+  }
+  .ifpd-tab-panel {
+    padding: 14px 12px;
+  }
+  .ifpd-panel-info h3 {
+    font-size: 16px;
+  }
+  .ifpd-lead-text {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .ifpd-features-list {
+    margin-bottom: 10px;
+  }
+  .ifpd-features-list li {
+    font-size: 11.5px;
+    margin-bottom: 4px;
+    line-height: 1.35;
+  }
+  .ifpd-img-wrap {
+    height: 160px;
+  }
+  .ifpd-deliverables-box {
+    padding: 8px 10px;
+    margin-bottom: 10px;
+  }
+  .ifpd-deliv-pills li {
+    font-size: 10.5px;
+    padding: 2px 7px;
+  }
+  .btn-tab-action {
+    width: 100%;
+    justify-content: center;
+    padding: 8px 12px;
+    font-size: 12px;
   }
   .btn-ifpd-master {
     width: 100%;
     justify-content: center;
-    font-size: 13px;
-    padding: 12px 18px;
+    font-size: 12px;
+    padding: 9px 14px;
   }
 }
 
