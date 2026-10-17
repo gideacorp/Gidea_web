@@ -28,7 +28,7 @@
   "box3_title": "Obstacle Limitation Surfaces (OLS) & Heliports",
   "box3_text": "Assessment of the aeronautical impact of constructions, urban developments, wind farms and installations on aerodrome and heliport operations (ICAO Annex 14 Vol I & II, FAA AC 150/5390).",
   "box4_title": "Aviation Noise Contours & Environmental Impact Assessment",
-  "box4_text": "Aircraft noise contour modeling (AEDT/INM isophones), noise-mitigated flight procedure design, and environmental management under ICAO Annex 16 and Doc 9829. Proven expertise and forensic support with ICAO and air navigation authorities (CORPAC Peru).",
+  "box4_text": "Aircraft noise contour modeling (AEDT/INM isophones), noise-mitigated flight procedure design, and environmental management under ICAO Annex 16 and Doc 9829. Proven expertise and forensic support aligned with ICAO standards and air navigation service providers (ANSPs).",
   "sec3_tag": "03. TECHNICAL CAPABILITIES",
   "sec3_title": "TECHNICAL AND OPERATIONAL CAPABILITIES",
   "cap1_label": "New Airports & Heliports:",
@@ -230,10 +230,10 @@
   "sec1_master_btn": "View Full Methodology & IFPD Technical Dossier",
   "env_service_tag": "ICAO ANNEX 16 / BALANCED APPROACH",
   "cap6_label": "Aircraft Noise & Environmental Impact:",
-  "cap6_text": "Acoustic footprint modeling (AEDT), noise contours, and flight trajectory optimization for noise and CO2 mitigation (ICAO Annex 16 / ICAO & CORPAC credentials).",
+  "cap6_text": "Acoustic footprint modeling (AEDT), noise contours, and flight trajectory optimization for noise and CO2 mitigation (ICAO Annex 16 and environmental assessment methodologies).",
   "form_subject_opt7": "Aviation Noise, Environmental Footprint & Aircraft Noise (ICAO Annex 16)",
   "env_page_sec_title": "AVIATION NOISE CONTOURS, NOISE MITIGATION & ENVIRONMENTAL IMPACT",
-  "env_page_sec_lead": "Computational acoustic modeling, low-noise flight procedure optimization (CDO/CCO), and noise management plans under the ICAO Balanced Approach. Backed by specialists with direct experience in ICAO projects and air navigation service providers (CORPAC Peru).",
+  "env_page_sec_lead": "Computational acoustic modeling, low-noise flight procedure optimization (CDO/CCO), and noise management plans under the ICAO Balanced Approach. Backed by specialists with direct experience in ICAO projects and air navigation service providers (ANSPs).",
   "env_item1_label": "Noise Contour Modeling (Isophone Contours):",
   "env_item1_text": "Advanced simulation using ICAO/FAA standard software (AEDT / INM) for DNL, Leq, Lden, and maximum event metrics (Lmax / SEL).",
   "env_item2_label": "Noise Mitigation Flight Procedure Design:",
@@ -241,5 +241,5 @@
   "env_item3_label": "ICAO Balanced Approach (Doc 9829):",
   "env_item3_text": "Comprehensive airport noise management programs combining noise reduction at source, land-use planning, operational noise abatement procedures, and operating restrictions.",
   "env_item4_label": "Technical Authority & Expert Track Record:",
-  "env_item4_text": "Consulting team with proven international technical assistance experience for ICAO and specialized support to air navigation service providers (CORPAC Peru)."
+  "env_item4_text": "Consulting team with proven international technical assistance experience for ICAO and specialized support to air navigation service providers (ANSPs) and civil aviation authorities."
 }

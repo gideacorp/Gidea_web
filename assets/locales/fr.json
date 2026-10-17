@@ -28,7 +28,7 @@
   "box3_title": "Surfaces de Limitation d'Obstacles (OLS) et Héliports",
   "box3_text": "Évaluation de l'impact des constructions, parcs éoliens et installations sur les opérations d'aérodromes et d'héliports (OACI Annexe 14 Vol I & II, FAA AC 150/5390).",
   "box4_title": "Empreinte Acoustique, Atténuation du Bruit et Impact Environnemental",
-  "box4_text": "Modélisation du bruit aéronautique (courbes isophones AEDT/INM), atténuation sonore dans les procédures de vol et plans de gestion environnementale sous l'OACI Annexe 16 et Doc 9829. Expertise et antécédents avec l'OACI et autorités de navigation aérienne (CORPAC Pérou).",
+  "box4_text": "Modélisation du bruit aéronautique (courbes isophones AEDT/INM), atténuation sonore dans les procédures de vol et plans de gestion environnementale sous l'OACI Annexe 16 et Doc 9829. Expertise et antécédents alignés sur les critères OACI et les prestataires de navigation aérienne.",
   "sec3_tag": "03. CAPACITÉS TECHNIQUES",
   "sec3_title": "CAPACITÉS TECHNIQUES ET OPÉRATIONNELLES",
   "cap1_label": "Nouveaux Aéroports et Héliports :",
@@ -230,10 +230,10 @@
   "sec1_master_btn": "Voir la Méthodologie Complète et Dossier Technique IFPD",
   "env_service_tag": "OACI ANNEXE 16 / APPROCHE ÉQUILIBRÉE",
   "cap6_label": "Bruit et Impact Environnemental Aéronautique:",
-  "cap6_text": "Modélisation d'empreinte acoustique (AEDT), courbes isophones et conception de trajectoires avec atténuation sonore et CO2 (OACI Annexe 16 / expérience OACI & CORPAC).",
+  "cap6_text": "Modélisation d'empreinte acoustique (AEDT), courbes isophones et conception de trajectoires avec atténuation sonore et CO2 (OACI Annexe 16 et méthodologies d'évaluation environnementale).",
   "form_subject_opt7": "Empreinte Acoustique, Bruit Aéronautique et Impact Environnemental (OACI Annexe 16)",
   "env_page_sec_title": "EMPREINTE ACOUSTIQUE, ATTÉNUATION DU BRUIT ET IMPACT ENVIRONNEMENTAL",
-  "env_page_sec_lead": "Modélisation acoustique assistée par ordinateur, optimisation des procédures de vol à faible nuisance sonore (CDO/CCO) et plans de gestion du bruit selon l'Approche équilibrée de l'OACI. Soutenu par des experts ayant une expérience directe au sein de projets OACI et auprès de prestataires de navigation aérienne (CORPAC Pérou).",
+  "env_page_sec_lead": "Modélisation acoustique assistée par ordinateur, optimisation des procédures de vol à faible nuisance sonore (CDO/CCO) et plans de gestion du bruit selon l'Approche équilibrée de l'OACI. Soutenu par des experts ayant une expérience directe au sein de projets OACI et auprès de prestataires de navigation aérienne.",
   "env_item1_label": "Modélisation des Courbes Isophones de Bruit :",
   "env_item1_text": "Simulation par logiciels de référence OACI/FAA (AEDT / INM) pour les indicateurs DNL, Leq, Lden et niveaux crêtes (Lmax / SEL).",
   "env_item2_label": "Conception de Procédures à Moindre Bruit :",
@@ -241,5 +241,5 @@
   "env_item3_label": "Approche Équilibrée de l'OACI (Doc 9829) :",
   "env_item3_text": "Plans globaux de gestion du bruit aéroportuaire articulant réduction à la source, aménagement du territoire, procédures opérationnelles d'atténuation et restrictions d'exploitation.",
   "env_item4_label": "Expertise Reconnue et Références OACI :",
-  "env_item4_text": "Équipe de consultants disposant d'une expérience confirmée en assistance technique internationale OACI et auprès de prestataires de navigation aérienne (CORPAC Pérou)."
+  "env_item4_text": "Équipe de consultants disposant d'une expérience confirmée en assistance technique internationale OACI et auprès de prestataires de services de navigation aérienne (ANSPs) et autorités de l'aviation civile."
 }

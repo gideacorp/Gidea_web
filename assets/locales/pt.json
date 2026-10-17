@@ -28,7 +28,7 @@
   "box3_title": "Superfícies Limitadoras de Obstáculos (OLS) e Helipontos",
   "box3_text": "Avaliação do impacto aeronáutico de construções, empreendimentos urbanos, parques eólicos e instalações sobre aeródromos e helipontos (ICAO Anexo 14 Vol I e II, FAA AC 150/5390).",
   "box4_title": "Pegada Acústica, Mitigação de Ruído e Impacto Ambiental",
-  "box4_text": "Modelagem de ruído aeronáutico (curvas isófonas AEDT/INM), mitigação sonora em procedimentos de voo e planos de gestão ambiental sob a OACI Anexo 16 e Doc 9829. Experiência e respaldo técnico com a OACI e autoridades de navegação aérea (CORPAC Peru).",
+  "box4_text": "Modelagem de ruído aeronáutico (curvas isófonas AEDT/INM), mitigação sonora em procedimentos de voo e planos de gestão ambiental sob a OACI Anexo 16 e Doc 9829. Experiência e respaldo técnico alinhados à OACI e provedores de navegação aérea.",
   "sec3_tag": "03. CAPACIDADES TÉCNICAS",
   "sec3_title": "CAPACIDADES TÉCNICAS E OPERACIONAIS",
   "cap1_label": "Novos Aeroportos e Helipontos:",
@@ -230,10 +230,10 @@
   "sec1_master_btn": "Ver Metodologia Completa e Dossiê Técnico IFPD",
   "env_service_tag": "OACI ANEXO 16 / GESTÃO DE RUÍDO",
   "cap6_label": "Ruído e Impacto Ambiental Aeronáutico:",
-  "cap6_text": "Modelagem de pegada acústica (AEDT), curvas isófonas e projeto de trajetórias com mitigação de ruído e CO2 (OACI Anexo 16 / credenciais OACI & CORPAC).",
+  "cap6_text": "Modelagem de pegada acústica (AEDT), curvas isófonas e projeto de trajetórias com mitigação de ruído e CO2 (OACI Anexo 16 e metodologias de avaliação ambiental).",
   "form_subject_opt7": "Pegada Acústica, Ruído Aeronáutico e Impacto Ambiental (OACI Anexo 16)",
   "env_page_sec_title": "MANCHA DE RUÍDO, MITIGAÇÃO ACÚSTICA E IMPACTO AMBIENTAL AERONÁUTICO",
-  "env_page_sec_lead": "Modelagem acústica computacional, otimização de procedimentos de voo com mitigação de ruído (CDO/CCO) e planos de gestão ambiental sob a Abordagem Equilibrada da OACI. Apoiado por especialistas com experiência direta em projetos da OACI e provedores de navegação aérea (CORPAC Peru).",
+  "env_page_sec_lead": "Modelagem acústica computacional, otimização de procedimentos de voo com mitigação de ruído (CDO/CCO) e planos de gestão ambiental sob a Abordagem Equilibrada da OACI. Apoiado por especialistas com experiência direta em projetos da OACI e provedores de navegação aérea.",
   "env_item1_label": "Modelagem de Curvas Isófonas de Ruído:",
   "env_item1_text": "Simulação via software padrão OACI/FAA (AEDT / INM) para métricas DNL, Leq, Lden e níveis de evento único (Lmax / SEL).",
   "env_item2_label": "Desenho de Procedimentos com Mitigação Sonora:",
@@ -241,5 +241,5 @@
   "env_item3_label": "Abordagem Equilibrada da OACI (Doc 9829):",
   "env_item3_text": "Planos abrangentes de gestão de ruído aeroportuário articulando redução na fonte, ordenamento do solo, procedimentos operacionais atenuantes e restrições operacionais.",
   "env_item4_label": "Chancela Técnica e Experiência Pericial:",
-  "env_item4_text": "Equipe com histórico comprovado em assistência técnica internacional OACI e suporte especializado a órgãos de navegação aérea (CORPAC Peru)."
+  "env_item4_text": "Equipe com histórico comprovado em assistência técnica internacional OACI e suporte especializado a provedores de serviços de navegação aérea (ANSPs) e autoridades de aviação civil."
 }
