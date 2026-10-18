@@ -1,3 +1,5 @@
 {
-  "name": "gidea-ifpd"
+  "name": "gidea-ifpd",
+  "cleanUrls": true,
+  "trailingSlash": false
 }

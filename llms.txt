@@ -5,8 +5,8 @@
 ## Corporate Summary
 - **Legal Entity**: GIDEA LLC
 - **Headquarters**: Melbourne, FL, United States of America
-- **Official Website**: https://www.gideacorp.com
-- **Official Inquiries**: consultas@gideacorp.com / proyectos@gideacorp.com
+- **Official Website**: https://www.gideallc.com
+- **Official Inquiries**: consultas@gideallc.com / proyectos@gideallc.com
 - **Target Clientele**: Civil Aviation Authorities (CAAs / DGACs), Air Navigation Service Providers (ANSPs), Airport Operators, Airlines, Heliport Operators, and Infrastructure Developers.
 - **Geographic Coverage**: Latin America (South America, Central America, Caribbean) and the United States.
 
@@ -49,8 +49,8 @@ GIDEA integrates a turnkey operational ecosystem through formal strategic partne
 - **Airborne Flight Validation Network**: Certified partners for in-flight validation (Doc 9906 QA) and high-precision WGS-84 / LiDAR geodetic surveys.
 
 ## Key Links & Reference URLs
-- Main Portal: https://www.gideacorp.com
-- Instrument Flight Procedure Design: https://www.gideacorp.com/services/instrument-flight-procedure-design.html
-- PBN & Airspace Optimization: https://www.gideacorp.com/services/pbn-airspace-optimization.html
-- Obstacle Assessment & OLS: https://www.gideacorp.com/services/obstacle-assessment-ols.html
-- Aerodrome & Heliport Feasibility: https://www.gideacorp.com/services/aerodrome-heliport-feasibility.html
+- Main Portal: https://www.gideallc.com
+- Instrument Flight Procedure Design: https://www.gideallc.com/services/instrument-flight-procedure-design.html
+- PBN & Airspace Optimization: https://www.gideallc.com/services/pbn-airspace-optimization.html
+- Obstacle Assessment & OLS: https://www.gideallc.com/services/obstacle-assessment-ols.html
+- Aerodrome & Heliport Feasibility: https://www.gideallc.com/services/aerodrome-heliport-feasibility.html

@@ -3,19 +3,19 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Homepage -->
   <url>
-    <loc>https://www.gideacorp.com/</loc>
+    <loc>https://www.gideallc.com/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.gideacorp.com/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.gideacorp.com/" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.gideacorp.com/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gideacorp.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gideallc.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gideallc.com/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.gideallc.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.gideallc.com/" />
   </url>
 
   <!-- Service: Instrument Flight Procedure Design (IFPD) -->
   <url>
-    <loc>https://www.gideacorp.com/services/instrument-flight-procedure-design.html</loc>
+    <loc>https://www.gideallc.com/services/instrument-flight-procedure-design.html</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -23,7 +23,7 @@
 
   <!-- Service: PBN & Airspace Optimization -->
   <url>
-    <loc>https://www.gideacorp.com/services/pbn-airspace-optimization.html</loc>
+    <loc>https://www.gideallc.com/services/pbn-airspace-optimization.html</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -31,7 +31,7 @@
 
   <!-- Service: Obstacle Assessment & OLS -->
   <url>
-    <loc>https://www.gideacorp.com/services/obstacle-assessment-ols.html</loc>
+    <loc>https://www.gideallc.com/services/obstacle-assessment-ols.html</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -39,7 +39,7 @@
 
   <!-- Service: Aerodrome & Heliport Feasibility -->
   <url>
-    <loc>https://www.gideacorp.com/services/aerodrome-heliport-feasibility.html</loc>
+    <loc>https://www.gideallc.com/services/aerodrome-heliport-feasibility.html</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
