@@ -53,7 +53,7 @@
           "addressRegion": "FL",
           "addressCountry": "US"
         },
-        "description": "Specialized aeronautical engineering consultancy focused on Instrument Flight Procedure Design (IFPD), Performance-Based Navigation (PBN/GNSS), Airspace Architecture, and Aeronautical Obstacle Assessments under ICAO Doc 8168/9906 and FAA Order 8260 criteria across Latin America, the Caribbean, and the United States.",
+        "description": "Specialized aeronautical engineering consultancy focused on Instrument Flight Procedure Design (IFPD), Performance-Based Navigation (PBN/GNSS), Airspace Architecture, and Aeronautical Obstacle Assessments under ICAO Doc 8168/9906, FAA Order 8260 (TERPS), and Regional Civil Aviation Authority regulations (DGAC/LAR/SRVSOP) across Latin America, the Caribbean, and the United States.",
         "areaServed": [
           { "@type": "AdministrativeArea", "name": "Latin America" },
           { "@type": "AdministrativeArea", "name": "South America" },
@@ -62,17 +62,49 @@
           { "@type": "Country", "name": "United States" }
         ],
         "knowsAbout": [
+          {
+            "@type": "Thing",
+            "name": "International Civil Aviation Organization (ICAO / OACI)",
+            "sameAs": "https://en.wikipedia.org/wiki/International_Civil_Aviation_Organization"
+          },
+          {
+            "@type": "Thing",
+            "name": "Federal Aviation Administration (FAA)",
+            "sameAs": "https://en.wikipedia.org/wiki/Federal_Aviation_Administration"
+          },
+          {
+            "@type": "Thing",
+            "name": "Civil Aviation Authorities of Latin America (DGAC / SRVSOP / LAR)",
+            "sameAs": "https://es.wikipedia.org/wiki/Direcci%C3%B3n_General_de_Aeron%C3%A1utica_Civil"
+          },
+          {
+            "@type": "Thing",
+            "name": "European Union Aviation Safety Agency (EASA)",
+            "sameAs": "https://en.wikipedia.org/wiki/European_Union_Aviation_Safety_Agency"
+          },
+          {
+            "@type": "Thing",
+            "name": "EUROCONTROL",
+            "sameAs": "https://en.wikipedia.org/wiki/Eurocontrol"
+          },
           "Instrument Flight Procedure Design (IFPD)",
           "Performance-Based Navigation (PBN)",
           "RNAV / RNP / RNP AR",
           "Point-in-Space (PinS) Heliport Approaches",
           "ICAO Doc 8168 PANS-OPS",
           "FAA Order 8260 TERPS",
+          "FAA Order 8260.3",
+          "FAA Order 8260.58",
+          "FAA Order 8260.19",
+          "FAA FAR Part 77",
           "ICAO Doc 9906 Quality Assurance",
+          "ICAO Doc 9613 PBN Manual",
+          "ICAO Doc 9905 RNP AR Manual",
+          "Reglamentos Aeronáuticos Latinoamericanos (LAR / SRVSOP)",
+          "Direcciones Generales de Aeronáutica Civil (DGAC)",
           "Airspace Optimization & TMA Redesign",
           "Obstacle Limitation Surfaces (OLS)",
           "ICAO Annex 14",
-          "FAA FAR Part 77",
           "ARINC 424 Navigation Database Coding",
           "Aircraft Noise Contours & Acoustic Footprint Modeling (AEDT)",
           "ICAO Annex 16 Environmental Protection & Doc 9829 Balanced Approach",
@@ -522,23 +554,27 @@
       </div>
     </section>
 
-    <!-- ===== ESTÁNDARES ICAO & FAA / MARCO REGULATORIO ===== -->
+    <!-- ===== ESTÁNDARES ICAO, FAA Y REGIONAL / MARCO REGULATORIO ===== -->
     <section class="section bg-dark text-white text-center" id="estandares">
       <div class="container">
-        <h2 data-i18n="sec4_title">ESTÁNDARES Y CUMPLIMIENTO NORMATIVO</h2>
+        <h2 data-i18n="sec4_title">CUMPLIMIENTO NORMATIVO OACI, FAA Y REGIONAL</h2>
         <p class="section-lead mx-auto text-white" data-i18n="sec4_lead">Rigor Técnico · Integridad de Datos · Seguridad Operacional</p>
-        <div class="grid-3 mt-4">
+        <div class="grid-4 mt-4">
           <div class="standard-box">
-            <h4 data-i18n="std1_title">Doc 8168 (PANS-OPS)</h4>
-            <p data-i18n="std1_text">Criterios para la construcción de procedimientos de vuelo visual y por instrumentos (Vol. II).</p>
+            <h4 data-i18n="std1_title">OACI / ICAO (PANS-OPS & PBN)</h4>
+            <p data-i18n="std1_text">Criterios internacionales para la construcción de procedimientos de vuelo visual y por instrumentos bajo OACI Doc 8168 y Doc 9613.</p>
           </div>
           <div class="standard-box">
-            <h4 data-i18n="std2_title">Doc 9906</h4>
-            <p data-i18n="std2_text">Aseguramiento de la Calidad (QA) en el Proceso de Diseño de Procedimientos de Vuelo.</p>
+            <h4 data-i18n="std2_title">FAA (TERPS & FAR Part 77)</h4>
+            <p data-i18n="std2_text">Normativa federal de EE. UU. según FAA Order 8260 (8260.3, 8260.58) y evaluación de superficies de despeje bajo FAR Part 77.</p>
           </div>
           <div class="standard-box">
-            <h4 data-i18n="std3_title">Gestión de Calidad</h4>
-            <p data-i18n="std3_text">Todo proceso técnico está respaldado por un Expediente Técnico completo garantizando trazabilidad absoluta.</p>
+            <h4 data-i18n="std3_title">Autoridades Regionales (DGAC & LAR)</h4>
+            <p data-i18n="std3_text">Conformidad con las Direcciones Generales de Aeronáutica Civil y Reglamentos Aeronáuticos Latinoamericanos (SRVSOP / LAR).</p>
+          </div>
+          <div class="standard-box">
+            <h4 data-i18n="std4_title">Garantía de Calidad (Doc 9906)</h4>
+            <p data-i18n="std4_text">Aseguramiento de la Calidad (QA), validación independiente en tierra y Expediente Técnico completo con trazabilidad matemática total.</p>
           </div>
         </div>
 
@@ -556,8 +592,8 @@
             <div class="marquee-item" title="ICAO - International Civil Aviation Organization">
               <img src="assets/images/logos/logo-oaci.svg" alt="OACI - Organización de Aviación Civil Internacional (ICAO Doc 8168)" />
             </div>
-            <div class="marquee-item" title="FAA - Federal Aviation Administration">
-              <img src="assets/images/logos/logo-faa.jpg" alt="FAA" />
+            <div class="marquee-item" title="FAA - Federal Aviation Administration (United States)">
+              <img src="assets/images/logos/logo-faa.svg" alt="FAA - Federal Aviation Administration (TERPS Order 8260 & FAR Part 77)" />
             </div>
             <div class="marquee-item" title="EASA - European Union Aviation Safety Agency">
               <img src="assets/images/logos/logo-easa.webp" alt="EASA" />
@@ -571,15 +607,15 @@
             <div class="marquee-item" title="IATA - International Air Transport Association">
               <img src="assets/images/logos/logo-iata.webp" alt="IATA" />
             </div>
-            <div class="marquee-item" title="DGAC - Civil Aviation Authorities">
-              <img src="assets/images/logos/logo-dgac.webp" alt="DGAC / CAAs" />
+            <div class="marquee-item" title="DGAC - Autoridades de Aeronáutica Civil de la Región (SRVSOP / LAR)">
+              <img src="assets/images/logos/logo-dgac.webp" alt="DGAC - Direcciones Generales de Aeronáutica Civil y Autoridades Aeronáuticas Regionales" />
             </div>
             <!-- Duplicated for seamless infinite marquee loop -->
             <div class="marquee-item" title="ICAO - International Civil Aviation Organization">
               <img src="assets/images/logos/logo-oaci.svg" alt="OACI - Organización de Aviación Civil Internacional (ICAO Doc 8168)" />
             </div>
-            <div class="marquee-item" title="FAA - Federal Aviation Administration">
-              <img src="assets/images/logos/logo-faa.jpg" alt="FAA" />
+            <div class="marquee-item" title="FAA - Federal Aviation Administration (United States)">
+              <img src="assets/images/logos/logo-faa.svg" alt="FAA - Federal Aviation Administration (TERPS Order 8260 & FAR Part 77)" />
             </div>
             <div class="marquee-item" title="EASA - European Union Aviation Safety Agency">
               <img src="assets/images/logos/logo-easa.webp" alt="EASA" />
@@ -593,8 +629,8 @@
             <div class="marquee-item" title="IATA - International Air Transport Association">
               <img src="assets/images/logos/logo-iata.webp" alt="IATA" />
             </div>
-            <div class="marquee-item" title="DGAC - Civil Aviation Authorities">
-              <img src="assets/images/logos/logo-dgac.webp" alt="DGAC / CAAs" />
+            <div class="marquee-item" title="DGAC - Autoridades de Aeronáutica Civil de la Región (SRVSOP / LAR)">
+              <img src="assets/images/logos/logo-dgac.webp" alt="DGAC - Direcciones Generales de Aeronáutica Civil y Autoridades Aeronáuticas Regionales" />
             </div>
           </div>
         </div>
