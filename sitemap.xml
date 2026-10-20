@@ -44,4 +44,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Service: Environmental Impact Assessments & Atmospheric Emissions -->
+  <url>
+    <loc>https://www.gideallc.com/services/environmental-impact-emissions.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 </urlset>
