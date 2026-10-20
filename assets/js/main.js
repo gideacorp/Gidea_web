@@ -121,29 +121,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===== 2.5. Mobile Hamburger Menu =====
+  // ===== 2.5. Mobile Hamburger Menu & Accordion Dropdowns =====
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const navRight = document.getElementById('navRight');
   
   if (mobileMenuBtn && navRight) {
     mobileMenuBtn.addEventListener('click', () => {
-      mobileMenuBtn.classList.toggle('active');
-      navRight.classList.toggle('active');
+      const isActive = mobileMenuBtn.classList.toggle('active');
+      navRight.classList.toggle('active', isActive);
+      document.body.style.overflow = isActive ? 'hidden' : '';
       
-      // Prevent body scrolling when menu is open
-      if (navRight.classList.contains('active')) {
-        document.body.style.overflow = 'hidden';
-      } else {
-        document.body.style.overflow = '';
+      // If closing menu, close any open mobile accordion dropdowns
+      if (!isActive) {
+        document.querySelectorAll('.nav-item-dropdown.open').forEach(d => d.classList.remove('open'));
       }
     });
 
-    // Close menu when a link is clicked
-    document.querySelectorAll('.nav-menu a').forEach(link => {
+    // Mobile Accordion Toggle for Dropdowns (tap to expand/collapse)
+    document.querySelectorAll('.nav-item-dropdown > a').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+          e.preventDefault();
+          e.stopPropagation();
+          const parent = trigger.closest('.nav-item-dropdown');
+          const isCurrentlyOpen = parent.classList.contains('open');
+          
+          // Close other open mobile dropdowns for accordion effect
+          document.querySelectorAll('.nav-item-dropdown.open').forEach(d => {
+            if (d !== parent) d.classList.remove('open');
+          });
+          
+          parent.classList.toggle('open', !isCurrentlyOpen);
+        }
+      });
+    });
+
+    // Close menu when a navigation destination link is clicked
+    document.querySelectorAll('.nav-menu a:not(.nav-item-dropdown > a)').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenuBtn.classList.remove('active');
         navRight.classList.remove('active');
         document.body.style.overflow = '';
+        document.querySelectorAll('.nav-item-dropdown.open').forEach(d => d.classList.remove('open'));
       });
     });
   }

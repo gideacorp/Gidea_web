@@ -80,16 +80,19 @@
     left: -100%; /* Oculto inicialmente */
     width: 100%;
     height: calc(100vh - 68px);
+    height: calc(100dvh - 68px);
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 24px;
+    padding-bottom: 90px;
     transition: left 0.3s ease;
     z-index: 1000;
     overflow-y: auto;
-    padding-bottom: 40px;
+    -webkit-overflow-scrolling: touch;
   }
   .nav-right.active {
     left: 0;
@@ -99,12 +102,14 @@
   .nav-menu {
     display: flex !important;
     flex-direction: column;
-    gap: 30px !important;
+    gap: 16px !important;
     width: 100%;
     text-align: center;
+    padding: 0 16px !important;
+    box-sizing: border-box;
   }
   .nav-menu a {
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-weight: 600 !important;
     color: var(--primary-color) !important;
   }
@@ -113,91 +118,135 @@
   }
   .btn-nav {
     display: inline-block;
-    padding: 12px 30px !important;
+    padding: 10px 28px !important;
     background: var(--primary-color);
     border-radius: 30px !important;
+    margin-top: 4px;
   }
 
-  /* Mobile Dropdown Menu */
+  /* Mobile Dropdown Menu (Accordion manual) */
   .nav-item-dropdown {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .nav-item-dropdown > a {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav-item-dropdown .nav-chevron {
+    transition: transform 0.25s ease;
+    width: 15px;
+    height: 15px;
+  }
+  .nav-item-dropdown.open .nav-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Submenús colapsados por defecto en móvil */
   .nav-dropdown-menu {
+    display: none !important;
     position: static !important;
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;
     box-shadow: none !important;
     border: none !important;
-    background: rgba(2, 132, 199, 0.04) !important;
+    background: rgba(2, 132, 199, 0.05) !important;
     border-radius: 8px !important;
-    padding: 8px 16px !important;
-    margin-top: 10px !important;
+    padding: 6px 14px !important;
+    margin-top: 8px !important;
     width: 90% !important;
-    max-width: 340px !important;
-    display: flex !important;
+    max-width: 320px !important;
     flex-direction: column !important;
-    gap: 8px !important;
+    gap: 4px !important;
+    box-sizing: border-box;
   }
   .nav-dropdown-menu::before {
     display: none !important;
   }
   .nav-dropdown-menu a {
-    font-size: 14px !important;
+    font-size: 13.5px !important;
     font-weight: 500 !important;
     color: var(--text-dark) !important;
-    padding: 8px 0 !important;
+    padding: 8px 4px !important;
     border-bottom: 1px solid rgba(0,0,0,0.06) !important;
     text-align: center !important;
     justify-content: center !important;
+    line-height: 1.35;
   }
   .nav-dropdown-menu li:last-child a {
     border-bottom: none !important;
   }
 
+  /* Al tocar el dropdown en móvil se despliega suavemente */
+  .nav-item-dropdown.open .nav-dropdown-menu {
+    display: flex !important;
+    animation: mobileSlideDown 0.2s ease-out;
+  }
+  @keyframes mobileSlideDown {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   /* Selector de Idiomas en Móvil */
   .lang-selector {
     display: block !important;
-    margin: 40px auto 0 !important;
-    padding: 30px 20px 0 !important;
+    margin: 24px auto 0 !important;
+    padding: 18px 0 0 !important;
     border-left: none !important;
     border-top: 1px solid #dce1e8;
-    width: 80%;
+    width: 88% !important;
+    max-width: 320px !important;
+    box-sizing: border-box;
   }
   .lang-current {
-    display: none !important; /* Ocultamos el toggle */
+    display: none !important; /* Ocultamos el toggle en móvil */
   }
+  /* Grilla 2x2: todos los 4 botones perfectamente visibles, ninguno queda oculto */
   .lang-dropdown {
-    display: flex !important; /* Mostramos directamente las opciones */
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
     position: static !important;
     box-shadow: none !important;
     border: none !important;
     background: transparent !important;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
+    width: 100% !important;
     min-width: 100% !important;
+    box-sizing: border-box !important;
   }
   .lang-btn {
-    width: auto !important;
-    padding: 10px 15px !important;
+    width: 100% !important;
+    padding: 9px 6px !important;
     background: #f0f4f9 !important;
-    border-radius: 8px;
+    border-radius: 6px;
+    display: flex !important;
     flex-direction: column;
-    gap: 5px !important;
+    align-items: center;
     justify-content: center;
+    gap: 4px !important;
+    border: 1px solid #e2e8f0 !important;
+    box-sizing: border-box !important;
+    cursor: pointer;
   }
   .lang-btn.active {
     background: var(--primary-color) !important;
     color: var(--bg-white) !important;
+    border-color: var(--primary-color) !important;
+  }
+  .lang-btn.active svg {
+    stroke: #ffffff !important;
   }
   .lang-btn span:last-child {
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 11.5px;
+    font-weight: 600;
   }
 
   /* ===== HERO SECTION ===== */
