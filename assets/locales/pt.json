@@ -342,6 +342,18 @@
   "nav_sub_pbn": "Espaço Aéreo & PBN",
   "nav_sub_feasibility": "Viabilidade de Aeródromos & Helipontos",
   "nav_sub_ols": "Superfícies Limitadoras (OLS)",
-  "nav_sub_sms": "Segurança Operacional (SMS)",
-  "nav_sub_env": "Impacto Ambiental & Emissões"
+  "nav_sub_sms": "Segurança Operacional & SMS (Conformidade)",
+  "nav_sub_env": "Impacto Ambiental & Emissões",
+  "nav_home": "Início",
+  "back_to_home": "Voltar ao Início",
+  "nav_sub_airspace": "Otimização do Espaço Aéreo",
+  "sec2_card1_badge": "OACI ANEXO 14 VOL. I & II",
+  "sec2_card2_badge": "OACI ANEXO 19 · DOC 9859 · LAR",
+  "sec2_card3_badge": "OACI ANEXO 14 · FAA FAR PART 77",
+  "sec2_card4_badge": "OACI DOC 9889 · EPA AERMOD · ANEXO 16",
+  "sec2_card1_pills": "<span>Rosa dos Ventos</span><span>Fator de Usabilidade</span><span>Helipontos PinS</span>",
+  "sec2_card2_pills": "<span>Safety Assessments</span><span>Gap Analysis</span><span>Planos de Adequação</span>",
+  "sec2_card3_pills": "<span>Estudos de Penetração</span><span>Antenas e Torres</span><span>Parques Eólicos</span>",
+  "sec2_card4_pills": "<span>Licenciamento EIA</span><span>Dispersão AERMOD</span><span>Mancha Acústica</span>",
+  "btn_view_full_spec": "Ver Ficha Técnica Completa"
 }

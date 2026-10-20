@@ -342,6 +342,18 @@
   "nav_sub_pbn": "Espace Aérien & PBN",
   "nav_sub_feasibility": "Faisabilité Aérodromes & Héliports",
   "nav_sub_ols": "Surfaces de Dégagement (OLS)",
-  "nav_sub_sms": "Sécurité Opérationnelle (SMS)",
-  "nav_sub_env": "Impact Environnemental & Émissions"
+  "nav_sub_sms": "Sécurité Opérationnelle & SMS (Conformité)",
+  "nav_sub_env": "Impact Environnemental & Émissions",
+  "nav_home": "Accueil",
+  "back_to_home": "Retour à l'Accueil",
+  "nav_sub_airspace": "Optimisation de l'Espace Aérien",
+  "sec2_card1_badge": "OACI ANNEXE 14 VOL. I & II",
+  "sec2_card2_badge": "OACI ANNEXE 19 · DOC 9859 · LAR",
+  "sec2_card3_badge": "OACI ANNEXE 14 · FAA FAR PART 77",
+  "sec2_card4_badge": "OACI DOC 9889 · EPA AERMOD · ANNEXE 16",
+  "sec2_card1_pills": "<span>Rose des Vents</span><span>Taux d'Utilisabilité</span><span>Héliports PinS</span>",
+  "sec2_card2_pills": "<span>Safety Assessments</span><span>Gap Analysis</span><span>Plans de Conformité</span>",
+  "sec2_card3_pills": "<span>Études de Pénétration</span><span>Antennes & Pylônes</span><span>Parcs Éoliens</span>",
+  "sec2_card4_pills": "<span>Licence ÉIE</span><span>Dispersion AERMOD</span><span>Climat Sonore</span>",
+  "btn_view_full_spec": "Voir la Fiche Technique Complète"
 }

@@ -815,6 +815,239 @@ a {
   text-transform: uppercase;
 }
 
+/* ===== 02. ENTORNO AEROPORTUARIO - CARDS REDESIGN ===== */
+.airport-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 24px;
+}
+.airport-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.airport-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
+}
+
+/* Card Visual Header with Real Image & Badge */
+.airport-card-visual {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+  background: #0f172a;
+}
+.airport-card-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.airport-card:hover .airport-card-visual img {
+  transform: scale(1.04);
+}
+.airport-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.6) 100%);
+}
+.airport-card-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(4px);
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  text-transform: uppercase;
+}
+
+/* Specific Badge Theme per Card */
+.airport-card-theme-feasibility .airport-card-badge {
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.4);
+}
+.airport-card-theme-safety .airport-card-badge {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.4);
+}
+.airport-card-theme-ols .airport-card-badge {
+  color: #f97316;
+  border-color: rgba(249, 115, 22, 0.4);
+}
+.airport-card-theme-env .airport-card-badge {
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.4);
+}
+
+/* Card Content Body */
+.airport-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.airport-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.airport-card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.airport-card-icon svg {
+  width: 20px;
+  height: 20px;
+}
+.airport-card-theme-feasibility .airport-card-icon {
+  background: rgba(2, 132, 199, 0.1);
+  color: #0284c7;
+}
+.airport-card-theme-safety .airport-card-icon {
+  background: rgba(217, 119, 6, 0.1);
+  color: #d97706;
+}
+.airport-card-theme-ols .airport-card-icon {
+  background: rgba(234, 88, 12, 0.1);
+  color: #ea580c;
+}
+.airport-card-theme-env .airport-card-icon {
+  background: rgba(5, 150, 105, 0.1);
+  color: #059669;
+}
+
+.airport-card-title-row h4 {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin: 0;
+  line-height: 1.3;
+  font-weight: 700;
+}
+.airport-card-body p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0 0 16px 0;
+  flex-grow: 1;
+}
+
+/* Feature deliverables pills */
+.airport-card-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.airport-card-pills span {
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Card Action Button */
+.airport-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 11px 16px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  background: #f8fafc;
+  color: var(--primary-color);
+  border: 1px solid #cbd5e1;
+}
+.airport-card-btn svg {
+  transition: transform 0.2s ease;
+  width: 15px;
+  height: 15px;
+}
+.airport-card:hover .airport-card-btn {
+  background: var(--primary-color);
+  color: #ffffff !important;
+  border-color: var(--primary-color);
+}
+.airport-card:hover .airport-card-btn svg {
+  transform: translateX(4px);
+  color: #ffffff;
+}
+
+/* Return to Home Buttons (Subpages) */
+.btn-back-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  color: #ffffff !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+}
+.btn-back-breadcrumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateX(-2px);
+}
+.btn-back-home-bottom {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.2s ease;
+}
+.btn-back-home-bottom:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff !important;
+  border-color: #ffffff;
+  transform: translateX(-3px);
+}
+
+@media (max-width: 768px) {
+  .airport-card-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
 /* Responsive Tabs for Tablets and Mobiles */
 @media (max-width: 991px) {
   #procedimientos.section {
