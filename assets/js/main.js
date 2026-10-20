@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===== 1. Smooth Scrolling with precise navbar offset =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
+      // In mobile view (<= 1024px), dropdown accordion triggers only expand/collapse submenus
+      if (window.innerWidth <= 1024 && this.matches('.nav-item-dropdown > a')) {
+        return;
+      }
+
       const targetId = this.getAttribute('href');
       if (!targetId || targetId === '#') return;
       const el = document.querySelector(targetId);
@@ -143,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth <= 1024) {
           e.preventDefault();
           e.stopPropagation();
+          e.stopImmediatePropagation();
           const parent = trigger.closest('.nav-item-dropdown');
           const isCurrentlyOpen = parent.classList.contains('open');
           
