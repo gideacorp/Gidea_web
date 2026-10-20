@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ===== ScrollSpy for Nav Menu =====
-  const navLinks = document.querySelectorAll('.nav-menu a:not(.btn-nav)');
+  const navLinks = document.querySelectorAll('.nav-menu > li > a:not(.btn-nav)');
   const trackedSections = [];
   navLinks.forEach(link => {
     const id = link.getAttribute('href');

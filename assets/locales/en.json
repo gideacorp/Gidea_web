@@ -2,7 +2,7 @@
   "lang": "en",
   "nav_procedures": "Flight Procedures",
   "nav_airport": "Aerodromes & Heliports",
-  "nav_capabilities": "Technical Capabilities",
+  "nav_capabilities": "Capabilities",
   "nav_contact": "Contact",
   "hero_title": "ENGINEERING THAT TRANSFORMS OPERATIONAL REQUIREMENTS INTO AIR NAVIGATION SOLUTIONS.",
   "hero_sub": "GIDEA specialises in instrument flight procedure design, airspace engineering, and aerodrome & heliport environment analysis.",
@@ -86,7 +86,7 @@
   "footer_pans_terps": "PANS-OPS · TERPS · PBN",
   "footer_heliports": "Aerodromes & Heliports (PinS)",
   "footer_rights": "© 2025 GIDEA LLC. All rights reserved.",
-  "nav_partners": "Strategic Alliances",
+  "nav_partners": "Alliances",
   "reg_title": "REGULATORY BASELINE & COMPLIANCE",
   "reg_sub": "Our technical processes and flight procedure criteria strictly adhere to the standards, recommended practices, and orders of premier international aviation authorities.",
   "partners_tag": "STRATEGIC ALLIANCES",
@@ -335,5 +335,13 @@
   "env_d3_title": "Airspace Environmental Trade-Off Matrix",
   "env_d3_text": "Comparative multi-criteria study comparing SID/STAR alternatives, detailing fuel burn, metric tons of CO2, noise footprints, and affected population counts.",
   "env_d4_title": "Environmental Management Plan (EMP)",
-  "env_d4_text": "Operational manual of preventive and corrective mitigations, complete with continuous air quality monitoring protocols, noise surveillance, and compliance milestones."
+  "env_d4_text": "Operational manual of preventive and corrective mitigations, complete with continuous air quality monitoring protocols, noise surveillance, and compliance milestones.",
+  "nav_services": "Services",
+  "nav_airport_env": "Airport Environment",
+  "nav_sub_ifpd": "Flight Procedures (IFPD)",
+  "nav_sub_pbn": "Airspace & PBN",
+  "nav_sub_feasibility": "Aerodrome & Heliport Feasibility",
+  "nav_sub_ols": "Obstacle Assessment (OLS)",
+  "nav_sub_sms": "Operational Safety (SMS)",
+  "nav_sub_env": "Environmental Impact & Emissions"
 }

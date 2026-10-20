@@ -6,8 +6,8 @@
   <title>Evaluación de Obstáculos y Superficies Limitadoras (OLS) | OACI Anexo 14 & FAA Part 77 | GIDEA LLC</title>
   <meta name="description" content="Estudios de afectación aeronáutica, modelado de Superficies Limitadoras de Obstáculos (OLS) y análisis de franqueamiento bajo OACI Anexo 14, Doc 8168 y FAA 14 CFR Part 77." />
   <link rel="canonical" href="https://www.gideallc.com/services/obstacle-assessment-ols.html" />
-  <link rel="stylesheet" href="../assets/css/style.css?v=19" />
-  <link rel="stylesheet" href="../assets/css/mobile.css?v=19" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=26" />
+  <link rel="stylesheet" href="../assets/css/mobile.css?v=26" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
@@ -72,10 +72,33 @@
 
       <nav class="nav-right" id="navRight">
         <ul class="nav-menu">
-          <li><a href="../index.html#procedimientos" data-i18n="nav_procedures">Procedimientos de Vuelo</a></li>
-          <li><a href="../index.html#entorno" data-i18n="nav_airport">Entorno Aeroportuario</a></li>
-          <li><a href="../index.html#capacidades" data-i18n="nav_capabilities">Capacidades Técnicas</a></li>
-          <li><a href="../index.html#estandares" data-i18n="nav_standards">Normativa</a></li>
+          <!-- SERVICIOS DROPDOWN -->
+          <li class="nav-item-dropdown">
+            <a href="../index.html#procedimientos">
+              <span data-i18n="nav_services">Servicios</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav-dropdown-menu">
+              <li><a href="instrument-flight-procedure-design.html" data-i18n="nav_sub_ifpd">Procedimientos de Vuelo (IFPD)</a></li>
+              <li><a href="pbn-airspace-optimization.html" data-i18n="nav_sub_pbn">Espacio Aéreo &amp; PBN</a></li>
+            </ul>
+          </li>
+
+          <!-- ENTORNO AEROPORTUARIO DROPDOWN -->
+          <li class="nav-item-dropdown">
+            <a href="../index.html#entorno">
+              <span data-i18n="nav_airport_env">Entorno Aeroportuario</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav-dropdown-menu">
+              <li><a href="aerodrome-heliport-feasibility.html" data-i18n="nav_sub_feasibility">Factibilidad &amp; Helipuertos</a></li>
+              <li><a href="obstacle-assessment-ols.html" data-i18n="nav_sub_ols">Superficies Limitadoras (OLS)</a></li>
+              <li><a href="aerodrome-heliport-feasibility.html#safety-assessments" data-i18n="nav_sub_sms">Seguridad Operacional (SMS)</a></li>
+              <li><a href="environmental-impact-emissions.html" data-i18n="nav_sub_env">Medio Ambiente &amp; Emisiones</a></li>
+            </ul>
+          </li>
+
+          <li><a href="../index.html#capacidades" data-i18n="nav_capabilities">Capacidades</a></li>
           <li><a href="../index.html#alianzas" data-i18n="nav_partners">Alianzas</a></li>
           <li><a href="../index.html#contacto" class="btn-nav" data-i18n="nav_contact">Contacto</a></li>
         </ul>

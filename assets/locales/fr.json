@@ -2,7 +2,7 @@
   "lang": "fr",
   "nav_procedures": "Procédures de Vol",
   "nav_airport": "Aérodromes et Héliports",
-  "nav_capabilities": "Capacités Techniques",
+  "nav_capabilities": "Compétences",
   "nav_contact": "Contact",
   "hero_title": "L'INGÉNIERIE QUI TRANSFORME LES EXIGENCES OPÉRATIONNELLES EN SOLUTIONS DE NAVIGATION AÉRIENNE.",
   "hero_sub": "GIDEA est spécialisé dans la conception de procédures de vol aux instruments, l'ingénierie de l'espace aérien et l'analyse de l'environnement des aérodromes et héliports.",
@@ -335,5 +335,13 @@
   "env_d3_title": "Matrice d'Arbitrage Environnemental des Trajectoires",
   "env_d3_text": "Étude comparative multicritère des variantes SID/STAR, détaillant les tonnes de CO2, l'empreinte acoustique et le dénombrement des populations survolées.",
   "env_d4_title": "Plan de Gestion Environnementale (PGE)",
-  "env_d4_text": "Guide opérationnel des mesures d'atténuation et de prévention, complété par les protocoles de surveillance continue de la qualité de l'air et du climat sonore."
+  "env_d4_text": "Guide opérationnel des mesures d'atténuation et de prévention, complété par les protocoles de surveillance continue de la qualité de l'air et du climat sonore.",
+  "nav_services": "Services",
+  "nav_airport_env": "Environnement Aéroportuaire",
+  "nav_sub_ifpd": "Procédures de Vol (IFPD)",
+  "nav_sub_pbn": "Espace Aérien & PBN",
+  "nav_sub_feasibility": "Faisabilité Aérodromes & Héliports",
+  "nav_sub_ols": "Surfaces de Dégagement (OLS)",
+  "nav_sub_sms": "Sécurité Opérationnelle (SMS)",
+  "nav_sub_env": "Impact Environnemental & Émissions"
 }

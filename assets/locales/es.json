@@ -2,7 +2,7 @@
   "lang": "es",
   "nav_procedures": "Procedimientos de Vuelo",
   "nav_airport": "Aeródromos y Helipuertos",
-  "nav_capabilities": "Capacidades Técnicas",
+  "nav_capabilities": "Capacidades",
   "nav_contact": "Contacto",
   "hero_title": "INGENIERÍA QUE TRANSFORMA REQUERIMIENTOS OPERACIONALES EN SOLUCIONES DE NAVEGACIÓN AÉREA.",
   "hero_sub": "GIDEA es especialista en diseño de procedimientos de vuelo por instrumentos, ingeniería del espacio aéreo y análisis del entorno de aeródromos y helipuertos.",
@@ -335,5 +335,13 @@
   "env_d3_title": "Matriz Ambiental de Rutas Aéreas",
   "env_d3_text": "Estudio comparativo trade-off entre opciones de vuelo SID/STAR, detallando toneladas de CO2, huella sonora y población expuesta por alternativa.",
   "env_d4_title": "Plan de Gestión Ambiental (PGA)",
-  "env_d4_text": "Manual de medidas preventivas y de mitigación operacional, acompañado del programa de vigilancia, monitoreo sonoro y muestreo de calidad del aire."
+  "env_d4_text": "Manual de medidas preventivas y de mitigación operacional, acompañado del programa de vigilancia, monitoreo sonoro y muestreo de calidad del aire.",
+  "nav_services": "Servicios",
+  "nav_airport_env": "Entorno Aeroportuario",
+  "nav_sub_ifpd": "Procedimientos de Vuelo (IFPD)",
+  "nav_sub_pbn": "Espacio Aéreo & PBN",
+  "nav_sub_feasibility": "Factibilidad & Helipuertos",
+  "nav_sub_ols": "Superficies Limitadoras (OLS)",
+  "nav_sub_sms": "Seguridad Operacional (SMS)",
+  "nav_sub_env": "Medio Ambiente & Emisiones"
 }

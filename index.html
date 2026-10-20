@@ -23,7 +23,7 @@
   <meta name="google-site-verification" content="googled22f74b4fc1f53aa" />
   <meta name="google-site-verification" content="google2bb3f24e870de3ae" />
 
-  <link rel="stylesheet" href="assets/css/style.css?v=19" />
+  <link rel="stylesheet" href="assets/css/style.css?v=26" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/mobile.css?v=19" />
+  <link rel="stylesheet" href="assets/css/mobile.css?v=26" />
 
   <!-- Schema.org Structured Data (JSON-LD) for Search Engines & AI Crawlers -->
   <script type="application/ld+json">
@@ -222,11 +222,33 @@
 
       <nav class="nav-right" id="navRight">
         <ul class="nav-menu">
-          <li><a href="#procedimientos" data-i18n="nav_procedures">Procedimientos de Vuelo</a></li>
-          <li><a href="#entorno" data-i18n="nav_airport">Entorno Aeroportuario</a></li>
-          <li><a href="#impacto-ambiental" data-i18n="nav_environmental">Medio Ambiente &amp; Emisiones</a></li>
-          <li><a href="#capacidades" data-i18n="nav_capabilities">Capacidades Técnicas</a></li>
-          <li><a href="#estandares" data-i18n="nav_standards">Normativa</a></li>
+          <!-- SERVICIOS DROPDOWN -->
+          <li class="nav-item-dropdown">
+            <a href="#procedimientos">
+              <span data-i18n="nav_services">Servicios</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav-dropdown-menu">
+              <li><a href="#procedimientos" data-i18n="nav_sub_ifpd">Procedimientos de Vuelo (IFPD)</a></li>
+              <li><a href="services/pbn-airspace-optimization.html" data-i18n="nav_sub_pbn">Espacio Aéreo &amp; PBN</a></li>
+            </ul>
+          </li>
+
+          <!-- ENTORNO AEROPORTUARIO DROPDOWN -->
+          <li class="nav-item-dropdown">
+            <a href="#entorno">
+              <span data-i18n="nav_airport_env">Entorno Aeroportuario</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav-dropdown-menu">
+              <li><a href="services/aerodrome-heliport-feasibility.html" data-i18n="nav_sub_feasibility">Factibilidad &amp; Helipuertos</a></li>
+              <li><a href="services/obstacle-assessment-ols.html" data-i18n="nav_sub_ols">Superficies Limitadoras (OLS)</a></li>
+              <li><a href="services/aerodrome-heliport-feasibility.html#safety-assessments" data-i18n="nav_sub_sms">Seguridad Operacional (SMS)</a></li>
+              <li><a href="services/environmental-impact-emissions.html" data-i18n="nav_sub_env">Medio Ambiente &amp; Emisiones</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#capacidades" data-i18n="nav_capabilities">Capacidades</a></li>
           <li><a href="#alianzas" data-i18n="nav_partners">Alianzas</a></li>
           <li><a href="#contacto" class="btn-nav" data-i18n="nav_contact">Contacto</a></li>
         </ul>

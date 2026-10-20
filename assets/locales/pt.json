@@ -2,7 +2,7 @@
   "lang": "pt",
   "nav_procedures": "Procedimentos de Voo",
   "nav_airport": "Aeródromos e Helipontos",
-  "nav_capabilities": "Capacidades Técnicas",
+  "nav_capabilities": "Capacidades",
   "nav_contact": "Contato",
   "hero_title": "ENGENHARIA QUE TRANSFORMA REQUISITOS OPERACIONAIS EM SOLUÇÕES DE NAVEGAÇÃO AÉREA.",
   "hero_sub": "GIDEA é especialista em projeto de procedimentos de voo por instrumentos, engenharia de espaço aéreo e análise do ambiente aeroportuário e helipontos.",
@@ -86,7 +86,7 @@
   "footer_pans_terps": "PANS-OPS · TERPS · PBN",
   "footer_heliports": "Aeródromos e Helipontos (PinS)",
   "footer_rights": "© 2025 GIDEA LLC. Todos os direitos reservados.",
-  "nav_partners": "Alianças",
+  "nav_partners": "Parcerias",
   "reg_title": "MARCO REGULATÓRIO E NORMAS",
   "reg_sub": "Nossos processos técnicos atendem rigorosamente aos padrões internacionais e métodos recomendados dos principais órgãos da aviação civil mundial.",
   "partners_tag": "PARCERIAS ESTRATÉGICAS",
@@ -335,5 +335,13 @@
   "env_d3_title": "Matriz Ambiental de Rotas Aéreas",
   "env_d3_text": "Estudo comparativo trade-off entre opções de trajetórias SID/STAR, detalhando emissões de CO2, mancha acústica e número de residentes sobrevoados.",
   "env_d4_title": "Plano de Gestão Ambiental (PGA)",
-  "env_d4_text": "Manual operacional de medidas preventivas e mitigadoras, contendo planos detalhados de monitoramento de qualidade do ar e vigilância do ruído aeronáutico."
+  "env_d4_text": "Manual operacional de medidas preventivas e mitigadoras, contendo planos detalhados de monitoramento de qualidade do ar e vigilância do ruído aeronáutico.",
+  "nav_services": "Serviços",
+  "nav_airport_env": "Ambiente Aeroportuário",
+  "nav_sub_ifpd": "Procedimentos de Voo (IFPD)",
+  "nav_sub_pbn": "Espaço Aéreo & PBN",
+  "nav_sub_feasibility": "Viabilidade de Aeródromos & Helipontos",
+  "nav_sub_ols": "Superfícies Limitadoras (OLS)",
+  "nav_sub_sms": "Segurança Operacional (SMS)",
+  "nav_sub_env": "Impacto Ambiental & Emissões"
 }
