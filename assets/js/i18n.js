@@ -21,7 +21,7 @@ const i18n = (() => {
 
   async function loadTranslations(lang) {
     const basePath = window.location.pathname.includes('/services/') ? '../assets/locales/' : 'assets/locales/';
-    const resp = await fetch(`${basePath}${lang}.json?v=14`);
+    const resp = await fetch(`${basePath}${lang}.json?v=25`);
     if (!resp.ok) throw new Error(`Could not load locale: ${lang}`);
     return resp.json();
   }
@@ -33,6 +33,8 @@ const i18n = (() => {
       if (t[key] !== undefined) {
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
           el.placeholder = t[key];
+        } else if (typeof t[key] === 'string' && t[key].includes('<') && t[key].includes('>')) {
+          el.innerHTML = t[key];
         } else {
           el.textContent = t[key];
         }

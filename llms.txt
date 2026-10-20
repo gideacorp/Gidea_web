@@ -42,6 +42,11 @@ All engineering processes and procedure designs strictly adhere to international
 - Safety Assessments and Operational Risk Evaluations (SMS / Annex 19).
 - Proprietary aeronautical software tools for engineering calculations, criteria validation, and 3D airspace visualization.
 
+### 5. Environmental Impact Assessments (EsIA) & Atmospheric Emissions Modeling
+- **Airport & Heliport Environmental Assessments (EsIA)**: Comprehensive environmental evaluations for new aerodromes, runway extensions, terminal developments, and Environmental Management Plans (PGA/EMP) under ICAO Annex 16 and Doc 9829.
+- **Atmospheric Emissions & AERMOD Dispersion**: Aircraft LTO cycle and GSE ground fleet emissions inventories (ICAO Doc 9889) coupled with US EPA AERMOD computer dispersion modeling of NOx, PM10, PM2.5, and SO2 over airport terrain.
+- **Flight Procedure Environmental Evaluation**: Multi-criteria noise, fuel burn, and CO2 emissions trade-off assessments for SID, STAR, and approach trajectory modifications, supporting continuous descent (CDO) and climb (CCO) operations.
+
 ## Strategic Alliances & Ecosystem
 GIDEA integrates a turnkey operational ecosystem through formal strategic partnerships:
 - **SCIAER** (https://sciaer.com): Aerodrome master planning, pavement engineering, airside/landside infrastructure, and AeroGEN software.
@@ -54,3 +59,4 @@ GIDEA integrates a turnkey operational ecosystem through formal strategic partne
 - PBN & Airspace Optimization: https://www.gideallc.com/services/pbn-airspace-optimization.html
 - Obstacle Assessment & OLS: https://www.gideallc.com/services/obstacle-assessment-ols.html
 - Aerodrome & Heliport Feasibility: https://www.gideallc.com/services/aerodrome-heliport-feasibility.html
+- Environmental Impact & AERMOD Emissions: https://www.gideallc.com/services/environmental-impact-emissions.html
