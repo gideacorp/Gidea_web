@@ -186,6 +186,7 @@
   "box2_btn": "Specs: Operational Safety (SMS)",
   "box3_btn": "Specs: Obstacle Surfaces (OLS)",
   "box4_btn": "Specs: Environmental Impact & Emissions",
+  "ifpd_tab_hint": "Swipe to see more options",
   "tab_pins_title": "Approaches & PinS",
   "tab_conv_title": "Conventional (ILS / VOR)",
   "tab_pbn_title": "PBN / GNSS (RNAV & RNP)",

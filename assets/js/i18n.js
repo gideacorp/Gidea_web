@@ -21,7 +21,7 @@ const i18n = (() => {
 
   async function loadTranslations(lang) {
     const basePath = window.location.pathname.includes('/services/') ? '../assets/locales/' : 'assets/locales/';
-    const resp = await fetch(`${basePath}${lang}.json?v=28`);
+    const resp = await fetch(`${basePath}${lang}.json?v=30`);
     if (!resp.ok) throw new Error(`Could not load locale: ${lang}`);
     return resp.json();
   }

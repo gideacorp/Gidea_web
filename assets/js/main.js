@@ -250,27 +250,105 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===== IFPD Interactive Tabs System =====
   const ifpdTabBtns = document.querySelectorAll('.ifpd-tab-btn');
   const ifpdTabPanels = document.querySelectorAll('.ifpd-tab-panel');
+  const ifpdDots = document.querySelectorAll('.ifpd-dot');
+  const ifpdTabsNav = document.getElementById('ifpdTabsNav');
+  const ifpdScrollLeft = document.getElementById('ifpdScrollLeft');
+  const ifpdScrollRight = document.getElementById('ifpdScrollRight');
+
+  function updateTabScrollArrows() {
+    if (!ifpdTabsNav || !ifpdScrollLeft || !ifpdScrollRight) return;
+    const scrollLeft = ifpdTabsNav.scrollLeft;
+    const maxScroll = ifpdTabsNav.scrollWidth - ifpdTabsNav.clientWidth;
+
+    if (scrollLeft > 10) {
+      ifpdScrollLeft.style.opacity = '1';
+      ifpdScrollLeft.style.pointerEvents = 'auto';
+    } else {
+      ifpdScrollLeft.style.opacity = '0';
+      ifpdScrollLeft.style.pointerEvents = 'none';
+    }
+
+    if (maxScroll > 10 && scrollLeft < maxScroll - 10) {
+      ifpdScrollRight.style.opacity = '1';
+      ifpdScrollRight.style.pointerEvents = 'auto';
+    } else {
+      ifpdScrollRight.style.opacity = '0';
+      ifpdScrollRight.style.pointerEvents = 'none';
+    }
+  }
+
+  function setActiveTab(targetId, targetBtn) {
+    if (!targetId || !targetBtn) return;
+
+    ifpdTabBtns.forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    ifpdTabPanels.forEach(p => p.classList.remove('active'));
+
+    targetBtn.classList.add('active');
+    targetBtn.setAttribute('aria-selected', 'true');
+    const targetPanel = document.getElementById(targetId);
+    if (targetPanel) {
+      targetPanel.classList.add('active');
+    }
+
+    // Sync pagination dots
+    ifpdDots.forEach(dot => {
+      if (dot.getAttribute('data-tab-target') === targetId) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+
+    // Center clicked tab in horizontal scroll on mobile
+    if (window.innerWidth <= 1024 && ifpdTabsNav) {
+      targetBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      setTimeout(updateTabScrollArrows, 320);
+    }
+  }
 
   if (ifpdTabBtns.length > 0 && ifpdTabPanels.length > 0) {
     ifpdTabBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         const targetId = btn.getAttribute('data-tab');
-        if (!targetId) return;
+        if (targetId) setActiveTab(targetId, btn);
+      });
+    });
 
-        ifpdTabBtns.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-selected', 'false');
-        });
-        ifpdTabPanels.forEach(p => p.classList.remove('active'));
-
-        btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
-        const targetPanel = document.getElementById(targetId);
-        if (targetPanel) {
-          targetPanel.classList.add('active');
+    // Dot navigation
+    ifpdDots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const targetId = dot.getAttribute('data-tab-target');
+        const targetBtn = document.querySelector(`.ifpd-tab-btn[data-tab="${targetId}"]`);
+        if (targetBtn) {
+          setActiveTab(targetId, targetBtn);
         }
       });
     });
+
+    // Mobile scroll buttons
+    if (ifpdScrollLeft && ifpdTabsNav) {
+      ifpdScrollLeft.addEventListener('click', () => {
+        ifpdTabsNav.scrollBy({ left: -190, behavior: 'smooth' });
+        setTimeout(updateTabScrollArrows, 320);
+      });
+    }
+    if (ifpdScrollRight && ifpdTabsNav) {
+      ifpdScrollRight.addEventListener('click', () => {
+        ifpdTabsNav.scrollBy({ left: 190, behavior: 'smooth' });
+        setTimeout(updateTabScrollArrows, 320);
+      });
+    }
+
+    if (ifpdTabsNav) {
+      ifpdTabsNav.addEventListener('scroll', () => {
+        updateTabScrollArrows();
+      }, { passive: true });
+      window.addEventListener('resize', updateTabScrollArrows, { passive: true });
+      setTimeout(updateTabScrollArrows, 150);
+    }
 
     // Smooth scroll and subject pre-selection for tab consultation buttons
     document.querySelectorAll('.btn-tab-action').forEach(btn => {

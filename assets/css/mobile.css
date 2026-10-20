@@ -10,6 +10,12 @@
   .mobile-menu-btn {
     display: none;
   }
+  .ifpd-mobile-nav-bar {
+    display: none !important;
+  }
+  .ifpd-nav-scroll-btn {
+    display: none !important;
+  }
 }
 
 /* ==========================================================================
@@ -395,5 +401,94 @@
   .partner-logo-img {
     max-height: 42px !important;
     max-width: 155px !important;
+  }
+
+  /* ===== IFPD TABS: Mobile Horizontal Scroll Affordance ===== */
+  .ifpd-mobile-nav-bar {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px 7px;
+    background: rgba(2, 10, 22, 0.98);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    user-select: none;
+  }
+  .ifpd-mobile-nav-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 11.5px;
+    color: #94a3b8;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+  }
+  .ifpd-hint-icon {
+    color: #38bdf8;
+    animation: hintArrowMove 2s infinite ease-in-out;
+  }
+  @keyframes hintArrowMove {
+    0%, 100% { transform: translateX(0); opacity: 0.75; }
+    50% { transform: translateX(4px); opacity: 1; color: #7dd3fc; }
+  }
+  .ifpd-mobile-nav-dots {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .ifpd-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.28);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .ifpd-dot.active {
+    width: 18px;
+    border-radius: 8px;
+    background: #38bdf8;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+  }
+
+  .ifpd-tabs-nav-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .ifpd-nav-scroll-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 36px;
+    z-index: 5;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.25s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .ifpd-nav-scroll-left {
+    left: 0;
+    background: linear-gradient(to right, rgba(2, 10, 22, 0.96) 35%, rgba(2, 10, 22, 0));
+    color: #38bdf8;
+    padding-right: 8px;
+  }
+  .ifpd-nav-scroll-right {
+    right: 0;
+    background: linear-gradient(to left, rgba(2, 10, 22, 0.96) 35%, rgba(2, 10, 22, 0));
+    color: #38bdf8;
+    padding-left: 8px;
+  }
+  .ifpd-nav-scroll-btn svg {
+    filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.5));
+  }
+  .ifpd-tabs-nav {
+    padding: 10px 24px !important;
+    gap: 8px !important;
   }
 }
