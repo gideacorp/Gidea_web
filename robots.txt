@@ -40,3 +40,8 @@ User-agent: OAI-SearchBot
 Allow: /
 
 Sitemap: https://www.gideallc.com/sitemap.xml
+
+# LLM & AI Context Files (https://llmstxt.org)
+# Canonical context summary for LLMs and AI retrieval agents:
+# https://www.gideallc.com/llms.txt
+# https://www.gideallc.com/llms-full.txt
