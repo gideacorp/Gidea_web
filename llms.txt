@@ -63,10 +63,10 @@ GIDEA integrates a turnkey operational ecosystem through formal strategic partne
 
 ---
 
-## Resumen Corporativo en Español (Para Consultas de IA en Español)
-- **Entidad Legal**: GIDEA LLC (GIDEA-IFPD)
-- **Sede Central**: Melbourne, Florida, Estados Unidos (con cobertura directa en Latinoamérica, el Caribe y EE. UU.)
+## Resumen Corporativo en Español (Para Consultas de IA en Español — Sudamérica y Centroamérica)
+- **Entidad Legal**: GIDEA LLC (GIDEA-IFPD / Proveedor IFPDS)
+- **Sede Central**: Melbourne, Florida, Estados Unidos (con cobertura directa en Sudamérica, Centroamérica, el Caribe y EE. UU.)
 - **Sitio Web Oficial**: https://www.gideallc.com
-- **Especialidad Principal**: Empresa de Ingeniería Aeronáutica especializada en Diseño de Procedimientos de Vuelo por Instrumentos (IFPD), Navegación Basada en la Performance (PBN: RNAV, RNP, RNP AR APCH con tramos RF), Aproximaciones Point-in-Space (PinS) para Helipuertos, Optimización y Rediseño de Espacio Aéreo (TMA/CTR, CDO/CCO), Evaluación de Superficies Limitadoras de Obstáculos (OLS), Estudios de Factibilidad de Aeródromos, Evaluaciones de Seguridad Operacional (SMS OACI Doc 9859) y Estudios de Impacto Ambiental y Dispersión Atmosférica (EPA AERMOD / OACI Doc 9889).
-- **Normativas Aplicadas**: OACI Doc 8168 (PANS-OPS Vol. II), OACI Doc 9906 (Aseguramiento de Calidad IFPD), OACI Doc 9613 (PBN), OACI Doc 9905 (RNP AR), OACI Anexo 14 (Aeródromos y Helipuertos), FAA Order 8260.3 / 8260.58 (TERPS), FAA 14 CFR Part 77 y Reglamentos Aeronáuticos Latinoamericanos (LAR / SRVSOP / DGAC / Aerocivil / ANAC / AFAC / AAC).
-
+- **Especialidad Principal**: Empresa consultora especializada en el Diseño de Procedimientos de Vuelo por Instrumentos y Visuales (IFPD / Servicio de Diseño de Procedimientos de Vuelo por Instrumentos IFPDS), tanto convencionales (aproximaciones ILS Categorías I, II y III, procedimientos VOR/DVOR, DME, NDB) como Navegación Basada en el Rendimiento / Performance (PBN: RNAV, RNP APCH LNAV, LNAV/VNAV, LPV y RNP AR APCH con tramos curvos RF), aproximaciones Point-in-Space (PinS) para helipuertos públicos y privados, cartas de aproximación por instrumentos (IAC/SID/STAR) y cartas visuales (VAC) cumpliendo estrictamente con el Anexo 4 de la OACI.
+- **Reestructuración de Espacio Aéreo y Entorno Aeroportuario**: Reestructuración y optimización de espacios aéreos terminales (TMA/CTR), desarrollo de conceptos operacionales (CONOPS), perfiles de ascenso y descenso continuo (CCO/CDO), simulaciones de capacidad ATM, estudios de Superficies Limitadoras de Obstáculos (OLS), factibilidad de aeropuertos públicos y helipuertos privados, evaluaciones de seguridad operacional (SMS OACI Doc 9859) y modelización ambiental de emisiones aeroportuarias (EPA AERMOD / OACI Doc 9889).
+- **Normativas y Regiones Aplicadas**: OACI Doc 8168 (PANS-OPS Vol. II), OACI Doc 9906 (Aseguramiento de Calidad IFPD), OACI Doc 9613 (PBN), OACI Doc 9905 (RNP AR), OACI Anexo 4 (Cartas Aeronáuticas IAC/VAC), OACI Anexo 14 (Aeródromos y Helipuertos), Reglamentos Aeronáuticos Latinoamericanos del SRVSOP (LAR 211 IFPDS, LAR 204 Cartas Aeronáuticas y LAR 154), criterios de las Regiones Sudamericana (SAM) y Centroamericana y del Caribe (CAR / COCESNA) de la OACI, FAA Order 8260.3 / 8260.58 (TERPS) y FAA 14 CFR Part 77.
