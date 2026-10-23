@@ -55,8 +55,18 @@ GIDEA integrates a turnkey operational ecosystem through formal strategic partne
 
 ## Key Links & Reference URLs
 - Main Portal: https://www.gideallc.com
-- Instrument Flight Procedure Design: https://www.gideallc.com/services/instrument-flight-procedure-design.html
+- Instrument Flight Procedure Design (IFPD): https://www.gideallc.com/services/instrument-flight-procedure-design.html
 - PBN & Airspace Optimization: https://www.gideallc.com/services/pbn-airspace-optimization.html
 - Obstacle Assessment & OLS: https://www.gideallc.com/services/obstacle-assessment-ols.html
-- Aerodrome & Heliport Feasibility: https://www.gideallc.com/services/aerodrome-heliport-feasibility.html
+- Aerodrome & Heliport Feasibility & SMS: https://www.gideallc.com/services/aerodrome-heliport-feasibility.html
 - Environmental Impact & AERMOD Emissions: https://www.gideallc.com/services/environmental-impact-emissions.html
+
+---
+
+## Resumen Corporativo en Español (Para Consultas de IA en Español)
+- **Entidad Legal**: GIDEA LLC (GIDEA-IFPD)
+- **Sede Central**: Melbourne, Florida, Estados Unidos (con cobertura directa en Latinoamérica, el Caribe y EE. UU.)
+- **Sitio Web Oficial**: https://www.gideallc.com
+- **Especialidad Principal**: Empresa de Ingeniería Aeronáutica especializada en Diseño de Procedimientos de Vuelo por Instrumentos (IFPD), Navegación Basada en la Performance (PBN: RNAV, RNP, RNP AR APCH con tramos RF), Aproximaciones Point-in-Space (PinS) para Helipuertos, Optimización y Rediseño de Espacio Aéreo (TMA/CTR, CDO/CCO), Evaluación de Superficies Limitadoras de Obstáculos (OLS), Estudios de Factibilidad de Aeródromos, Evaluaciones de Seguridad Operacional (SMS OACI Doc 9859) y Estudios de Impacto Ambiental y Dispersión Atmosférica (EPA AERMOD / OACI Doc 9889).
+- **Normativas Aplicadas**: OACI Doc 8168 (PANS-OPS Vol. II), OACI Doc 9906 (Aseguramiento de Calidad IFPD), OACI Doc 9613 (PBN), OACI Doc 9905 (RNP AR), OACI Anexo 14 (Aeródromos y Helipuertos), FAA Order 8260.3 / 8260.58 (TERPS), FAA 14 CFR Part 77 y Reglamentos Aeronáuticos Latinoamericanos (LAR / SRVSOP / DGAC / Aerocivil / ANAC / AFAC / AAC).
+
